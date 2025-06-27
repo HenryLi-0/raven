@@ -1,6 +1,6 @@
 # Raven
 
-[Raven](https://github.com/HenryLi-0/raven/) is an open source disco party light, built for Hack Club's [Highway](https://highway.hackclub.com/)! 
+[Raven](https://github.com/HenryLi-0/raven/) is an open source spinning LED light display (like a disco party light of sorts), built for Hack Club's [Highway](https://highway.hackclub.com/)! 
 
 
 #### Introduction
