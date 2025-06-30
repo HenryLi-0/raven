@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D3, D4",D_DO-201AD_P15.24mm_Horizontal,3,1N5822,
+D2,Diode_DO-35,1,Diode,
+R1,R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal,1,Resistor,
+R2,R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal,1,Resistor,
+U1,Seeed_XIAO_RP2040,1,MCU_Seeed_XIAO_ESP32-C3,
+U2,TO254P1040X460X1935-3,1,STP55NF06L,

@@ -3207,7 +3207,7 @@
 		(descr "Resistor, Axial_DIN0411 series, Axial, Horizontal, pin pitch=15.24mm, 1W, length*diameter=9.9*3.6mm^2")
 		(tags "Resistor Axial_DIN0411 series Axial Horizontal pin pitch 15.24mm 1W length 9.9mm diameter 3.6mm")
 		(property "Reference" "R2"
-			(at 7.62 -2.92 360)
+			(at 7.62 -2.92 0)
 			(layer "F.SilkS")
 			(uuid "7c90e803-d52a-4b6e-8e05-76c6d90e38a0")
 			(effects
@@ -3218,7 +3218,7 @@
 			)
 		)
 		(property "Value" "Resistor"
-			(at 7.62 2.92 360)
+			(at 7.62 2.92 0)
 			(layer "F.Fab")
 			(uuid "eeaf9eed-c99f-4541-9bc2-4878f95da0f2")
 			(effects
@@ -3433,7 +3433,7 @@
 			(uuid "4b71e393-a772-46df-8f9a-e6fdab964bab")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 7.62 0 360)
+			(at 7.62 0 0)
 			(layer "F.Fab")
 			(uuid "6a25fe0f-6c81-4c7f-a7bf-e3a39a1c5dd6")
 			(effects
@@ -5197,7 +5197,7 @@
 		(descr "Diode, DO-201AD series, Axial, Horizontal, pin pitch=15.24mm, , length*diameter=9.5*5.2mm^2, , http://www.diodes.com/_files/packages/DO-201AD.pdf")
 		(tags "Diode DO-201AD series Axial Horizontal pin pitch 15.24mm  length 9.5mm diameter 5.2mm")
 		(property "Reference" "D1"
-			(at 7.62 -3.72 360)
+			(at 7.62 -3.72 0)
 			(layer "F.SilkS")
 			(uuid "5a825b91-117f-4451-8f2e-e3866d99f2ce")
 			(effects
@@ -5208,7 +5208,7 @@
 			)
 		)
 		(property "Value" "1N5822"
-			(at 7.62 3.72 360)
+			(at 7.62 3.72 0)
 			(layer "F.Fab")
 			(uuid "bef136ce-1d57-4371-96d7-e760d3f635e9")
 			(effects
@@ -5483,7 +5483,7 @@
 			(uuid "6395c699-af4f-41d1-842f-1aab76ae643e")
 		)
 		(fp_text user "K"
-			(at 0 -2.6 360)
+			(at 0 -2.6 0)
 			(layer "F.SilkS")
 			(uuid "1944bbd4-36b9-48e8-b2d4-df584f05f4ca")
 			(effects
@@ -5494,7 +5494,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 0 -2.6 360)
+			(at 0 -2.6 0)
 			(layer "F.Fab")
 			(uuid "30030a03-6223-4812-9c3b-d2dd83a5edef")
 			(effects
@@ -5505,7 +5505,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 8.3325 0 360)
+			(at 8.3325 0 0)
 			(layer "F.Fab")
 			(uuid "b1df279a-135c-42df-b674-4a66376eee68")
 			(effects
@@ -7115,7 +7115,7 @@
 		(descr "THT rectangular pad as test Point, square 2.5mm side length, hole diameter 1.2mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -2.148 360)
+			(at 0 -2.148 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1833435a-5044-42d9-b61a-261610335814")
@@ -7127,7 +7127,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_2.5x2.5mm_Drill1.2mm"
-			(at 0 2.25 360)
+			(at 0 2.25 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "76748718-1568-465d-a643-21988d539b4f")
@@ -8346,7 +8346,7 @@
 		(uuid "dfd14f95-b9a2-4413-92a1-dd37e90820db")
 		(at 179.96 70)
 		(property "Reference" "U2"
-			(at 0.63143 -4.71072 360)
+			(at 0.63143 -4.71072 0)
 			(layer "F.SilkS")
 			(uuid "289a7b21-3393-4416-9a23-2c7f19b14b5a")
 			(effects
@@ -8357,7 +8357,7 @@
 			)
 		)
 		(property "Value" "STP55NF06L"
-			(at 0.04 2.5 360)
+			(at 0.04 2.5 0)
 			(layer "F.Fab")
 			(uuid "952da188-e701-49fd-84c6-36d0a310e866")
 			(effects
@@ -8368,7 +8368,7 @@
 			)
 		)
 		(property "Footprint" "STP55NF06L:TO254P1040X460X1935-3"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "14ff943d-745b-4863-857b-9a2fba2cd5e4")
@@ -8380,7 +8380,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "acc2aa23-1ccb-4f0c-aa02-3ba84116f3b9")
@@ -8392,7 +8392,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d6ce1645-0041-4f88-b978-9bb9a34b6945")
