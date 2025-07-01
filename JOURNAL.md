@@ -301,4 +301,45 @@ so, we just need to write firmware, and then somehow find 50 LEDs (we might have
 
 ok, good night! (i'll calculate the hours tomorrow i guess)
 
-**Time Spent: 7.75** (wait no way, like the motor?)
+**Time Spent: 7.75 hrs** (wait no way, like the motor?)
+
+## 06-30-2025: Day 6: Starting CAD Stuff!
+**no way, onshape appearance?**
+
+ok, nearing a week soon! today's CAD day! or more like tomorrow, since its actually 2 AM on 6/30/2025, and i just pushed the commit with the 6/29/2025 log (im a little too excited to work on this)
+
+but since that's cad day, im actually gonna work on some of the firmware now! ok so its 2:37 AM now, and i got the theoretical settings and startup done, so now all the logic (predictive RPM and timing) needs to be done. gotta search this up, but hopefully it has decimal time tracking (as in, `time.time()` returns a decimal), since if it only returned whole numbers, that would make things a little less accurate!
+
+ok, good night, see you tomorrow morning! (cad cad cad)
+
+ok its 4:07 PM now, time to start CADing! gonna quickly export the kicad files into stl...
+
+ok, everything imported (except that motor... do i just go hunting on aliexpress again?), lets get the CAD started! (its 4:25 PM now!) i guess we do a mastersketch (*DDS noises* (FRC reference))
+
+ok so we need something heavy to keep the whole thing down ~~and not take off~~, so i guess we just make the top as light as possible (pocketing time) and the bottom have attachemts to put something like a weight on (or just make it heavy in general)
+
+also turns out im actually designed it for M4 screws??? ok, wait, let me just take a break and think about this, since this CAD is not going the way i want it. what we want is a setup that looks like this:
+
+![ms paint](</updatelogs/images/202506/06302025 - 1.png>)
+
+and top down, something like (ok left at 5:05 PM and back at 11:20 PM!) (so uh kinda 6 hours passed and oopsie)
+
+![ms paint again](</updatelogs/images/202506/06302025 - 2.png>)
+
+ignoring the fact that they are very not to scale, that's the general idea we're going for! gonna quickly take a visit to the bathroom, then we continue the CAD!
+
+ok i need to figure out what motor im using, since i dont think using amazon shipping is gonna give the best prices (but, i really need to be careful of getting scammed on aliexpress lol) (mfw i say that and the second option is 3 motors prices at $0.99)
+
+ok, so we need a shaft that isnt a perfect cylinder, or else we will not be able to get a grip... ok, so i actually cant find any non-sketchy D-shaft 775 motor, so i guess im gonna use [this one](https://www.aliexpress.us/item/3256807114067845.html?spm=a2g0o.productlist.main.1.16cd6776Vgc891&algo_pvid=26af35e1-df73-4cc4-ac55-c5f83bc87477&algo_exp_id=26af35e1-df73-4cc4-ac55-c5f83bc87477-17&pdp_ext_f=%7B%22order%22%3A%22554%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%2116.50%210.99%21%21%21117.41%217.03%21%402101c59117513426452444616e02a5%2112000040117671201%21sea%21US%216405565024%21ABX&curPageLogUid=Umbp8PlZyzJa&utparam-url=scene%3Asearch%7Cquery_from%3A) that has a circular shaft, so ill probably use some hub or something (or just use superglue? idk)
+
+hey, add [M4 screws (M4, 20mm)](https://www.aliexpress.us/item/3256804341271555.html?spm=a2g0o.productlist.main.2.461ac14e7BXtJq&algo_pvid=43910c63-45e0-4ecd-b9b1-ad107835e2ab&algo_exp_id=43910c63-45e0-4ecd-b9b1-ad107835e2ab-1&pdp_ext_f=%7B%22order%22%3A%225870%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.16%210.99%21%21%211.16%210.99%21%402101ea7117513433620995216eb46a%2112000029486656871%21sea%21US%216405565024%21ABX&curPageLogUid=FRqi06trgT20&utparam-url=scene%3Asearch%7Cquery_from%3A) to the BOM! and [these brass heat inserts (M4, OD 6mm, length 5mm)](https://www.aliexpress.us/item/3256803396040989.html?spm=a2g0o.productlist.main.2.309e5c43kJ2Kn6&algo_pvid=41f4ca04-74cd-48e3-9b75-9c71cfc4611e&algo_exp_id=41f4ca04-74cd-48e3-9b75-9c71cfc4611e-1&pdp_ext_f=%7B%22order%22%3A%2218926%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.88%210.99%21%21%211.88%210.99%21%40210313e917513432649813622e6066%2112000026370649721%21sea%21US%216405565024%21ABX&curPageLogUid=yV34TZUfSQd2&utparam-url=scene%3Asearch%7Cquery_from%3A) while youre at it! and [these M4 nuts (M4)](https://www.aliexpress.us/item/3256807407546447.html?spm=a2g0o.productlist.main.2.368eNuFVNuFVPm&algo_pvid=8fe920d4-ae35-4001-9942-7d798b919b5b&algo_exp_id=8fe920d4-ae35-4001-9942-7d798b919b5b-1&pdp_ext_f=%7B%22order%22%3A%2211553%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.56%210.99%21%21%2111.08%217.02%21%402101e07217513438147161886eaffb%2112000041426239344%21sea%21US%216405565024%21ABX&curPageLogUid=GygBYXASGNU6&utparam-url=scene%3Asearch%7Cquery_from%3A)! (ill have to look into this, but i *could* use the heat inserts as nuts... might be a bad idea, but ill look into it)
+
+ok, gotta go to sleep now (its so early), but i do have a meeting tomorrow that i'll definitely not use to work on the CAD... no no, that would be such a terrible idea... who would ever do such thing? (*subtle foreshadowing*)
+
+ok, just realized that the motor has some threaded m4 holes already! gotta update the PCB now, but heres the CAD so far!
+
+![cad](</updatelogs/images/202506/06302025 - 3.png>)
+
+ok good night now! (oops got caught being up at 12:40 AM oops)
+
+**Time Spent: 2.5 hrs**
