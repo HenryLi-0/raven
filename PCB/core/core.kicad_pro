@@ -469,7 +469,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "core.step",
+      "step": "../../CAD/PCB_core.step",
       "svg": "",
       "vrml": ""
     },

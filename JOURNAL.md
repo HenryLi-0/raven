@@ -343,3 +343,28 @@ ok, just realized that the motor has some threaded m4 holes already! gotta updat
 ok good night now! (oops got caught being up at 12:40 AM oops)
 
 **Time Spent: 2.5 hrs**
+
+## 07-01-2025: Day 7: Updating PCB and CAD Work!
+**While being very eepy.**
+
+yeah i really need to stop sleeping on this cad
+
+9:45 PM here on the first day of july, i guess lets start it off on a good step! just kidding, i fell asleep on the bed and now its 10:58 PM. oops. ok, back to CADing!
+
+ok, so i gotta update the PCB for this, but the LED panel should be using the M4 not the M2 screws... gonna do that right now! additionally, the core PCB need motor mounting holes! ok, 11:48 PM, and just updated the core PCB! the back now has the silkscreen labels for what each hole does, and shifted stuff so that its farther from the motor hole! (we dont want shorts or funny drilling activity near the center)
+
+ok, idk what took so long, buts its now 12:13 AM, but the PCBs are updated! here's some screenshots!
+
+![OMG LEDS!!!](</updatelogs/images/202506/07012025 - 1.png>)
+
+![core pcb!](</updatelogs/images/202506/07012025 - 2.png>)
+
+ok, ill see you in the morning where i should hopefully finish the cad (yes, i had a 6.5 hour meeting this morning, unfortunately couldnt CAD during that time)
+
+speaking of the CAD, the base will need to be split, since i cant exactly fit a 24 cm diameter disc on my A1 mini (18cm x 18cm build plate) (~~i just had a funny idea about printing a 0.1kg part on the school printers~~ (jk im not actually gonna do that, ill probably split the part into eigths and connect it with the M4 screws))
+
+ok, so CAD, firmware, and BOM to do!
+
+ok good night now
+
+**Time Spent: 1.5 hrs**

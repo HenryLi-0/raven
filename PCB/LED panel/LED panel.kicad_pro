@@ -469,7 +469,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "LED panel.step",
+      "step": "../../CAD/PCB_LED panel.step",
       "svg": "",
       "vrml": ""
     },
