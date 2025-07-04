@@ -414,3 +414,49 @@ anyways, that's it! hopefully more progress tomorrow, but yeah, gotta update the
 
 **Time Spent: 2.75 hrs**
 
+## 07-03-2025: Day 9: Even More CAD Work!
+**cad cad cad**
+
+henry did not wake up early.
+
+oh wait i just realized todays the first day of a certain convention in pittsburg! guess ill see a couple videos coming out in a couple days... **NO WAY! [ITS WATER THEMED!](https://en.wikipedia.org/wiki/Anthrocon)** (water game?) (scroll to the bottom)
+
+anyways, its 9:02 PM (this feels a bit way too familiar...) and its now CAD time! also, i just remembered LCSC was a thing, and since desoldering LEDs off an LED strip (where, the LEDs could have a strong adhesive, LEDs could be sketchy, i could melt one again, etc.) is a bad idea, LCSC probably is a smarter idea (for a lot of our electronics, in fact) (might be a bit more expensive, but honestly cheaper and more reliable in the long run, just need to make sense of these aprt nubmers...)
+
+anyways, back to the CAD! (reminder for myself that i also need to update the PCB with some diodes)
+
+![interesting color choice...](</updatelogs/images/202507/07032025 - 1.png>)
+
+but yeah, something like that! probably should make the bottom a bit shorter though... ok, done! (parametric cad!!!)
+
+![hmm](</updatelogs/images/202507/07032025 - 2.png>)
+
+hmm, someones (probably me) is gonna get punched real hard by these two protruding screws, might make a big fat long spacer in the back (maybe not too much of a problem, but we'll see later) also, the nuts might touch the power and ground of the LED panels, so we need to take note of that
+
+ok, currently simulating the load and stuff, had to replace the LED and PCB material with plantinum because FR-4 doesnt have some ratio or constant or something so onshape cant simulate it
+
+oh wow whys it taking so long... is onshape like doing a blender render or something
+
+oh its done! took like 7 minutes, but its ready! oops i did a modal simulation instead of linear static... guess its another wait? oh wow, much faster! ~~wait a second why does that look so sus~~
+
+ok, putting 2 pounds of force is unrealistic, but its not gonna do it any good. anyways, heres a more realistic 0.2 pound load on it
+
+![hmm](</updatelogs/images/202507/07032025 - 3.png>)
+
+in the end, the top structure would probably keep it all together! ill probably just keep onshape on overnight and simulate when the cad is actually done! right, back to cad!
+
+just had an idea, what if we make our base heavier by just filling it with sand? it would make it essentially heavier than 100% infill PLA, and it would probably be way cheaper? wait a second i dont even need to buy it, i have a beach like a kinda far away (maybe gravel will also do?)
+
+ok, silly CAD activities, this might be the worst quality CAD i made in a while, but ill clean it up in a bit
+
+i just remembered that we need to do the light thingy (you know, the thing where we decrease the angle of exiting light?)
+
+wait we might actually need all the screws they give (so far using like 75 screws) this reminds me of that one time we spammed rivets on one robot cad
+
+ok, gonna go to sleep now, here's the current state of the CAD! i guess ill use the extra screw space on the LED pannels to screw on the light blocking thingy, and yeah, we're getting there! still lots of other things to do (PCB update and code and BOM), but we're getting there!
+
+![cad!](</updatelogs/images/202507/07032025 - 4.png>)
+
+ok, good night!
+
+**Time Spent: 3.5 hrs**
