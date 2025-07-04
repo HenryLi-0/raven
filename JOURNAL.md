@@ -355,9 +355,9 @@ ok, so i gotta update the PCB for this, but the LED panel should be using the M4
 
 ok, idk what took so long, buts its now 12:13 AM, but the PCBs are updated! here's some screenshots!
 
-![OMG LEDS!!!](</updatelogs/images/202506/07012025 - 1.png>)
+![OMG LEDS!!!](</updatelogs/images/202507/07012025 - 1.png>)
 
-![core pcb!](</updatelogs/images/202506/07012025 - 2.png>)
+![core pcb!](</updatelogs/images/202507/07012025 - 2.png>)
 
 ok, ill see you in the morning where i should hopefully finish the cad (yes, i had a 6.5 hour meeting this morning, unfortunately couldnt CAD during that time)
 
@@ -400,7 +400,7 @@ actually yeah, this idea does really work at all, either something can break or 
 
 WAIT! THE SOLUTION IS JUST KISS (KEEP IT SIMPLE, SILLY!)! THE SOLUTION IS JUST A BRACKET WITH OPPOSING SUPPORTS THAT HAS SPACERS!
 
-![what is that](</updatelogs/images/202506/07022025 - 1.png>)
+![what is that](</updatelogs/images/202507/07022025 - 1.png>)
 
 so, what are you even looking at? yeah, probably shouldnt have drawn it with pen, but it was first thing i could grab, so so be it. basically, you can see the bracket there, with the clean surface being the on point bottom right (clean surface, as in, the face that isnt covered with layer lines). then we have these four other "caps" that wrap around the bracket, with the clean surface facing up. then, we have a spacer that's just solid PLA that goes on the bases of each screw, with the clean surface being the surface that, when you look at top down, you see the screw hole. then, we can wrap this around the sides, allowing us to make sure the "caps" dont move. (we can also just super glue just to be super sure!) and thats the solution! the screws then go in, and it stays! nice! ok, time to CAD this! (wow, that was a lot of thinking...)
 
@@ -408,7 +408,7 @@ yeah i guess i gotta CAD this upside down, we're actually kinda getting really h
 
 ok, being forced to go to sleep again (but its only 12:30 AM???), so here's the CAD update! 
 
-![onshape mention](</updatelogs/images/202506/07022025 - 2.png>)
+![onshape mention](</updatelogs/images/202507/07022025 - 2.png>)
 
 anyways, that's it! hopefully more progress tomorrow, but yeah, gotta update the PCB too! (maybe i wake up early tomorrow and grind? idk)
 
