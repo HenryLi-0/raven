@@ -1339,12 +1339,6 @@
 		)
 	)
 	(junction
-		(at 118.11 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0d81bef3-e9bd-44dc-979d-c03eefa2c570")
-	)
-	(junction
 		(at 104.14 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1357,10 +1351,10 @@
 		(uuid "91c355c8-8b21-4b54-ac07-6d617bff9413")
 	)
 	(junction
-		(at 118.11 62.23)
+		(at 118.11 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cd66c282-dfa3-47e3-a133-0a8ed4b782e9")
+		(uuid "f3897001-7b53-42b4-ad0f-dbca955e61d3")
 	)
 	(wire
 		(pts
@@ -1504,6 +1498,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 62.23) (xy 118.11 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92f963c1-fdfd-4b08-98ef-746b36b4309b")
+	)
+	(wire
+		(pts
 			(xy 99.06 54.61) (xy 99.06 57.15)
 		)
 		(stroke
@@ -1641,16 +1645,6 @@
 			(type default)
 		)
 		(uuid "f243a164-e440-4c75-9c05-ee08019c106a")
-	)
-	(wire
-		(pts
-			(xy 124.46 62.23) (xy 118.11 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f26a9597-40ae-4fb3-9e52-a7244100ccde")
 	)
 	(text "10 kΩ"
 		(exclude_from_sim no)
@@ -2124,7 +2118,7 @@
 	)
 	(global_label "HALL BACKUP"
 		(shape input)
-		(at 124.46 62.23 0)
+		(at 118.11 62.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2134,7 +2128,7 @@
 		)
 		(uuid "e4bf6ce0-e521-424d-99b7-11dfd2d3d9c3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.3872 62.23 0)
+			(at 134.0372 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2250,91 +2244,6 @@
 			(project ""
 				(path "/fbd72b7d-ff34-44b4-b2bb-0e63eec67b9d"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 118.11 66.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4cfb5d11-d851-4933-a63d-286ca5d1e217")
-		(property "Reference" "D6"
-			(at 122.936 66.802 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Diode"
-			(at 122.936 65.024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94f6189f-df7f-45bf-a08a-8995d77d9275")
-		)
-		(pin "2"
-			(uuid "4bc97d8a-e7db-4ca5-81f6-72089d2bc91f")
-		)
-		(instances
-			(project "core"
-				(path "/fbd72b7d-ff34-44b4-b2bb-0e63eec67b9d"
-					(reference "D6")
 					(unit 1)
 				)
 			)
