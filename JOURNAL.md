@@ -460,3 +460,73 @@ ok, gonna go to sleep now, here's the current state of the CAD! i guess ill use 
 ok, good night!
 
 **Time Spent: 3.5 hrs**
+
+## 07-04-2025: Day 10: PCB and Electronics
+**pcb funny, and electronics too**
+
+
+ok, starting today at 2:20 PM instead of the previous couple days! fist things first, im gonna update the PCBs!
+
+ok, been doing some work, then just remembered that i needed to update the license (since, GNU GPL v3 is kinda a more software thing). just updated it, with `CERN-OHL-S v2` for the hardware and `GNU GPL v3` for the software! that should keep everything open source! ok, quick commit, PCB work is still being done!
+
+ok, board should be ready! 
+
+![waw](</updatelogs/images/202507/07042025 - 1.png>)
+
+ok, kicad wont stop telling me in DRC that theres errors, since the `A3144E GPIO` isn't connected (since, connecting both GPIO to listen to the A3144 would probably end badly). im gonna have to write this down somewhere, but we have to connect those two pins!
+
+ok, we need to update the LED ones now...
+
+also, dont remembered if i mentioned this, but the LED panel needs updates because... a nut kinda crushes one of the LEDs, and the bottom ones might be a *little* too close to the pads (ill do the LCSC stuff later)
+
+wait its 3:45 PM now, im gonna take a quick break... back at 4:04 PM! (not found)
+
+since the LED panel is 99.8827mm tall, we're getting really close to the 10cm mark, so we might actually have to make the ~~RAM stick~~ LED panel a bit wider, which should, in theory, not really change the price? this quote is taking a while... yeah, still $2.10! ok gonna work on it...
+
+LED PCB now updated! updating the cad now...
+
+![ram stick](</updatelogs/images/202507/07042025 - 2.png>)
+
+ok, exported, importing into onshape! (also, quick commit)
+
+uh why is the xiao made of solid gold now (yes, i know that its just the color, but it looked really funny)
+
+![gold microcontroller](</updatelogs/images/202507/07042025 - 3.png>)
+
+wait i might actually need to revisit the idea of putting the boards electronics on top since... er...
+
+![whaaa](</updatelogs/images/202507/07042025 - 4.png>)
+
+yeah we might have a bit of a problem... yeah, mounting it on top might be the move... also, we have a LOT of collision issues
+
+so we might have to solder the wires upside down for the main part, which is probably a smart move if we incorporate a couple zip ties, since that should keep all the wiring safe and tucked inside the machine (we dont want a flying whip of sorts) we also need to have a safety off switch, which i kinda forgot to add to the BOM, but that'll probably be ziptied somewhere too
+
+![hmm](</updatelogs/images/202507/07042025 - 5.png>)
+
+played around with how wire length can impact singal strength, and it seems that sus wiring that goes back and forth for very long doesnt mess with the signals *too* much, we'll have to see with the neopixels (right now, its just GPIO value determines on/off, unlike neopixels that have to send the info)
+
+ok, its 5:06 PM and im gonna be back in a bit! as for CAD work, planning on starting to do the right side (with the batteries and chargers) now!
+
+ok, back at work at 8:15 PM, and did a bit more playing around with those LEDs...
+
+![leds leds leds](</updatelogs/images/202507/07042025 - 6.png>)
+
+basically, doubled or tripled the amount of wires going back and forth, so this is like seriously an overestimate of what the actual leds will experience, but theres no really difference in brightness, so i think we're ok! gonna write a letter real quick, currently 8:45 PM!
+
+ok so now its 10:33 PM, and the neighbors somewhere are really playing around with fireworks, or at least someone in like a 1 mile radius is. anyways, since it sounds like something more violent, im gonna try to focus (while im like the closest to the window)
+
+whys the floor shaking
+
+hey so im back, thinking about it, is a 775 overkill for our system? given the battery, TP4056 output, and converting it to 5V, we might have like, very little amps to deal with for the motor, which might just not spin. basically, we dont need industrial motors, just motors than can spin the roughly 2 (lets say 3 for headroom) pound thing at 1k or 2k RPM, gonna do some research now...
+
+wheres the search bar in here rdfjpasdjvksdnfaksdfasdfas found a good RS550 motor, except for the fact that it leads me to whatever dollar express is and THERES NO SEARCH BAR ADKLASKLDFALSKDJ (i dont need a usb air humidifier, i just want my motor)
+
+yeah so its now 11:50 PM, and im still trying to research what motors work and dont, and if my wiring idea sucks, since research really conflicts with itself. im looking at TP4056 wiring on youtube, and 3 of Orbit (FRC 1690)'s videos show up in a row in "Explore More" (2022-2024).
+
+ok, so we've had some changes! instead of running everything through the TP4056 modules to control the voltage and what not, we're actually gonna use the battery directly connect to the MT3608 to get power to the logic circuit, then we have some other convertor for the motor, which also has battery directly, basically we dont have the TP4056 on the spinning bit itself, but just the batteries. then connect it to the ground of the MOSFET, since we need to do the whole electron thing
+
+ok, so its 12:40 AM now, and ive been doing a ton of researching and might need to make a ton of changes. basically, today was very confusing, and i really need to rethink the power system. kinda tired, hopefully waking up at a reasonable time tomorrow!
+
+ok good night
+
+**Time Spent: 4.75 hrs**
