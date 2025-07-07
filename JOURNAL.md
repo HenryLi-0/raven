@@ -530,3 +530,28 @@ ok, so its 12:40 AM now, and ive been doing a ton of researching and might need 
 ok good night
 
 **Time Spent: 4.75 hrs**
+
+## 07-05-2025: Day 11: Further Confusion
+**electronics are confusing**
+
+ok, first things first. electronics.
+
+4:36 PM right now, gonna search in the depths of youtube videos to find any wiring example with the battery!
+
+yeah so im kinda super confused right now. so ignore what i said last night, we should definitely not connect the raw battery straight to the circuit (we need overdischarge protection). so, apparently the TP4056 does and does not have overdischarge protection? video and research is conflicting, but im gonna assume not. a battery management systems is *kinda* a bit up there in pricing, so im gonna research overdischarge protection now
+
+oh its 5PM theres some mosim announcement stream right now, guess ill leave the 5 minutes youtube premiere timer in the background?
+
+ok, turns out i forgot we had discharge protection oops
+
+ok so that was 5:30 PM, organized my stuff, did a little art for the preview image (does that count for time? i guess not...), so here's the idea! basically, we charge the batteries serperately, then plug it into the machine, where we will NOT BE CONNECTING IT RAW, but instead, have an over-discharge module (that im still trying to find :D), which should give us a ton of amps! also, this means that we need big fat beefy traces all over the place (since, 20A max discharge rate is kinda a lot, since we designed with 3A max in mind)
+
+heh i just drew some art (oops its 11:50 PM now) oops now its 12:39 AM, ill continue this on my phone!
+
+ok its 1:36 AM and im on my phone now with github mobile, so dont be expecting any pictures! trying to do some research in the safer metoeds while still getting reasonable power, and i think what we said before (over discharge module thing), is ok! gonna hunt on aliexpress now...
+
+found this [over discharge protection module](https://www.aliexpress.com/item/1005006160741067.html)! instructions on how to use it unclear, but another one that looks similar also has instructions so its *probably* the same right (please be)
+
+yeah i fell asleep typing that, so thats it for 7/5/2025! good night!
+
+**Time Spent: 1.5 hrs**
