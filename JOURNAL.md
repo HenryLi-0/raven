@@ -556,3 +556,89 @@ yeah i fell asleep typing that, so thats it for 7/5/2025! good night!
 
 **Time Spent: 1.5 hrs**
 
+## 07-06-2025: Day 12: Hunting
+**lcsc watch out WAIT ARE THOSE LEDS**
+
+yeah so we kinda gotta finish this...
+
+just did a little research on the reviews of yesterday's overdischarge stuff, and it seems good! only downside is that its a *little* expensive (dont worry, welcome deal here! not sure how many deals i can get...) so, i guess we need to redraw the wiring diagram! (its 9:30 PM right now) wait a second, why does it say supply voltage 12V to 36V, guess this isnt the product for that!
+
+so we need the entire battery output, but overdischarge protection to stop lower battery sus activity, so the battery should be able to deliver its stated 20A, but not get restrictied by the TP4056's 1A dishcharge thing (which is also one reason we arent including it on the spining bit now)
+
+ok i gotta go for a second (its 10 right now), since my cousin is currently doing something in texas (i have no clue whats going on) ok three minutes later, and i guess they just diappeared off the face of the earth? i dont really know, gonna go back to search on aliexpress and LCSC, oh looks like theyre back
+
+also the MT3608 that we had earlier does 2A max, which isnt enough... however, heres a [battery charger protection thing](https://www.aliexpress.us/item/3256807120302984.html?spm=a2g0o.productlist.main.1.11115eb9tU5tMV&algo_pvid=17b15dd3-c056-4c08-8b4d-3a71811ebffa&algo_exp_id=17b15dd3-c056-4c08-8b4d-3a71811ebffa-0&pdp_ext_f=%7B%22order%22%3A%2212577%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005007306617736%22%2C%22orig_item_id%22%3A%221005007296858433%22%7D&pdp_npi=4%40dis%21USD%213.27%211.64%21%21%2123.30%2111.65%21%402103277f17518531947346287e3da2%2112000040176986833%21sea%21US%216405565024%21ABX&curPageLogUid=Ibhrdg7VpNy4&utparam-url=scene%3Asearch%7Cquery_from%3A) (choose 2S 20A Balanced)! (uh idk if running this on only one battery would work?) yeah idk if this is the move, its layout looks super cursed, and im not exactly sure buying 4 batteries is the move. looking into making my own overdischarge protection circuit (bad idea), and i see a minecraft comparator reference
+
+theres no way im soldering that
+
+![what the](</updatelogs/images/202507/07062025 - 1.png>)
+
+anyways, heres some things i found:
+- [1S 24A, might be the one! little sus, but should be good](https://www.aliexpress.us/item/3256805852468677.html?spm=a2g0o.productlist.main.9.302f5e3czX8KX7&algo_pvid=25c9b235-06aa-403b-ad23-0fdd63fde68e&algo_exp_id=25c9b235-06aa-403b-ad23-0fdd63fde68e-8&pdp_ext_f=%7B%22order%22%3A%22570%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%210.88%210.88%21%21%216.26%216.26%21%402101e9a217518566248628615e1e4a%2112000035437067506%21sea%21US%216405565024%21ABX&curPageLogUid=mvB8T0ck0sas&utparam-url=scene%3Asearch%7Cquery_from%3A)
+- [1S 10A, ok, less sus, but not enough amps!](https://www.aliexpress.us/item/3256806617397129.html?spm=a2g0o.productlist.main.3.302f5e3ceqAYR7&algo_pvid=abc4450d-26db-481b-8f75-b82ffec1d72d&algo_exp_id=abc4450d-26db-481b-8f75-b82ffec1d72d-2&pdp_ext_f=%7B%22order%22%3A%22496%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.37%210.99%21%21%219.79%217.08%21%402103201917518565855054326e5bf8%2112000038357512404%21sea%21US%216405565024%21ABX&curPageLogUid=VgW5fFPmZzZJ&utparam-url=scene%3Asearch%7Cquery_from%3A)
+- [some 18650 format battery holder of sorts](https://www.digikey.com/en/products/detail/keystone-electronics/1044/5057795)
+
+ok anyways its 11PM and im off to watch frozen 2 for like the fifteenth time ok see ya
+
+ok its 12:13 AM and i just finished reading all the FRC servers im in (lurking behavior), anyways back to aliexpress! the `1S 24A` one (the first link) seems pretty ok, a little sketchy (not too many reviews) and one picture has a chip without a part marking in the photo, but reviews seem alright and the pictures. also, just realized, these will take a LONG time to ship. like it says july 19-22. eh, i guess trade off for being so cheap.
+
+ok, so thats good! time to hunt LCSC for an A3144 and the MOSFET
+
+hmm you need to by 5 A3144 at once, but i guess LCSC is better since its like $4 on aliexpress for also 5 (also, LCSC is probably more reputable) [here's](https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html?s_z=n_a3144) the link! also, whys the datasheet only in chinese
+
+also, AP scores dont appear out yet? guess ill check in the morning
+
+ok, since the pdf didnt allow copy pasting, i just downloaded it, went to google drive, uploaded it, and now i can copy and paste. yeah it just works like that. anyways, looks good! gonna hunt for the mosfet now, we also need leds...
+
+yep, [here's](https://lcsc.com/product-detail/MOSFETs_STMicroelectronics-STP55NF06L_C77582.html?s_z=n_STP55NF06L) the STP55NF06L, cheaper than digikey!
+
+ok, WS2812B now, shouldnt be too hard... oh yeah, nvm, since theres apparently 46 different ones, guess i spoke too soon... also thats crazy, 983885 and 1010610 leds in stock, how many do they mass produce at once?
+
+waa who makes this many leds? (please send me your secret led stash)
+
+![leds leds leds](</updatelogs/images/202507/07062025 - 2.png>)
+
+wait i need to find what footprint or at least what the LEDs i have look like... ok, whatever `LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm` means (probably 5mm by 5mm base and 3.2mm tall?) reading through [this datasheet](https://lcsc.com/datasheet/lcsc_datasheet_2506031657_XINGLIGHT-XL-5050RGBC-WS2812B_C2843785.pdf) for [these leds](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_XINGLIGHT-XL-5050RGBC-WS2812B_C2843785.html?s_z=n_ws2812b) and dont really get whats 500 euros?
+
+![wha](</updatelogs/images/202507/07062025 - 3.png>)
+
+wait this is funny
+
+![oops](</updatelogs/images/202507/07062025 - 4.png>)
+
+anyways, im gonna continue research on the phone, currently 1:02 AM! (lots of things start tomorrow, guess i should try sleeping earlier today? probably not)
+
+**Time Spent: 3.5 hrs**
+
+## 07-07-2025: Day 13: More Hunting (and LEDs!)
+**did someone say leds**
+
+yeah its 12:52 PM and im forcrd to touch grass to earn money
+
+turns out the middle achool has the same internet password as the other schools across NYC so it appears that i maybe can hunt for more LCSC parts
+
+yeah so last night i fell asleep (oops) so i guess heres the summary
+
+basically, the one i was looking at had weird funny funny, basically i had no clue what that extra characters on that text mean. also, the marking on the LED itself (like the lines) were different so i went back on LCSC and found [this thingy](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html), looks pretty close to the actual thing (i have to make sire the markings match when i get back home), but it has a 5.0mm x 5.4mm, wait nvm actually the base is 5.0mm x 5.0mm, 5.4mm is just counting the pads! ok, this should be the one!
+
+yeah its now 3:14 PM (last thing was from 1:20 ish) getting bored now (we're all done with our stuff), kinda miss my computer right now, but we'll do with what we have. 
+
+60 of [these LED](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html) (same as the ones up there) cost $3.95 (FRC 395? two train robotics?) anyways, within our budget! (wonder what shipping costs are?)
+
+ok, i guess we have to calculate trace width at home (and figure out and **finalize** the power system), so its 3:18 PM, i need to find the bathroom in this school, so see ya!
+
+yeah bathroom was in a very cursed spot and the bathroom itself was very cursed. anyways, its 9:15 PM at night, and i decided to do a little something for the last 15 minutes!
+
+![woa](</updatelogs/images/202507/07072025 - 1.png>)
+
+yeah, i also didnt expect to see the insides of my hackpad tonight, but i just decided to do a little cleaning! while it was out however, i decided to snag some data on its light spread! unfortunately, my measurements tell me that its more than 180 degrees, since it somehow lit areas below the PCB, but that's also probably since we're in a white room with a couple reflective surfaces here and there. anyways, the aforementioned LEDs seem good! anyways, finalizing the power system time!
+
+wait research is telling me we need like 1 or 2 cm thick traces for 5V @20A... anyways, lets ignore that for now, and draw this diagram!
+
+why does going outside make me so tired (i just laid in bed from 9:30 PM to 10 PM) ok now im being forced to sleep, i guess you get a wiring diagram tomorrow? just kidding, took like 45 minutes, but here's the drawing!
+
+![diagram!](</updatelogs/images/202507/07072025 - 2.png>)
+
+ok good night! (yeah i need to update the journal for today and yesterday, ill do it sometime!)
+
+**Time Spent: 1.5 hrs**
