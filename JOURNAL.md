@@ -642,3 +642,110 @@ why does going outside make me so tired (i just laid in bed from 9:30 PM to 10 P
 ok good night! (yeah i need to update the journal for today and yesterday, ill do it sometime!)
 
 **Time Spent: 1.5 hrs**
+
+## 07-08-2025: Day 14: Traces and Confusion
+**what is going on**
+
+no way its taking this long, lets finish this! so, its 6PM right now (started updating the journals at 5:45 PM)! realized that yesterday's diagram isnt *super* clear (as in, image quality, its a little blurry), so here's a better image!
+
+![diagram!](</updatelogs/images/202507/07082025 - 1.png>)
+
+ok, first thing, lemme double check that the MT3608 can actually support our amperage (and volts too), so lets do some math... ok, so if we can support 3.7-4.2V @20A, we can do 5V @14.8-16.8A, which is ok? also, for the motor, if we need, we can run it at 14V @5.29-6A (lower limit is roughly 5.28571A), which should be able to power the 775 motor? it might actually be ok for this! (we're feeding a total of 74-84W)
+
+ok, just ran through this idea with an omniscient ai, and it says its pretty much ok, just have a shared ground for everything and the buck convertors, so yeah, thats what im gonna do! well, after dinner, its 6:30 right now!
+
+ok, back, its 7:45 PM now! i guess its time to do the PCB stuff? gonna calculate the width of the traces real quick...uh 2.5cm traces is kinda crazy, lemme double check that... uh yeah.
+
+ok, so since we cant have giant fat 2cm traces on our PCB, we're gonna have to do something different. uh. so we kinda need to "banish" a couple amps on the logic side... wait a second, does the battery only supply whats needed? oh. oopsie, i guess we dont need 2cm traces on our PCB! (except for the motor...) ok, PCB time now! im gonna estimate the logic line needs 5A at most (probably only 3A at most, realistically, but lets just do 5A to be safe), so, according to kicad, with a current of `5A` and temperature rise of `10C`, we need `2.76552mm` traces (round to `2.8mm`, just to be safe). meanwhile, for `20A` and temperature rise of `10C`, we need `18.7156mm` traces (round to `20mm`, just to be safe). ok, time to get to work!
+
+hmm... how to change the entire net... did it manually, LED panel's almost good! just gonna change the pad size...
+
+![waw](</updatelogs/images/202507/07082025 - 2.png>)
+
+ok, 8:50 PM, led panel done! now for the big PCB... (also those traces are MASSIVE) yeah, we also need to do the thing with the shared ground... yeah so this is kinda confusing... wait im gonna quickly commit the led stuff
+
+oh yeah we should also look to source our diodes from LCSC
+
+ok, back (took a rest from 9PM to 9:30PM), yeah these nets are absolutely messed up... really considering redoing it? how am i supposed to route the pins of the MOSFET when the traces are 2cm thick... yeah so if we shove 20A in a 0.8mm trace, we get some sweet 1800C temperature rise (aka, we start dealing with liquid copper)
+
+ok, you know what, i guess we'll let it rise `15C`, and just print some fan blades to stick onto this (since, this thing is essentially a giant fan), bringing out traces to `14.6331mm` wide, rounded to `15mm`
+
+wait im gonna find the datasheet or data of the motor to find out how many amps we should actually aim for
+
+need to do some math, so if each LED is 5mm apart, and say, a 25cm diamter, we have a roughly 158 LED long circle (assuming the LEDs fit the circle perfectly, which they dont), anyways, what was i calculating again? we need to do a full revolution every "refresh" of the eye, so thats like 50 rotations per second? so like 3k rotations per minute?
+
+wait im a little silly. oops. so uh, basically, since we're running it at 14V, we actually **ARENT** shoving 20A down the line, we actually are doing 5-6A, so we actually only need `4.39879mm` traces (calculated for `7A`, rounded to `4.4mm`). yeah sorry, that was a big waste of time... ok, looking for motors (original one is kinda... lacking documentation), andymark has terrifying shipping prices
+
+wait im actually kinda confused because 14V @5-6A is, in fact, **NOT** enough for this motor... im gonna stop doing the PCB design for now, gonna focus on what motor we're using. ok, just spent a bit look at [some 550 motors](https://www.aliexpress.us/item/3256805434004883.html?spm=a2g0o.productlist.main.2.38ad10dbozbJho&algo_pvid=c85af6f1-91bd-4d8b-9026-3312fcf9b4de&algo_exp_id=c85af6f1-91bd-4d8b-9026-3312fcf9b4de-1&pdp_ext_f=%7B%22order%22%3A%22476%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%213.63%210.99%21%21%2125.92%217.06%21%40210318e817520322585382672ea633%2112000033773483986%21sea%21US%216405565024%21ABX&curPageLogUid=eMsbf9qdwhwJ&utparam-url=scene%3Asearch%7Cquery_from%3A) and i *think* they aren't strong enough? i guess we just stick with our original motor and try to figure stuff out?
+
+looking back, a `1S 24A` BMS makes kinda no sense for the 20A max discharge battery, gotta fix that too. guess we going for `1S 16A` then! ok, talking to omniscient ai, i just got insulted, so i guess 775 isn't the way to go? so the 775 is an inrunner motor but we're looking for an outrunner motor. however, that setup would require us to have a slipring since the mosfet is still in the spinning bit, so thats kinda out of the question. also, the boost convertor does 2A max so we need to find another one
+
+ok so its 12:30 AM right now, and ive think ive accepted the fact that we cant do this do a 775 motor, we have to use an outrunner motor. however, that requires us to move the entire motor control circuitry off the spinning board and onto a new board that stays stationary with respect to the table. this means we have two microcontrollers, one in the spinning bit for LED control and one at the base for motor control. they *should* communicate when to power on and off via bluetooth! 
+
+[drone motor something](https://www.aliexpress.us/item/3256802252458485.html?spm=a2g0o.productlist.main.3.464bbwchbwchf3&algo_pvid=a1260a99-3e96-46e5-b9f9-6d5ccf6346fa&algo_exp_id=a1260a99-3e96-46e5-b9f9-6d5ccf6346fa-11&pdp_ext_f=%7B%22order%22%3A%22517%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%214.64%210.99%21%21%214.64%210.99%21%402101ec1a17520361227765313ea087%2112000020658933923%21sea%21US%216405565024%21ABX&curPageLogUid=lLdhzPZdPGnO&utparam-url=scene%3Asearch%7Cquery_from%3A)
+
+something something esc, honestly, im a bit too tired tonight, so i guess ill continue looking into this tomorrow!
+
+good night! (12:50 AM woo)
+
+ok so its like 2:31 AM and ive been looking at memes for like an hour (i should stop), but realized im the buggest silly in the seven seas right now. we dont need a drone motor or an outrunner motor. we just need to flip the 775 motor upside down so that the shaft touches the spinny bit and spins with it, and is normally mounted onto the bit that doesnt spin. then, we have to have the two microcontroller setup, but this time we can actually use PWM and our MOSFET idea/setup (instead of a whole ESC setup for drone motors and whatever). this does mean we need like a giant clearance between the motor (like the big part) and the lower PCB, but i guess we could just print the bottom and just have a top PCB if we have to. anyways, this also gives us more space for the motor PCB and its wiring, so thats nice! ok good night!
+
+**Time Spent: 4.25 hr**
+
+## 07-09-2025: Day 15: Boost Convertor
+**henry didnt find it**
+
+wow today was quite the day, its already 10 PM..., anyways watched another movie today, time to start working! yeah so today in the doctors office i got bored while waiting and decided to research a couple of boost convertors (since the current MT3608 we have has a max amp of 2A, which is quite sad when we want to power motors). anyways, found [this one](https://www.aliexpress.us/item/3256805882203198.html?spm=a2g0n.productlist.0.0.186529edWzCVc3&aff_platform=msite&m_page_id=mvipdhwcaawioqjm197f1148b831e07212c62465f0&gclid=&pdp_ext_f=%7B%22order%22%3A%22937%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis!USD!1.73!0.99!!!12.34!7.05!%402101c5ac17520963580108649eed83!12000035596268598!sea!US!6405565024!ABX&algo_pvid=c5c05c22-8da6-4f29-bb19-0adee8073828), but it requires an input voltage of 10-32V, which the battery doesnt exactly deliver. therefore, we continue hunting.
+
+yeah so its been 22 minutes and im starting to think there arent any boost convertors around for this job. so uh, found [this](https://www.aliexpress.us/item/2255800011462620.html?spm=a2g0o.productlist.main.1.18b2lpAAlpAAaF&algo_pvid=556b5380-9541-4ed4-956d-35e1f915b3c7&algo_exp_id=556b5380-9541-4ed4-956d-35e1f915b3c7-26&pdp_ext_f=%7B%22order%22%3A%223088%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.87%210.99%21%21%211.87%210.99%21%402101ef5e17521136451725715e2715%2112000044237774496%21sea%21US%216405565024%21ABX&curPageLogUid=Ne4PmkucTc7K&utparam-url=scene%3Asearch%7Cquery_from%3A) but its limited to 5A in its input, so yeah. im kinda getting desperate here.
+
+ok who keeps breaking the internet router
+
+so i just had an idea, yeah its not gonna work (it was to skip the boost convertor for the motor and just attach it raw, but we need more volts!) yeah its been 45 minutes now and i cant find a good one. ok its now 11:05 PM and im just gonna take a break, ive looked through way too many aliexpress offers today...
+
+ok im back at 12:15 AM and im honestly very tired lol, but lets try to push through.
+
+[here's](https://www.aliexpress.us/item/3256805855172022.html?spm=a2g0o.productlist.main.12.7795lnSalnSasl&algo_pvid=b0afe62d-f32d-4314-85ed-17e95cc84a90&algo_exp_id=b0afe62d-f32d-4314-85ed-17e95cc84a90-11&pdp_ext_f=%7B%22order%22%3A%22712%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%210.96%210.96%21%21%216.85%216.85%21%402101c5b117521210612946204e1677%2112000035452245642%21sea%21US%216405565024%21ABX&curPageLogUid=SWzPmyjDzBHM&utparam-url=scene%3Asearch%7Cquery_from%3A) a thing for 2A battery protection (choose `2S 20A Balance` or something)
+
+alright, lets just finish this research phase, im getting really tired
+
+what did i just come across
+
+![what this](</updatelogs/images/202507/07092025 - 1.png>)
+
+ok theres actually no way i spent the entirety of today search for a single boost converter. anyways, im just gonna draw a wiring diagram real quick (yes for v3)
+
+yeah so i just realized that... this soltuion kinda means that i need a step down to 5V thing for the motor system since we have a XIAO that doesnt want to become a frying pan
+
+yeah ok, laid out all the components, its 1AM now, im just gonna wrap this up tomorrow (yay dont have to go outside tomorrow since its online on thursdays) (probably going to school on friday for driver practice? probably a good idea)
+
+so yeah, thats it, good night!
+
+**Time Spent: 2 hrs**
+
+## 07-10-2025: Day 16: Rewiring 
+**batteries**
+
+ok, its 4:10 PM, so lets get this done! after yesterday and a bit of research before i went to sleep last night, ive determined that theres like no viable option for a boost convertor that can convert @20A, even at low voltages, to higher voltages, at least, none that are cheap. basically, all the ones that i could find were in the $20 to $30 price range, which is absolutely silly, so ive actually got a better idea! we just, instead of spending so much on a single sad boost convertor, we actually spend it on batteries, so that we already have the correct voltage! (this is also cheaper than buying the boost converter, gives us more power, and also allows us to skip the whole boost converter bit for the motor!)
+
+this means, the motor... gets 4 batteries. yeah. however, note that the boost converter i found was $25-ish, and the 2 additional batteries would only be $10, meaning that buying batteries instead is actually a smarter move! (the omniscient ai also seems to agree, so this is probably also the good move forward!) however, all we need to do is make sure out battery protection system (as in over-discharge protection) is ok and not, you know, super dubious
+
+to the aliexpress! but first, gotta do something else, brb! (its 4:20 right now)
+
+yah so its 12:00 AM and i took some practice test and think i did ok, but anyways, back to drawing the layout! gotta find a 4S battery protection thingy... ok, found one thats 4S but 30A (we need 20A or less), 3S 20A (please so close)
+
+idk, so far found these two but i dont like something about both of them
+- [i cant tell if this acutal does discharge protection since weird docs contradict title but idk](https://www.aliexpress.us/item/3256806852470291.html?spm=a2g0o.productlist.main.8.270e37b5TFYjci&algo_pvid=deb023e0-46fe-4aff-b650-c48ea758565d&algo_exp_id=deb023e0-46fe-4aff-b650-c48ea758565d-8&pdp_ext_f=%7B%22order%22%3A%223256%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005007038785043%22%2C%22orig_item_id%22%3A%221005005356630077%22%7D&pdp_npi=4%40dis%21USD%212.22%211.11%21%21%2115.86%217.93%21%402101ead817522078481501637e4d8d%2112000039180604374%21sea%21US%216405565024%21ABX&curPageLogUid=uLIF7P0l0uhI&utparam-url=scene%3Asearch%7Cquery_from%3A)
+- [weird connector and hard to read docs](https://www.aliexpress.us/item/3256808381922829.html?spm=a2g0o.productlist.main.3.3e9d2360vC5qEx&algo_pvid=3f3e1191-641f-4e39-9b19-ada63354c459&algo_exp_id=3f3e1191-641f-4e39-9b19-ada63354c459-2&pdp_ext_f=%7B%22order%22%3A%22236%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%212.89%212.51%21%21%2120.61%2117.93%21%402103247917522076636808908e5bdd%2112000045753788312%21sea%21US%216405565024%21ABX&curPageLogUid=8Qs8lZR9Nvbh&utparam-url=scene%3Asearch%7Cquery_from%3A)
+
+ok, went back to drawing the wiring diagram, but im not sure if we should do two hall effect sensors or one, ill brb, just gonna save and commit and continue on my phone!
+
+how am i on 10%, anyways, basically, heres the deal. we have the two systems seperated (hey maybe we can use some of the extra pins for a speaker), only connected by bluetooth, but what if that connection fails, or we need more accurate data (since, RPM can change very fast). if the hall effect sensor is on the LED section, we wont have the ability to speed up accurately (probably some PID control), as in the feedback data will always be delayed by the connection. this shouldnt be a big deal, but disconnects or signal intereference can mess with this
+
+ok, what if we moved the hall effect sensor to the motor side? well, we wont be able to have the exact timings for the LEDs, which is kinda really bad since the LEDs really need to know where they are. speaking of which, i have an idea for super precise position measuring, and kts very silly. code execution time measuring and prediciting, we havent even started firmware yet...
+
+so basically, have delays and risk bad connection, or just dont even need them to send this data and just give each of them their own. and i think thats the better move since we get 5 of them at a time anyways
+
+ok so im going up to school for driving practice tomorrow so good night! (its 1:24 AM, guess ill do it on like 5 hours of sleep) also, gotta remember to find a stronger boost converter for the LED side, wait, i dont remember saying this, but the logic side has been renamed to the led side! also, subsystem also works in place of side for both of them! ok good night now!
+
+**Time Spent: 1.25 hrs**
