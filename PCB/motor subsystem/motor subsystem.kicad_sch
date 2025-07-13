@@ -1615,228 +1615,6 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-	)
-	(junction
-		(at 218.44 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f5fba8d-8fcc-4bc0-abb9-82fd1d23232f")
 	)
 	(junction
 		(at 81.28 91.44)
@@ -1857,12 +1635,6 @@
 		(uuid "1d9ce9dc-de63-471a-8f79-657d64a5b886")
 	)
 	(junction
-		(at 233.68 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "212e1742-52b8-489d-9d21-6dd15532d988")
-	)
-	(junction
 		(at 81.28 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1879,30 +1651,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a1b4563-9093-48a9-9087-e09573d90b6f")
-	)
-	(junction
-		(at 157.48 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3ad38f95-7b95-4609-9973-b181bec0d8b4")
-	)
-	(junction
-		(at 248.92 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e0e180a-81cf-4193-b691-6dce38dd2056")
-	)
-	(junction
-		(at 203.2 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e2b97bc-5609-40a4-a6e1-e4d450cd8b1b")
-	)
-	(junction
-		(at 203.2 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5374b3e0-41d0-42be-8464-8e4f3f62f85f")
 	)
 	(junction
 		(at 111.76 91.44)
@@ -1923,30 +1671,6 @@
 		(uuid "83352582-aafb-439d-806e-04e7ec8798dc")
 	)
 	(junction
-		(at 172.72 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84f96f90-c188-463e-8371-b58baef930e2")
-	)
-	(junction
-		(at 187.96 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "853da5ae-1d95-412b-8cbb-76deeb1fefea")
-	)
-	(junction
-		(at 233.68 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9197e8e8-44bf-4618-9256-81d111002476")
-	)
-	(junction
-		(at 248.92 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9214b45a-db65-4430-a9f7-8bad19fae943")
-	)
-	(junction
 		(at 96.52 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1965,18 +1689,6 @@
 		(uuid "be60f0a7-9c6e-4b1d-b06a-d062a759b78a")
 	)
 	(junction
-		(at 187.96 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c23b5fc2-67bf-485c-bbb9-df6899cf1bfc")
-	)
-	(junction
-		(at 157.48 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c402298b-985d-4c8d-a739-18661c433ee0")
-	)
-	(junction
 		(at 35.56 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1989,44 +1701,20 @@
 		(uuid "d02ba7da-2af6-4b81-b4b9-b8d84b7e879f")
 	)
 	(junction
-		(at 172.72 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d178ee00-e3b7-40d7-b44b-e825db7c317d")
-	)
-	(junction
 		(at 35.56 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1d45131-a1b1-4d50-afa0-0b776d583561")
 	)
-	(junction
-		(at 142.24 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e2664b1b-1970-41aa-8800-e0d16442a880")
-	)
-	(junction
-		(at 142.24 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eefda7b3-3ffb-48c0-9b93-b0eb47a6ff2d")
-	)
-	(junction
-		(at 218.44 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2da07a5-c5dc-4664-b82e-677b3eafd4e6")
-	)
 	(wire
 		(pts
-			(xy 203.2 91.44) (xy 218.44 91.44)
+			(xy 147.32 43.18) (xy 147.32 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "06bbc9af-0e28-4293-888c-7371d0b5c2ef")
+		(uuid "0465feca-8e1d-4710-80c4-76b6d6598fe5")
 	)
 	(wire
 		(pts
@@ -2040,16 +1728,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 91.44) (xy 203.2 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "222d6488-2000-46d1-9400-082e86d4f77a")
-	)
-	(wire
-		(pts
 			(xy 96.52 44.45) (xy 95.25 44.45)
 		)
 		(stroke
@@ -2057,16 +1735,6 @@
 			(type default)
 		)
 		(uuid "26f8219a-88a1-4eef-b72f-1db3b3666df2")
-	)
-	(wire
-		(pts
-			(xy 218.44 76.2) (xy 233.68 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2726e1d5-ea7f-489c-947a-299320eeeb69")
 	)
 	(wire
 		(pts
@@ -2140,16 +1808,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 76.2) (xy 218.44 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f44f86a-c6df-43d6-ad3b-72c5dd250b57")
-	)
-	(wire
-		(pts
 			(xy 86.36 59.69) (xy 87.63 59.69)
 		)
 		(stroke
@@ -2160,13 +1818,13 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 91.44) (xy 172.72 91.44)
+			(xy 154.94 50.8) (xy 154.94 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46ae9c98-a9ae-4052-80d9-68b57b005a82")
+		(uuid "49707c8e-8063-4b4e-beff-1f3fb1fc6a1a")
 	)
 	(wire
 		(pts
@@ -2220,16 +1878,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 76.2) (xy 248.92 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69347320-203f-45f7-aa6a-4ca46a9d817c")
-	)
-	(wire
-		(pts
 			(xy 35.56 91.44) (xy 50.8 91.44)
 		)
 		(stroke
@@ -2257,26 +1905,6 @@
 			(type default)
 		)
 		(uuid "75c5b5c5-2a85-4f01-9243-80a2a3084403")
-	)
-	(wire
-		(pts
-			(xy 187.96 76.2) (xy 203.2 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "804e2c8f-0b1a-4bf6-b60a-8d4aef7ec13e")
-	)
-	(wire
-		(pts
-			(xy 157.48 76.2) (xy 172.72 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81385a1c-5827-4da1-968b-82657683d4e0")
 	)
 	(wire
 		(pts
@@ -2310,26 +1938,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 91.44) (xy 157.48 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "892f1dab-bffa-4d11-bc64-093609925255")
-	)
-	(wire
-		(pts
-			(xy 172.72 91.44) (xy 187.96 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b416d74-e1f2-49e7-9745-cf1fcfe8ffe1")
-	)
-	(wire
-		(pts
 			(xy 101.6 46.99) (xy 101.6 40.64)
 		)
 		(stroke
@@ -2360,16 +1968,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 76.2) (xy 264.16 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bebbdba-884f-49ea-b0c0-daf65dbddfbb")
-	)
-	(wire
-		(pts
 			(xy 127 76.2) (xy 142.24 76.2)
 		)
 		(stroke
@@ -2390,16 +1988,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 91.44) (xy 233.68 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1ac8386-3b89-4095-9a54-a948cc45c809")
-	)
-	(wire
-		(pts
 			(xy 87.63 44.45) (xy 86.36 44.45)
 		)
 		(stroke
@@ -2410,13 +1998,13 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 91.44) (xy 264.16 91.44)
+			(xy 147.32 43.18) (xy 154.94 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb43965b-3ce6-4eb5-b558-e0c161b6b4b4")
+		(uuid "c4b5f54f-7383-45ac-9af1-e9e9a469ba69")
 	)
 	(wire
 		(pts
@@ -2470,26 +2058,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 91.44) (xy 248.92 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f64a6962-711d-4a4f-8ec1-15d6281a8e55")
-	)
-	(wire
-		(pts
-			(xy 172.72 76.2) (xy 187.96 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f89ca84d-42f1-4e6c-9a20-859b8f54efb8")
-	)
-	(wire
-		(pts
 			(xy 111.76 76.2) (xy 127 76.2)
 		)
 		(stroke
@@ -2508,15 +2076,31 @@
 		)
 		(uuid "fcaec6fb-d08f-46f1-bb58-816049071cb9")
 	)
-	(wire
-		(pts
-			(xy 142.24 76.2) (xy 157.48 76.2)
+	(text "NOTE:\nTHESE MUST BE RATED\nFOR 12+V @20A!\n\nI AM USING A PLACEHOLDER\nDIODE FOOTPRINT!"
+		(exclude_from_sim no)
+		(at 135.128 33.528 0)
+		(effects
+			(font
+				(face "Orbitron")
+				(size 1.27 1.27)
+				(bold yes)
+				(color 255 0 0 1)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "4233aa12-b8b8-422f-97fb-2e429f95fa6c")
+	)
+	(text "10 kΩ"
+		(exclude_from_sim no)
+		(at 160.528 49.53 0)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 255 0 0 1)
+			)
 		)
-		(uuid "fd9f8b63-0e88-49f9-8724-98be96617f48")
+		(uuid "65308533-5bb9-4b3f-af30-88fc5a172c07")
 	)
 	(text "NOTE:\nI AM USING THE RP2040 SYMBOL,\nBUT THIS IS THE ESP32-C3!"
 		(exclude_from_sim no)
@@ -2544,6 +2128,50 @@
 		)
 		(uuid "c0fea250-0753-4a1e-afba-a867dd8d15de")
 	)
+	(global_label "12V @20A GND"
+		(shape input)
+		(at 111.76 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15d96e78-6610-4305-8271-b957ee4785ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.199 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V GND"
+		(shape input)
+		(at 25.4 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "406a3ede-0f9a-45d2-be96-2d8f260e5615")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 15.2786 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOTOR-"
 		(shape input)
 		(at 124.46 46.99 0)
@@ -2562,6 +2190,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A3144E GND"
+		(shape input)
+		(at 151.13 53.34 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5dcd2975-b88d-491c-b06f-86858a34d290")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.13 68.2389 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2588,6 +2238,94 @@
 			)
 		)
 	)
+	(global_label "A3114E POW"
+		(shape input)
+		(at 147.32 53.34 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66113eaa-5572-460b-bcf6-ac4728219fe1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.32 68.4203 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V POW"
+		(shape input)
+		(at 147.32 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6adb6a8f-d5d5-43b6-ae7a-57357060af37")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.0172 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V GND"
+		(shape input)
+		(at 151.13 53.34 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "766de057-728c-4fb3-93b3-998406fdea60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.13 43.2186 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A3144E GPIO"
+		(shape input)
+		(at 86.36 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b414f86f-fd27-4215-8689-566447669cb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.8637 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MOTOR+"
 		(shape input)
 		(at 124.46 43.18 0)
@@ -2601,6 +2339,94 @@
 		(uuid "b9f5e030-70df-4efb-b54f-5b4e2bcc9237")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 135.3676 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A3144E GPIO"
+		(shape input)
+		(at 154.94 53.34 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c4f503a7-5018-4286-89ac-9ed886b39f48")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.94 68.8437 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "12V @20A POW"
+		(shape input)
+		(at 111.76 40.64 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca0ec1a6-49f7-46f0-8aa7-3230348cae16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 111.76 23.0196 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V GND"
+		(shape input)
+		(at 101.6 40.64 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df05a6f9-0b12-4f91-9aeb-08ab238bb0d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 30.5186 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "5V POW"
+		(shape input)
+		(at 96.52 40.64 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ece6e87a-2fd9-4beb-8eaa-13a165f8abba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.52 30.3372 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2629,73 +2455,6 @@
 				)
 				(justify right)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5822")
-		(at 118.11 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0dcd9107-522f-4ad6-b7ec-2764db5410a3")
-		(property "Reference" "D3"
-			(at 118.11 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5822"
-			(at 118.11 51.308 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 118.11 51.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 118.11 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "40V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 118.11 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "784206f4-aba8-4991-a8f4-04559f65fd20")
-		)
-		(pin "1"
-			(uuid "9903ce20-b019-470f-bb6f-a5c7d41fd9d7")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "D3")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -2767,32 +2526,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N5822")
-		(at 118.11 43.18 180)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 154.94 46.99 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "310c97c4-6962-4bb6-91a5-77842cfae9fc")
-		(property "Reference" "D2"
-			(at 118.11 38.862 0)
+		(uuid "34a6a27a-bf44-445a-b78d-8fd84ef54388")
+		(property "Reference" "R2"
+			(at 160.528 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1N5822"
-			(at 118.11 40.64 0)
+		(property "Value" "Resistor"
+			(at 160.528 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 118.11 38.735 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal"
+			(at 153.162 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2800,8 +2559,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 118.11 43.18 0)
+		(property "Datasheet" "~"
+			(at 154.94 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2809,91 +2568,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "40V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 118.11 43.18 0)
+		(property "Description" "Resistor"
+			(at 154.94 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "cb07f2ed-f3f7-4d47-92b0-bb8431d5e93e")
 		)
 		(pin "2"
-			(uuid "d945e661-6755-4f40-9069-a1909daf9743")
-		)
-		(pin "1"
-			(uuid "3e5c375d-fc76-4155-9878-fe30bc9bf36f")
+			(uuid "b2d9b63a-d7a1-42c2-94e3-9a265fc51d9a")
 		)
 		(instances
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 111.76 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3b54fe31-63b3-48c1-816f-aaacac2f12a0")
-		(property "Reference" "#PWR04"
-			(at 111.76 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 111.76 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 111.76 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "350b4c7b-23ab-4868-842d-17b98add57ab")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "#PWR04")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2969,81 +2662,6 @@
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
 					(reference "L4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 172.72 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4bb4f600-37da-4f35-a885-592701fb7f08")
-		(property "Reference" "L10"
-			(at 172.72 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 172.72 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 173.99 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 175.26 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 172.72 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "bf001d2a-c868-4c35-9091-9098fbe78590")
-		)
-		(pin "2"
-			(uuid "d0cf0564-2114-402b-8b35-7f267d8d6a79")
-		)
-		(pin "4"
-			(uuid "23bc998c-358d-4304-8b5e-8845c94daba1")
-		)
-		(pin "1"
-			(uuid "0551d771-6100-4142-a5eb-0c76442f838f")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L10")
 					(unit 1)
 				)
 			)
@@ -3229,81 +2847,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 157.48 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "743db41c-13da-48b0-9ff1-a42ac8ffc8d6")
-		(property "Reference" "L9"
-			(at 157.48 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 157.48 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 158.75 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 160.02 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 157.48 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c2679efd-8e62-419e-9fbf-9b8682de2873")
-		)
-		(pin "2"
-			(uuid "07362228-9c1f-4c6e-a176-a8745116f7ec")
-		)
-		(pin "4"
-			(uuid "b109f746-b764-4c6c-9d23-790b53c33b90")
-		)
-		(pin "1"
-			(uuid "946509d1-6ccf-41bd-9fdd-be4ac98ca33e")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 86.36 49.53 270)
 		(unit 1)
@@ -3371,73 +2914,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 25.4 91.44 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c5ecb0d-cc4b-440d-b8a6-a137d78b74fd")
-		(property "Reference" "#PWR05"
-			(at 19.05 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 21.59 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a4588503-32c1-49a4-ba9b-c91c311376bc")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N5822")
 		(at 91.44 44.45 0)
 		(unit 1)
@@ -3499,372 +2975,6 @@
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 187.96 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8004728a-7d14-4ed9-8660-ef1dcb5594b4")
-		(property "Reference" "L11"
-			(at 187.96 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 187.96 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 189.23 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 190.5 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 187.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "afe7d82a-afac-43dd-a5bb-f44dafe7c611")
-		)
-		(pin "2"
-			(uuid "c97d7f60-0454-4f26-b5b9-016dfd1244f5")
-		)
-		(pin "4"
-			(uuid "af01cbb3-b77b-4fc2-af5f-cbe8c9526d5c")
-		)
-		(pin "1"
-			(uuid "63a4fff2-c0fe-4668-97b3-9892e434b760")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 203.2 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9099b036-1451-425a-aca0-978f1dfa030d")
-		(property "Reference" "L12"
-			(at 203.2 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 203.2 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 204.47 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 205.74 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 203.2 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "2c693463-d7af-4aea-8665-f54591987f69")
-		)
-		(pin "2"
-			(uuid "d1839099-f787-4424-97cc-7382e8cf9b6e")
-		)
-		(pin "4"
-			(uuid "56de34f4-a07e-4a72-95f4-9427c425f34e")
-		)
-		(pin "1"
-			(uuid "f5b689a2-64d6-4705-899c-33021f4a94d3")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 264.16 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "91b5e345-e52a-40bf-95d5-622472b54b83")
-		(property "Reference" "L16"
-			(at 264.16 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 264.16 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 265.43 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 266.7 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 264.16 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "db37a595-99ff-4056-ba4c-379e247fad2e")
-		)
-		(pin "2"
-			(uuid "5cdc112a-0f94-4c85-b283-b73e59d5860f")
-		)
-		(pin "4"
-			(uuid "1471cd09-0149-455b-9d95-a294f56df02e")
-		)
-		(pin "1"
-			(uuid "2602b00d-df94-4e03-befa-acc1d987459a")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 218.44 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a5766e79-4780-490d-90cc-f6b5f9828d56")
-		(property "Reference" "L13"
-			(at 218.44 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 218.44 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 219.71 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 220.98 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 218.44 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "47aec739-42d3-47af-9e9e-79a0fd5a038c")
-		)
-		(pin "2"
-			(uuid "0d5cd76a-947e-406d-ab32-b93af94d4459")
-		)
-		(pin "4"
-			(uuid "26cbb366-5959-4d2f-a60b-28d2cfa6fd6a")
-		)
-		(pin "1"
-			(uuid "6b30ec0b-b98a-487c-b9c5-2285b40ad92f")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 111.76 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a6cfeb68-350b-4960-94b6-1384dbfdacee")
-		(property "Reference" "#PWR03"
-			(at 111.76 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93ccbb06-09e0-4ff0-a644-94a99faa7c82")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4235,81 +3345,6 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 233.68 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b69ff176-7074-451d-b55a-0099d63b2ce8")
-		(property "Reference" "L14"
-			(at 233.68 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 233.68 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 234.95 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 236.22 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 233.68 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "e9f27a98-8316-40e8-9b21-7eb1e0e4d7c2")
-		)
-		(pin "2"
-			(uuid "3b8129c8-a756-45ff-81bb-c3ba62f7d80b")
-		)
-		(pin "4"
-			(uuid "1329f7bf-be5f-4733-9b66-ec21c7fb16bc")
-		)
-		(pin "1"
-			(uuid "bc7036c0-ddc6-4864-a907-8358f5a2fd72")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
 		(at 127 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4378,138 +3413,6 @@
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
 					(reference "L7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 101.6 40.64 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce8d5abd-524d-4a30-8eb7-ed0863f275dc")
-		(property "Reference" "#PWR02"
-			(at 101.6 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 101.6 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1620e891-65e6-4a09-a9bc-0faf2dc39822")
-		)
-		(instances
-			(project ""
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 96.52 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3e16eb0-b854-4eb7-8aa3-3a9dc12ac63b")
-		(property "Reference" "#PWR01"
-			(at 96.52 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 96.52 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 96.52 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6db79ff9-f908-4ba3-875f-2630df6250ed")
-		)
-		(instances
-			(project ""
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4901,6 +3804,92 @@
 		)
 	)
 	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 118.11 43.18 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecaac7ff-8ce0-419b-87ee-e492692b925f")
+		(property "Reference" "D2"
+			(at 118.11 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30SQ045"
+			(at 118.11 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
+			(at 118.11 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 118.11 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b8f1fc4-d581-46c0-945c-064a8a94d285")
+		)
+		(pin "2"
+			(uuid "e443e640-311c-4576-bf70-a900a25b27a1")
+		)
+		(instances
+			(project ""
+				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Resistor")
 		(at 101.6 59.69 0)
 		(unit 1)
@@ -4968,52 +3957,32 @@
 		)
 	)
 	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 248.92 83.82 0)
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 118.11 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ffbaaf07-a4cf-41b5-9cee-f3f388c31d51")
-		(property "Reference" "L15"
-			(at 248.92 95.25 0)
+		(uuid "f783a148-4684-4e1a-85e9-959ad5927614")
+		(property "Reference" "D3"
+			(at 118.11 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LED_WS2812B"
-			(at 248.92 97.79 0)
+		(property "Value" "30SQ045"
+			(at 118.11 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 250.19 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 251.46 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 248.92 83.82 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
+			(at 118.11 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5021,22 +3990,52 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "bafa6297-2a0b-4cdd-95df-68bf0a324c71")
+		(property "Datasheet" ""
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "6ea6e268-e646-49cf-a5b3-8f1496864dba")
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "4"
-			(uuid "18d96ea3-a55b-46e6-b832-fee56e123592")
+		(property "Sim.Device" "D"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "65b4d0e5-7e47-4ce5-a9b8-328aea2a609e")
+			(uuid "fc913667-d0d5-435a-981f-3bba82a96597")
+		)
+		(pin "2"
+			(uuid "c5eb5cf7-43ac-4f6b-bb3d-f36a85f4ea1d")
 		)
 		(instances
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L15")
+					(reference "D3")
 					(unit 1)
 				)
 			)

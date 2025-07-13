@@ -1337,16 +1337,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 77.47) (xy 149.86 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a900f43e-813c-4049-a47d-77c11726e875")
-	)
-	(wire
-		(pts
 			(xy 137.16 62.23) (xy 144.78 62.23)
 		)
 		(stroke
@@ -1667,28 +1657,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "HALL EFFECT"
-		(shape input)
-		(at 149.86 77.47 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "df0c1e12-3999-407a-bb9b-e9102a9cc58a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.0009 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)

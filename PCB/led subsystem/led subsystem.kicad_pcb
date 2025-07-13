@@ -425,7 +425,7 @@
 		(descr "THT rectangular pad as test Point, square 4.0mm  side length, hole diameter 2.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -2.898 360)
+			(at 0 -2.898 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f5f607a8-a7f2-481b-b4f7-4658506d0202")
@@ -437,7 +437,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_4.0x4.0mm_Drill2.0mm"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bd61cdbb-87eb-4fec-907c-25063f3fbb74")
@@ -585,7 +585,7 @@
 		(descr "THT rectangular pad as test Point, square 4.0mm  side length, hole diameter 2.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -2.898 360)
+			(at 0 -2.898 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6f8c4f3a-3d3b-4da4-b333-c93ad8efa2b7")
@@ -597,7 +597,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_4.0x4.0mm_Drill2.0mm"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1619a771-1bdf-42f6-abbc-89e6c8f50d8c")
@@ -1660,7 +1660,7 @@
 		(descr "THT rectangular pad as test Point, square 4.0mm  side length, hole diameter 2.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -2.898 360)
+			(at 0 -2.898 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "77f3d44b-8edd-4757-a0b8-5899dae404e5")
@@ -1672,7 +1672,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_4.0x4.0mm_Drill2.0mm"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fed810e8-0169-4653-81fc-7e0f17a3e4bd")
@@ -3039,7 +3039,7 @@
 		(descr "THT rectangular pad as test Point, square 4.0mm  side length, hole diameter 2.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -2.898 360)
+			(at 0 -2.898 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "72fae0d0-dd35-42b0-a4cb-0e60ea411f00")
@@ -3051,7 +3051,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_4.0x4.0mm_Drill2.0mm"
-			(at 0 3.1 360)
+			(at 0 3.1 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6c3bd92a-6790-4451-8649-8aa6c8413011")
@@ -3199,7 +3199,7 @@
 		(descr "THT rectangular pad as test Point, square 2.0mm_Drill1.0mm  side length, hole diameter 1.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -1.998 360)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "24265f0d-2d98-42fc-9351-27bc6a135e4e")
@@ -3211,7 +3211,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
-			(at 0 2.05 360)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3cd4f7bf-89d0-4083-8281-6d045aae6566")
@@ -4829,7 +4829,7 @@
 		(descr "THT rectangular pad as test Point, square 2.0mm_Drill1.0mm  side length, hole diameter 1.0mm")
 		(tags "test point THT pad rectangle square")
 		(property "Reference" "REF**"
-			(at 0 -1.998 360)
+			(at 0 -1.998 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "00d3100d-0616-44a7-91d8-b5dc31ed55ff")
@@ -4841,7 +4841,7 @@
 			)
 		)
 		(property "Value" "TestPoint_THTPad_2.0x2.0mm_Drill1.0mm"
-			(at 0 2.05 360)
+			(at 0 2.05 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cc7cebf3-17b9-497b-a93b-3a9193074d45")

@@ -378,7 +378,7 @@ so its now 9:43 PM today (wait this feels a litle familiar), so lets get CADing!
 
 i just had an idea, what if we added a thing called a speaker directly into the thing? nah thats actually probably a bad idea if we're using the xiao (since, we dont exactly have lots of extra pins) also, just realized that the way we setup redundancy for the MOSFET and the sensor is probably a bad idea (for the MOSFET, both are set to OUT, meaning we could have issues, gotta add some diodes...) i'll fix that later!
 
-ok just got jumpscared that we might not be able to trigger the STP55NF06L with the XIAO, but after sneaking around the internet, i found a [datashee](https://www.st.com/resource/en/datasheet/stp55nf06l.pdf), and it looks like we'll probably be ok! ok back to cad
+ok just got jumpscared that we might not be able to trigger the STP55NF06L with the XIAO, but after sneaking around the internet, i found a [datasheet](https://www.st.com/resource/en/datasheet/stp55nf06l.pdf), and it looks like we'll probably be ok! ok back to cad
 
 ok why did yesterday's windows update steal 21 GB (mfw windows keeps spamming me with updates and install four apps of bloatware on my device including one that probably has some vulnerability that'll show up in like a month that allows it to take over peoples computers) (ok now who used 0.1 GB from the last time i looked at that screen. yeah i see you, 20.6 GB to 20.5 GB...) (WHYS IT AT 20.1 GB NOW) ok im gonna install this update and try to fix my computer
 
