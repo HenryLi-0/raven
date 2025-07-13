@@ -1,4 +1,4 @@
-from neopixel import NeoPixel
+from firmware.led.lib.neopixel import NeoPixel
 
 from constants import *
 

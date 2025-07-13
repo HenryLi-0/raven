@@ -3,8 +3,8 @@ import digitalio
 import time
 
 from constants import *
-from leds import *
-from hall import *
+from subsystem.leds import *
+from subsystem.hall import *
 
 print(dir(board))
 
