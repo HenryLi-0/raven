@@ -1,13 +1,13 @@
 import board
+import digitalio
 import time
 
 from constants import *
-from subsystems.leds import *
 from subsystems.hall import *
+from subsystems.leds import *
+from subsystems.motor import *
 
 print(dir(board))
-
-for panel in PANEL: panel.fill((0,0,0))
 
 '''###############################################################################################'''
 '''                                     STARTUP SYSTEMS CHECK                                     '''
@@ -19,27 +19,16 @@ if Constants.STARTUP_SYS_CHECK:
     BOARD.fill(LEDs_Status.LOAD)
     time.sleep(1)
     BOARD.fill(LEDs_Status.NONE)
+    time.sleep(1)
     
-    print(" | LEDs")
-    BOARD[0] = LEDs_Status.LOAD
-    for panel in PANEL: panel.fill((255,255,255))
-    time.sleep(1)
-    for panel in PANEL: panel.fill((0,0,0))
-    time.sleep(1)
-    BOARD[0] = LEDs_Status.PASS
-
-    print(" | HALL")
-    BOARD[1] = LEDs_Status.LOAD
-    start = time.time()
-    temp = False
-    while abs(time.time()-start) < 5 or temp:
-        temp = HALL.getValue() or temp
-    BOARD[1] = LEDs_Status.PASS if temp else LEDs_Status.FAIL
-    success = success and temp
-
-    print(" | Signal")
-    # TODO
-    BOARD[2] = LEDs_Status.PASS
+    print(" | MOTOR")
+    for i in range(3):
+        BOARD[i] = LEDs_Status.LOAD
+        MOTOR.setSpeed(i*20)
+        time.sleep(3)
+        temp = (abs(MOTOR.getSpeed()-i*20) < 1)
+        BOARD[i] = LEDs_Status.PASS if temp else LEDs_Status.FAIL
+        success = success and temp
 
     print(" |  | " + ("SUCCESS" if success else "FAIL"))
 else:
