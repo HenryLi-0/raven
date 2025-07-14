@@ -749,3 +749,186 @@ so basically, have delays and risk bad connection, or just dont even need them t
 ok so im going up to school for driving practice tomorrow so good night! (its 1:24 AM, guess ill do it on like 5 hours of sleep) also, gotta remember to find a stronger boost converter for the LED side, wait, i dont remember saying this, but the logic side has been renamed to the led side! also, subsystem also works in place of side for both of them! ok good night now!
 
 **Time Spent: 1.25 hrs**
+
+## 07-11-2025: Day 17: Planning and Electronics
+**cool leds!**
+
+ok its 9:55 PM, and i just finished updating the journal with the last three days! i feel like we're really dragging things out, not intentionally of course, but things really should be faster. looking back, i think a good thing we should do is create a couple goals and deadlines, so that we dont keep going on forever! ideally, it should be 100% complete by 7/15/2025, as far as the digital designs. materials then should come around the end of july, then can be constructed across maybe two days, then finally complete! of course, assuming everything arrives on time...
+
+ok, so here's the deal!
+- 7/11/2025
+    - finalize any electronics
+    - start working on the LED subsystem PCB
+- 7/12/2025
+    - finish working on the LED subsystem PCB
+    - start working on the motor subsystem PCB
+    - finish working on the motor subsystem PCB
+- 7/13/2025
+    - fix any PCB issues
+    - complete BOM list
+    - start finishing the CAD
+- 7/14/2025
+    - finish the CAD
+    - prepare for release!
+- 7/15/2025
+    - release!
+    - (if you see this on 7/15/2025, i guess henry actually did it on time!)
+
+so yeah, we got a plan, lets (hopefully) do it on time! woah, just got a flashback, wow, i miss hack club's arcade event... dont worry, summer of making is gonna be the next thing i work on after this!
+
+ok, electronics diagram now! its 10:04 PM, and i guess lets aim to be done by 10:15 PM! do i add a speaker now... its 10:20 PM and yeah, drawing these diagrams to look good is pretty hard... yeah we're not adding a speaker, its probably gonna take like two more days to research it? need some amplifier or something
+
+ok, its 10:29 PM, and i thinkk its ok! the only issue is that we dont exactly have a 4S 20A over discharge protection module thing, so we cant exactly connect that, but we'll do that later! ok, picutre incoming any second now...
+
+![waw](</updatelogs/images/202507/07112025 - 1.png>)
+
+yeah, so we gotta go fast, before i start to grind on mosim, speaking of which, heres why LEDs are great!
+
+![robot](</updatelogs/images/202507/07112025 - 2.png>)
+
+yep, we got some drive team practice today! also got the robot up and running again, so that nice! anyways, LOOK AT THOSE LEDS! LOOK AT THAT GLOW! (why are there like 5 or 6 LEDs off at the end... probably a code thing) anyways, back to the PCB! yeah i guess we just keep the core PCB around for now for reference! ok, quick commit!
+
+no way, kicad is on v9.0.3 already? im still on kicad v8.0.8... have i been putting off updates that long? i guess ill update after finishing this project! anyways, back to PCB-ing? CADing? PCBing? idk (PC Bing? like, a search engine on a personal computer?)
+
+why does the internet randomly implode  wait, its like 10:40 PM right now, imma brb!
+
+yeah i got distracted by mosim oopsie, its 12:01 PM now...
+
+ok, just finished making the schematics for both of them! gonna start working on the actual PCB tomorrow! (can we do a record of two PCBs in one day? who knows...)
+
+so yeah, pretty short day today, hopefully can spend the entirety of tomorrow on this! ok, good night!
+
+**Time Spent: 0.75 hrs**
+
+## 07-12-2025: Day 18: Firmware Ideas and PCBs
+**no way is that code?**
+
+ok, so its 4:00 PM now, yes i woke up at 1:00 PM, i had like the most insane dream
+
+anyways, last night, spent a couple minutes (like 15-ish?) thinking up of how we should do the programming side of things (which i seem to have forgot to include inside the schedule plan?) control wise I think I got it, PID and getting interval timings based on code execution time compared with the internal clock synced with the device. basically/specifically, im wondering about how we would represent LED patterns in the instructions so that it runs any combination we like
+
+so a light "value" can be represented by 5 numbers: the individual RGB values, start angle, ending angle! 0 degrees could be wherever the magnet is for the hall effect sensor (since, its a good reference point for the LED logic itself and for us). but how would someone represent a light moving to the right at 10 degrees/second? maybe with some form of action keywords? like:
+
+```
+// create new light
+NEW LIGHT “name”
+// set light angle speed (derivative of 1) by 10
+SET “name” ANGLE 1 10
+// pause until the 10 second mark
+FOR 10
+// set light angle speed to 0
+SET “name” ANGLE 1 0
+// delete the light
+DEL LIGHT “name”
+// variables
+NEW VAR “deg”
+```
+
+however, when you start going to mega complex stuff, things get confusing, like we're planning on some form of compiler for this, but what if there are 10 lights moving left and right? how would one encode that? or a bit with rapid flashing lights everywhere? probably gonna have different "modes" such as "scatter" or something that just defines the stuff, i guess a GUI and compiler would be good for this.
+
+additionally, i realized that the spinning bit also makes the machine a display, so i think it would be cool for the initial display to display some rotating text, like "RAVEN" *spin spin* "V1" *spin spin spin* or something, idk, just control over every line of LEDs would be pretty cool! anyways, back to the PCB! we got two PCBs to try to complete today!
+
+yeah, 5:07 PM now, pcb design does take a while... ok, 5:41 PM, design mostly good, working on silkscreen now!
+
+ok, 6:18 PM, and the first PCB is done!
+
+![yay](</updatelogs/images/202507/07122025 - 1.png>)
+
+gonna quickly commit, then update something on the LED panel, then do the motor PCB!
+
+ok, gonna go to eat dinner now, just updated the LED panel fill so that it now has a solid conenction to the correct pads! (so, the ground pad is fully connected to the ground fill pour!) ok, its 6:26 PM now, see ya! (motor PCB next!)
+
+ok whose linting the [`LICENSE`](</LICENSE>) file.
+
+![cursed](</updatelogs/images/202507/07122025 - 2.png>)
+
+ok, its 8:30 PM now! time to start working on the motor subsystem PCB... (does this mean JLCPCB is gonna send a total of 15 pieces of copper to me (3 different PCBs)) also, forgot to say, the LED subsystem PCB actually now has 3 LEDs on it! this is to create 3 "rings" that can be used for various purposes! speaking of which, i just realized i need to update the firmware folder to have two different firmwares, one for the led sybsystem and one for the motors!
+
+anyways, 20A! yeah its 9:10 PM now and still connecting stuff! looking at it now, this 1N5822 looks rather small to handle 20A, lemme just double check that its rated for it... oh its not, guess i need to find another diode!
+
+ok, here's one, the [30SQ045](https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html?s_z=n_30SQ045)! it also has a [datasheet](https://lcsc.com/datasheet/lcsc_datasheet_2410121844_LGE-30SQ045_C2903878.pdf)! ok, updated the PCB and stuff (couldnt find a symbol or footprint online so i just put in some placeholder diodes and some big diode footprint that should work!) ok, time for measuring the motor size and stuff! hey, looks like they restocked their 150W motors? anyways, the datasheet on the site doesnt exactly provide very useful measurements, as far as distance between the motor bits go, so i guess im gonna do... idk, the diameter of the motor decreased by a bit? ill look around for more data first
+
+yeah so i cant really find good info about the distance between the two "prongs" of the motor, i guess ill just make a reasonably sized hole and just connect it with a wire in the future?
+
+yeah so i actually forgot to add the hall effect sensor on the motor pcb... oops, gonna fix that right now
+
+so these traces are so so so large, that trying to fit the mosfet on it is getting weird
+
+ok, once again, i got jumpscared that we might not be able to power the STP55NF06L, theres a *chance* we might not be, since the max gate threshold voltage (for it to be fully open) isnt specified, and that graph is confusing as heck to read, so here's a [IRLZ44N](https://lcsc.com/product-detail/MOSFETs_UMW-Youtai-Semiconductor-Co-Ltd-IRLZ44N-UMW_C42370423.html?s_z=n_IRLZ44N) with the max gate threshold voltage being 2V, so it should be fully open! [here's](https://lcsc.com/datasheet/lcsc_datasheet_2506261420_UMW-Youtai-Semiconductor-Co---Ltd--IRLZ44N-UMW_C42370423.pdf) the datasheet!
+
+ok, 11:32 PM update, been staring at this datasheet for quite a while, we might need some mini heatsink or something for the MOSFET, just really worried about it being too much for it
+
+ok, so it should be good now? wirings super cursed, and tried to do the triangle thing as best as i could, guess someone should look over that?
+
+
+ok, its 12:25 AM now, and here's the current (haha get it amps) (im going crazy) state of things:
+
+![waw](</updatelogs/images/202507/07122025 - 3.png>)
+
+yeah, so those are some very big traces. somethings bothering me, the ESP32-C3 isnt centered... also, we current are using the STP55NF06L footprint right now, while we're supposed to get the IRLZ44N. they have the same shape/footprint, but i should probably add some text on the silkscreen or something... actually i'll do that right now
+
+ok, stuff updated! feels a little empty on the bottom, but we should maximize the support we get (10cm x 10cm boards are $2 on JLCPCB, so might as well maximize on how much PCB space we get) we should also find some way to add mounting holes, but that's for tomorrow! that also depends on the CAD, so we'll see! ok, good night!
+
+**Time Spent: 6.5 hrs**
+
+## 07-13-2025: Day 19: Finishing PCBs and Doing CAD Stuff
+**back to CAD i see...**
+
+ok, so today is the day of the yearly charging of the mouse! the battery lasts like a year on a charge for some reason, but yeah! also, while eating breakfast (at 1 PM since my sleep schedule isnt cursed), i remembered that we forgot to add the hall effect sensor on the motor subsystem PCB! so yeah, thats what we're doing first! (yeah i wrote i was gonna do it yesterday and just forgot)
+
+since my mouse is charging, im gonna try to do this with my trackpad, what could possibly go wrong?
+
+ok so turns out i just forgot to add the holes and stuff for the hall effect sensor
+
+ok, should be good now? tried to keep it as far from the motor as i could (also, just realized that the vanity on both boards both say core pcb, fixing that right now!)
+
+ok, 1:44 PM now and it should be good! broke out another pin on the XIAO (pin D9) which happens to be right next to the MOSFET controlling pin, so it would be a nice backup in the event that D10 explodes! also shifted the MOSFET and ground stuff closer to each other to minimize heat thingy, along with making the pads ridicilously big for heat stuff. ok, off for lunch now!
+
+ok, its 2:16 PM, just came back from lunch! ok, so, since i cant CAD right now (mouse still charging, ill just leave it alone for now, even though it probably already is at 100% or something), im gonna start doing some firmware stuff!
+
+wait im gonna brb in like 15 minutes, ok im back
+
+ok so just updated the LED pcb to breakout the D8 pin as a backup for the hall effect sensor, all that needs to be done is to destroy the previous traces and link up a couple other ones in order to swap pins!
+
+ok its 2:48 PM, brb, ok we're back at 3:20-ish! just updated the LED pcb to fix a little missing trace thats been bothering me, mouse is at 85%, gonna wait for 100% to start CAD! (i did just use it for half an hour to do something, but whatever)
+
+yeah imma make this object oriented... its 3:45 PM, brb, ok its 4:00 PM now! ok, just wrote some logic for the LED subsystem stuff! gonna quickly commit, then do some motor firmware!
+
+uh how do i write a pid controller from the ground up
+
+ok, back from a little quick mosim break, i think the pid controller is good? im gonna quickly test it after taking a bit away (its 5:40 PM right now and im kinda tired) (even though i woke up at 12 PM)
+
+back at 6 PM, somethings definitely wrong (theres no I value)
+
+![wha](</updatelogs/images/202507/07132025 - 1.png>)
+
+ok, so the issue was that i put very high constants and that my testing setup was messed up (i used `=` instead of `+=`), but it seems to work now! now how to implement trapezoid profiles...
+
+ok, its 6:52 PM now, just gonna commit (kinda tired, starting CAD next!) (firmware isnt close to done, but we have a start)
+
+ok, 10:15 PM and mouse seems stuck at 93%? anyways, CAD time! im starting to question whether this is a safe idea, but, i mean, ive been next to a speedy ankle biting robot before and some very fast spinning wheels, so this should *fine* (i might regret saying this). all i have to do is not activate it around expensive stuff! and maybe plastic wrap it or something (bad idea, heat might get stuck), anyways, just wear safety goggles or something
+
+ok yeah so we kinda have a problem, this cad is gonna need lots and lots of changes... (trying to flip this thing upside down)
+
+slowly getting there
+
+![hmm](</updatelogs/images/202507/07132025 - 2.png>)
+
+ok 11:15 PM, im gonna take a quick mosim break
+
+ok back at 11:30 PM, its super hard to think of where to set things up since we dont have actual measurements on the big fat part of the motor, but im planning on trying to make a 3D printable hub or something to connect to the round shaft
+
+no way, frc 1778 chill out reference
+
+![chill out](</updatelogs/images/202507/07132025 - 3.png>)
+
+yeah so its 12:30 AM, cleaned up the features, pretty tired now, here it is! (gonna finish tomorrow ig)
+
+![eepy](</updatelogs/images/202507/07132025 - 4.png>)
+
+ok, thats it, good night! also, considering mounting the stuff for the motor PCB facing the bottom? might protect the stuff from the spinning disc more? (the status LEDs are whatever, pretty noticable?) probably actually a pretty smart move
+
+ok, good night!
+
+**Time Spent: 7 hrs**
+
