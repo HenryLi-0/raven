@@ -1,7 +1,7 @@
 ---
 title: "Raven"
 author: "HenryLi-0"
-description: "An open source sticker machine, requiring only everyday items!"
+description: "An open source spinning LED light display!"
 created_at: "2025-06-25"
 ---
 
