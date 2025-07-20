@@ -3073,7 +3073,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STP55NF06L"
+		(property "Value" "IRLZ44N"
 			(at 114.554 58.928 0)
 			(effects
 				(font
