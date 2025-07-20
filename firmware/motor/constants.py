@@ -2,17 +2,17 @@ import board
 '''
 Pins:
 
-board.D0  - LED 0
-board.D1  - LED 1
-board.D2  - LED BACKUP 2
-board.D3  - LED 2
-board.D4  - LED BACKUP 1
-board.D5  - LED 3
-board.D6  - LED 4
+board.D0  - 
+board.D1  - 
+board.D2  - 
+board.D3  - 
+board.D4  - 
+board.D5  - 
+board.D6  - 
 
-board.D7  - HALL EFFECT SENSOR
-board.D8  - HALL EFFECT SENSOR BACKUP
-board.D10 - SELF LEDS
+board.D7  - 
+board.D8  - 
+board.D10 - 
 '''
 
 class Constants:

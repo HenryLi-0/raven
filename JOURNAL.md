@@ -153,7 +153,7 @@ The [seeedstudio XIAO ESP32-C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p
 
 before i look at a bunch of memes before sleeping tonight, ill do some research with motors! ideally, pretty light, can achieve 1k-3k RPM, (so like 16-50 rotations per second)! of course, we should aim to make the spinning part as light as possible, but we'll see! ok, see ya tomorrow! good night! (also, i wanna draw some art for this release... might not come out in time, who knows!)
 
-**Time spent today: 2.5 hours**
+**Time spent today: 2.5 hrs**
 
 ## 06-28-2025: Day 4: Parts Finding and Start PCB!
 **Pathfinding? FRC Reference?**
@@ -234,7 +234,7 @@ huge thanks to https://github.com/ccadic/TP4056-18650 for the TP4056 footprints!
 
 ok, still working on the PCB, hopefully gonna finish it tomorrow! got lots of research done today, just lots of designing tomorrow! ok good night
 
-**Time Spent: 4.75 hours**
+**Time Spent: 4.75 hrs**
 
 ## 06-29-2025: Day 5: PCB Work!
 **Does the P stand for pain?**
@@ -690,7 +690,7 @@ good night! (12:50 AM woo)
 
 ok so its like 2:31 AM and ive been looking at memes for like an hour (i should stop), but realized im the buggest silly in the seven seas right now. we dont need a drone motor or an outrunner motor. we just need to flip the 775 motor upside down so that the shaft touches the spinny bit and spins with it, and is normally mounted onto the bit that doesnt spin. then, we have to have the two microcontroller setup, but this time we can actually use PWM and our MOSFET idea/setup (instead of a whole ESC setup for drone motors and whatever). this does mean we need like a giant clearance between the motor (like the big part) and the lower PCB, but i guess we could just print the bottom and just have a top PCB if we have to. anyways, this also gives us more space for the motor PCB and its wiring, so thats nice! ok good night!
 
-**Time Spent: 4.25 hr**
+**Time Spent: 4.25 hrs**
 
 ## 07-09-2025: Day 15: Boost Convertor
 **henry didnt find it**
@@ -932,3 +932,275 @@ ok, good night!
 
 **Time Spent: 7 hrs**
 
+## 07-14-2025: Day 20: CAD CAD CAD
+**cad cad cad**
+
+started at 5:45 PM, just updated the journal with the last 3 days! calculating the time for some of them were ridiciously hard, but yeah, we're back! anyways CAD time!
+
+so we have to make this shaft collar REALLY strong, since the entire weight of everything else is relying on it, so i guess we design it to be a bit smaller than the actual design, so that it has to "squeeze" it in order to have a tight fasten? then the next question is how to attach everything else... i guess making vertical holes is alright? the shaft collar has to be printed sideways, since that would maximize grip strength (dont want the layer lines splitting). i guess ill coat it with something?
+
+ok, 6:15 right now, gonna eat dinner real quick
+
+ok, 7:15 now and im back! its raining pretty hard here in NYC right now
+
+some progress on the shaft collar...
+
+![](</updatelogs/images/202507/07142025 - 1.png>)
+
+research says that PLA sucks for shaft collars (funny behavior under heat) but it'll probably be fine right... (famous last words). ill probably shove random stuff inbetween it when i tighten the thing, while blowing air on it, so itll hopefully have more pressure? oh yeah, forgot to mention, this is a two piece shaft collar! (yeah, i just realized that the entire mass of this thing is relying on the operation of two screws)
+
+ok, searching through my pla 3d printing waste bag, im gonna see the effects of squishing pla together! yeah, dont know what i was expecting, but squishing pla together does NOT make it fuse. yeah dont know what i was thinking. anyways, i got some extra ideas incase out shaft collars dont work! ok, so just added one, its a little extension bit about the shaft collar to make sure it doesn't slide down (it can slide up though), so we can add a fan blade pointing upwards to push the top half down wards if we need. that's a pretty sus idea if you havent noticed.
+
+yeah so we're cutting clearance verrrrrrryyyyy close here, but it'll be alright
+
+hold on a second i just realized this is mechanically impossible to assemble, one second... never mind, it actually is possible to assemble. ok, so you can close the shaft collar, but you cant open it. well, if you're opening it, it probably means its broken, so i guess its unnecessary? or just get longer screws
+
+ok the solution is to buy 35mm M4 screws. since they come in sets of 20, i guess that would be 30 for the big spacers and stuff, and 6 for the collar shaft, and 4 for the future support stuff, then 40 small screws for all the LED panels, and that should be it? idk, thats for BOM later
+
+you know, i would love to CNC some of these parts, except i dont exactly have a cnc.
+
+wait a second, those two things are probably gonna collide
+
+ok, now we have a REALLY big shaft collar, but it shouldn't collide? might collide with the lower bit connection now, but we'll see
+
+ok, all we have to do now is make the connection from lower pcb to mount the motor, then connect the shaft collar to the upper bit, then assemble the whole thing (in the assembly of course, not real life just yet)
+
+ok, just moved some stuff on the PCB so that we have more space for these supports! just got an idea, instead of having vertical supports from each one, we can have two quarter "shields" that provide more support than one skinny cursed spacer! also probably looks better. (wait let me DRC real quick)
+
+ok, here it is!!!
+
+![yippe](</updatelogs/images/202507/07142025 - 2.png>)
+
+yah looks ok, anyways, top mounting and bottom mounting now. since things are a little weird, i kinda need **long rods** in my BOM, as in, we dont exactly have space for a clean mounting solution (as in, more holes), so its probably better to shove a long rod in replacement of a screw there. that sounds like a horrible idea, lets not do that. oh wait, this is just silly, we just do the same thing we did on the top on the bottom, then make some triangle cone shape thing for support
+
+ok, time to do good parametric cadding by using variables, time to update every feature! (we have 61)
+
+actually, 0.42mm is probably good for a lot of stuff, so gonna just update the reallly necessary ones
+
+wait i just realized, we're really covering up the motor's "air cooling" intake
+
+ok, bottom mount updated! might need to get 40mm screws now, but looks good! now we just need to do the little bottom support triangles. also, we forgot the place to put the battery and other electronics (oops). it's meant to be like a little thing that sticks out, but we'll see in COG analysis! (and real life, since the PLA parts aren't going to be 100% infill)
+
+![waw](</updatelogs/images/202507/07142025 - 3.png>)
+
+you know, sometimes its nice to show all sketches and hide all parts...
+
+![waw](</updatelogs/images/202507/07142025 - 4.png>)
+
+ok, its 10:16 PM now, im gonna brb (probably near 11:30 or something idk) (imma commit now)
+
+ok, turns out i came back at 11:28 PM, so very close! ok, back to CADing... im not sure how to do these stands since we only have one point of attachement right now, probably something you can just screw mount it to on the other side? wait i just had a REALLY good idea! we just mount it to the same mounting holes as the top led subsystem plate! it's got all the silkscreens already, we just have a nice copper thing we can mount this all onto! and its already got pre-drilled holes and stuff! ok, we need 8 mounting things now...
+
+just retaught myself how to use lofts again! (barely use them...) ok yeah lofts might not exactly be useful right now? actually they are, i change my mind once again. yah that does NOT look stable.
+
+ok, its been a while now (12:14 AM), and i think we got something!
+
+![hmm](</updatelogs/images/202507/07142025 - 5.png>)
+
+yeah, it looks kinda weird, but should work? also why does java say its ready. oops, forgot to clip the corners (it would awkwardly stick out on the pcb)
+
+![ah](</updatelogs/images/202507/07142025 - 6.png>)
+
+ah, there it is! ok, its 12:20 AM, gonna try to speedrun this top part
+
+12:30 AM, and here it is!
+
+![waw](</updatelogs/images/202507/07142025 - 7.png>)
+
+it's not one piece (its actually three), and consists of the little spacer from the washer to the "alignment disc", which just gives the led subsystem PCB a place to actually connect to! i might consider moving the LED subsystem mounting holes a bit wider actually... maybe later? all we have to do is make sure its all balanced when we actually assemble this! ok, lastly, we'll just have an extra arm where we'll ziptie all the future electronics or something, so yeah, all that's left is making the assembly!
+
+so im a little confused of how 0.5cm of height magically appeared from nowhere. however, on a more positive note, i just found out how to save some height! now that i look at it more, we somehow lost 0.3cm?
+
+ok you know what, its 1 AM, ill work on this tomorrow! guess the finish date will be pushed to 7/16/2025? idk, CAD and firmware and wrapping things up sounds ok? alright, good night! (its 1 AM aaa)
+
+**Time Spent: 5 hrs**
+
+## 07-16-2025: Day 21: More CAD!
+**more cad. and some screws!**
+
+what happened to 7/15/2025? well, i kinda got distracted with YOLO (like, computer vision) and made a model that detected white toilet paper roll cardboard thingies. apparently im also one of them (there were no picture of people in the dataset so thats probably why). anyways, currently, forcing another laptop to train it off of a bunch of FRC game pieces, and its been running for like... 9 hours? epoch 22/50-ish (yeah i dont exactly have a beefy GPU laying around)
+
+anyways, im back! its 5:41 PM, lets see how long my laptop lasts (its at 31%). ok, its actually now 6:00 PM and that other laptop is still going! ok, cad time!
+
+6:17 PM update, here's how it looks! still need to add all the screws (theres gonna be a lot of them), and the electronics area, but so far so good! i also removed the extra spacer, bringing out lower clearance to 1.2cm!
+
+![yay](</updatelogs/images/202507/07162025 - 1.png>)
+
+![huh](</updatelogs/images/202507/07162025 - 2.png>)
+
+its 7:21 PM and i think thats a couple screws
+
+![waa](</updatelogs/images/202507/07162025 - 3.png>)
+
+so uh i cant even count how many there are, so im just gonna measure the total volume and divide it by the volume of one of them! so there are $\frac{24.943163}{0.639568}$ (39-ish) M4 40mm screws and $\frac{31.44751}{0.388241}$ (81-ish) M4 20mm screws. whats funny is that they come in batchs of 20 (if i remember properly), so that kinda means that i should get rid of one screw somewhere... ok, removed the center one (this cant possibly go wrong right) so we now have $\frac{31.059269}{0.388241}$ (80-ish) M4 20mm screws! (wait so we have like 120-ish screws... wow)
+
+i dont wanna add these bolts D:
+
+ok its 7:40 PM, ill add those bolts later!
+
+just kidding i updated the pcb with the mounting holes!
+
+![waw](</updatelogs/images/202507/07162025 - 4.png>)
+
+ok its dinner time (its 8:05 PM now), see ya!
+
+its 1:48 AM and im kinda getting tired of running these YOLO models... anyways, its computing overnight and im kinda tired, so good night! (will try to finish tomorrow lol)
+
+**Time Spent: 2.5 hrs**
+
+## 07-17-2025: Day 22: That's Nuts!
+**thats nuts!**
+
+oops its 9:17 PM, adding nuts now (yep getting straight to work) (wait im gonna import the PCBs into onshape first)
+
+onshape is very sad and slow when importing these pcbs...
+
+huh onshapes geting a little faster?
+
+ok, holes cadded, that took surprisingly long to import, time to add the nuts!
+
+no way, square nuts are a thing?
+
+![woa](</updatelogs/images/202507/07172025 - 1.png>)
+
+so turns out i should make it 0.82mm spacing or something (greater than 0.808) instead of 0.7mm spacing. whoops. also, wow, that means that these screws and nuts are SMALL! anyways, 10:24 PM now, most nuts added, just gotta update the spacing of lots of stuff... (benefits of parametric cad!)
+
+wait im gonna go watch a movie (its 10:45 PM right now)
+
+its now 12:12 AM. before i went to watch a movie, i updated a couple of the spacings of stuff, so now its time to update the cad. again! ok, exporting from kicad now... ok, importing into onshape now... ok, onshape doing its thing now...
+
+why is it `-0.790000` cm instead of `0.8`. ok, silly mistake fixed, importing again...
+
+ok, updated the collar shaft! ok, screws updated, assembly repaired, doing some final checks now!
+
+ok, CAD looks good! just a little note, seems like the holes on the PCB can be a bit further away from each other! might actually connect the inner vertical screws on the lower motor support plate to the ones on the motor top mount... (i will need to steal 4 screws from somewhere)
+
+oh i actually just found where! the 4 screws we have for the outer spacers for one of the arms are kinda unnecessarily long (they literally collide with each other) so i guess we replace those with some shorter screws
+
+ok its 1am now and im going up to school tomorrow, so i guess im finishing this tomorrow? (please)
+
+here's the current state of things! (currently doing the changes with the mounting, so thats why theres a couple missing screws and nuts on the lower motor support plate)
+
+![waw](</updatelogs/images/202507/07172025 - 2.png>)
+
+ok, good night!
+
+**Time Spent: 2.25 hrs**
+
+## 07-18-2025: Day 23: CAD and Safety
+**ouch**
+
+hey! its 6 PM now, kinda tired (i got a giant cut from a piece of polycarb today), but we're so so so close to finishing CAD! found 20 zipties from a random box today, so that'll probably be enough to mount the electronics
+
+ok, just updated the PCB, why does the mounting area remind me of the Limelight 2 design
+
+ok, its 6:30 PM, updated the CAD and stuff, just need to add a couple bolts and it should be good! after this, we go to firmware! (but dinner first)
+
+ok, its 8:45 PM and im back (had some meeting)! turns out i did a silly, and i just realized i did more silly. basically, we removed the middle mounting holes to the straight right of the center of the led subsystem, so theres nothing there (meaning, we have to move some stuff to the side). additionally, 40mm screws are kinda way too long for these spacers (shouldve noticed this yesterday, but they dig into each other on every long spacer. oops.)
+
+solutions? fix the arm mounting (also figure out where we put this hall effect sensor) and replace all 40mm screws with 30mm. or something. (we still need 10 40mm screws though, 4 for the motor mount, 4 for the connection to the top, and 2 for the shaft collar)
+
+it might be smarter for me to just add the holes back onto the led subsystem, since we're gonna have to wire this hall effect sensor anyways (theres nothing non-moving for the magnet to be on, if the hall effect sensor is soldered directly onto the board)
+
+also, just realized the center text still says "CORE PCB"
+
+here's a before and after! (left is before, right is after)
+
+![woo](</updatelogs/images/202507/07182025 - 1.png>)
+
+updating that silkscreen now... so uh im trying to remember how i did this. i remember my steps, but i dont remember the settings... ok, just finished updating it! text is a bit smaller, but still is there! (all text on the PCB will probably be kinda super small)
+
+you know, i think this is a bit obvious, but that idea from yesterday to connect the two bits? turns out thats connecting the inner motor part (doesnt move) to the outside spinning part (that does move). yeah, i really shouldve seen this one
+
+ok, working on fixing it, currently 10:30 PM, ill be back in a bit!
+
+back at 11:46 PM! currently going through the CAD to see how many screws each (20mm just got updated to 16mm) we need, trying to aim for multiples (or just below) of 20, since we dont want to buy a bunch of extra screws we dont end up using
+
+also, quick side note, i do NOT remember the keycaps on the macropad being this smooth (maybe i finish hackboard now? i did finish it back in march, maybe ill redesign it)
+
+list because paragraph form is unreadable:
+- M4 40mm screws
+    - $\frac{6.395683}{0.639568}$
+    - 10 screws
+- M4 30mm screws
+    - $\frac{12.33371}{0.513905}$
+    - 24 screws
+- M4 16mm screws
+    - $\frac{28.389932}{0.337975}$
+    - 84 screws
+
+yeah so while calulating the screw counts, M4 16mm screws had a suspicious decimal. turns out a couple M4 30mm screws snuck into that folder. anyways, those are very sad not multiples of 20. ideally, it seems that the fastest solution is turning 4x 16mm screws into 40mm, and 4x 30mm screws into 40mm. 
+
+yeah i dont know which screws to change out. but on a side note, just fixed a couple spacer issues!
+
+im gonna write up a quick essay on what everything is so far, so we get a general idea of what this is! (its probably gonna sound so robotic)
+
+i just realized the journal has the wrong project on it. whoops.
+
+```
+Introducing Raven, an open source spinning LED light display! The system can be seperated into three parts: the motor subsystem, the LED control subsystem, and the LED panels. But first, what exactly is the idea behind Raven? Inspired by the light effects done at BattleCry 2025 at WPI (2025BC), along with really liking LEDs for some reason, I wanted to create a LED display that lights up an entire room. But a stationary system wouldn't create the desired effect, the effect to slice up the room into different colors. For example, imagine the left side of the room being red and the right being blue.
+
+This is accomplished by having 5 LED panels, each with 10 LEDs each, vertically stacked, pointing outwards. These 5 panels form a 180 degree circle, each panel spaced 45 degrees off the next. Arms connecting to the top and bottom of the LED panels attach to a center. Spacers keep these top and bottom arms in position. In the center, the top arms connect to the LED control PCB, which contains a XIAO ESP32-C3. This board is also equipped with a Hall Effect Sensor, used to be a simple way to measure RPM without an expensive encoder. This entire section spins on a shaft collar connected to a 775 motor. Additionally, a 18650 Li-ion battery is on this section, powering the whole thing without need for a power wire.
+
+In order to save on costs, a slip ring was strongly avoided during design. Instead, the motor subsystem powers the motor with 4 Li-ion batteries, supplying a total of 14.8-16.8V @20A to the motor. 4 Li-ion batteries was choosen as a solution to the problem with finding suitable boost converters, which were either incapable of handling 20A, or are just really expensive. In fact, it is actually cheaper to use 4 Li-ion batteries than a single one of these boost converters. This solution also gave the benefit of having additional battery time, which was a nice side bonus. The motor subsystem is stationary, with the base being a copy of the LED control subsystem's PCB. This empty PCB is used as the FR-4 material of the PCB is likely stronger than PLA parts, while also being a smart way to reuse the multiple PCBs sent by JLCPCB. This is also the reason why there are 5 LED panels, as to minimize waste. The motor subsystem is also powered with a XIAO ESP32-C3, and has its own Hall Effect Sensor to measure the RPM of the LED subsystem.
+
+The control system starts at the stationary motor subsystem microcontroller, which sends a constant ping to the LED subsystem's microcontroller. The LED subsystem reads this ping through the ESP32's bluetooth capabilities, and also sends a ping back. Both systems need to listen to each other in order to think they are operating properly. In the event that a ping isn't heard in a long time, the LED subsystem will stop operating and the motor subsystem will attempt to bring the motor to a stop. While operating properly, the LED subsystem uses a mix of data from the motor subsystem's Hall Effect Sensor and the LED subsystem's Hall Effect Sensor to calculate its speed and position, utilizing a model of the motor's speed. The motor subsystem will use PID control with a MOSFET to ensure that the LED subsystem reaches the proper spin.
+
+This entire system is packaged inside a cylinderical shape with diameter of roughly 24 cm and a height of roughly 15 cm. The LED subsystem, weighing less than 2 pounds, plans to spin at anywhere from 1k-2k RPM, in order to achieve a speed where the LEDs essentially blend into a blur. The LED subsytem is loaded with almost 120 screws, in order to ensure that the LED subsystem stays in place. Additionally, all batteries are protected inside an over-discharge protection board and charged with a TP4056 module with protection (the TP4056 does NOT provide power to the system, it is only used for charging.).
+
+And that's Raven, an open source spinning light display!
+
+```
+
+that took 20 minutes... i think i touched on all the points? ok, gonna write a quick checklist of things we need to test before actual trusting it!
+
+Post-Build Test Checklist:
+- Mechanical
+    - All screws tightened, loctite applied (or other things)
+    - No bends anywhere (especially the arms)
+    - Shaft can spin freely by hand without power
+    - All wires secured
+    - Battery securely mounted
+- Initial test (100-200 RPM)
+    - Powered on in a safe enclosure
+    - System can spin without wobble/vibration
+    - No expensive noises
+    - Hall Effect Senssors read the correct RPM
+    - Failsafes work properly (with simulated ping loss)
+    - Tuned motor PID controller
+- Electrical and Thermal
+    - Battery voltage before/after test recorded
+    - Motor MOSFET not overheating (using tools, not your finger)
+    - All LEDs operate properly (no flicker/signal loss)
+     Bluetooth connection stable under spin
+- Safety System Checks
+    - Failsafe shuts motor and LED subsystems off
+    - Manual kill switch tested
+    - System shutdown behavior is controlled (no violent stopping, etc.)
+- Additional tests
+    - INSIDE A SAFETY CAGE
+    - Start at 250 RPM
+    - Increment until 1500-2000 RPM
+    - For each speed:
+        - No vibration increase
+        - No parts shifting/shaking
+        - RPM proper readings
+        - LED visuals appear as expected
+        - No excessive heat
+- Post-Test inspections
+    - Check and retighten all screws
+    - Check all mounting points for cracks
+    - Check any logs
+    - Check all wires, boards, and solder joints
+- Endurance test
+    - Aim for 3 days of total running with no issues
+    - Several cycles per day, at different speeds
+    - Check temperatures and operation for all cycles
+    - Save logs
+    - Look at logs for any strange stuff!
+
+ok, its 1 AM now, good night! so we just have to assume a BOM, change some screws, and yeah! also, quick note, might want to make the spacers have smaller holes near the ends in order to force the screws to grab onto the spacer (so that it, you know, actually does something) but yeah, that and some firmware! (probably better to have it, but whatever, we'll make a thorough editor sometime in the future!)
+
+ok, good night! (uh oh gotta update journal for a lot of days...)
+
+**Time Spent: 3.5 hrs**
