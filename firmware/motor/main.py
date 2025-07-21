@@ -3,6 +3,8 @@ import digitalio
 import time
 
 from constants import *
+from library.control import *
+from subsystems.clock import *
 from subsystems.hall import *
 from subsystems.leds import *
 from subsystems.motor import *
@@ -38,9 +40,11 @@ time.sleep(1)
 if not(success):
     print("Safety Exit (Unsuccessful Systems Check)")
     BOARD.fill(LEDs_Status.FAIL)
+    status = SubsystemStatus.DANGER
     exit()
 else:
     BOARD.fill(LEDs_Status.PASS)
+    status = SubsystemStatus.OPERATIONAL
 time.sleep(1)
 BOARD.fill(LEDs_Status.NONE)
 
@@ -48,4 +52,18 @@ BOARD.fill(LEDs_Status.NONE)
 '''                                             START                                             '''
 '''###############################################################################################'''
 
-# blep
+pid = PIDController(Constants.Motor.kP, Constants.Motor.kI, Constants.Motor.kD)
+motorPWM = PWM()
+
+while status == SubsystemStatus.OPERATIONAL:
+    State.timestamp = CLOCK.getTime()
+    CLOCK.ping()
+    
+
+
+    # PID controlling motor PWM
+    fb = pid.calculate(State.currentRPM, State.targetRPM, State.timestamp)
+    print(fb)
+    motorPWM.set(fb)
+    MOTOR.setValue(motorPWM.get(State.timestamp))
+

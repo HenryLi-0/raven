@@ -10,9 +10,9 @@ class LEDs_Status:
 
 class LEDs_Board(NeoPixel):
     def __init__(self, pin):
-        super.__init__(pin, Constants.LED_LENGTH)
+        super.__init__(pin, Constants.Pins.LEDS_LEN)
         self.fill((0,0,0))
 
 
 '''Initialize all Neopixel strips (on the LED subsystem)'''
-BOARD = LEDs_Board(Constants.PIN_LEDS)
+BOARD = LEDs_Board(Constants.Pins.LEDS)
