@@ -1,6 +1,6 @@
 from library.neopixel import NeoPixel
 
-from constants import *
+from constants import Constants
 
 class LEDs_Status:
     PASS = (  0, 255,   0)
