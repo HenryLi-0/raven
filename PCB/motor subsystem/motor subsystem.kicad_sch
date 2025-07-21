@@ -1629,12 +1629,6 @@
 		(uuid "16dce3a2-d890-4321-bcb2-814e0ab5e5d9")
 	)
 	(junction
-		(at 127 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1d9ce9dc-de63-471a-8f79-657d64a5b886")
-	)
-	(junction
 		(at 81.28 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1653,18 +1647,6 @@
 		(uuid "3a1b4563-9093-48a9-9087-e09573d90b6f")
 	)
 	(junction
-		(at 111.76 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "736ad1c5-ee86-4fd7-8135-727c6f6684fb")
-	)
-	(junction
-		(at 127 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73a0e375-c888-4111-8a63-86924f72d20b")
-	)
-	(junction
 		(at 50.8 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1675,12 +1657,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92416d70-7773-40f1-aec8-2d2c14045be7")
-	)
-	(junction
-		(at 111.76 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "93b10a9b-10e3-46a5-8825-711bd22ca89c")
 	)
 	(junction
 		(at 96.52 91.44)
@@ -1765,16 +1741,6 @@
 			(type default)
 		)
 		(uuid "31418015-e4fb-407c-98e8-eb747223225c")
-	)
-	(wire
-		(pts
-			(xy 127 91.44) (xy 142.24 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34402dd4-583b-487b-b3b0-b5c7c1c34a0e")
 	)
 	(wire
 		(pts
@@ -1868,16 +1834,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 91.44) (xy 127 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63e03cf4-26b7-4eb5-995e-0567ba7d766a")
-	)
-	(wire
-		(pts
 			(xy 35.56 91.44) (xy 50.8 91.44)
 		)
 		(stroke
@@ -1968,16 +1924,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 76.2) (xy 142.24 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f5cb226-f442-4374-9e54-9a315ef0dcae")
-	)
-	(wire
-		(pts
 			(xy 105.41 59.69) (xy 106.68 59.69)
 		)
 		(stroke
@@ -2055,16 +2001,6 @@
 			(type default)
 		)
 		(uuid "f3928084-c5f7-4e39-86fd-4f2b73281027")
-	)
-	(wire
-		(pts
-			(xy 111.76 76.2) (xy 127 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa6b105f-ac51-4126-904f-266b52c0e5a1")
 	)
 	(wire
 		(pts
@@ -2981,81 +2917,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 142.24 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "af345851-2180-49e3-a28c-0f812a2ec57d")
-		(property "Reference" "L8"
-			(at 142.24 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 142.24 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 143.51 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 144.78 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 142.24 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "364f295c-41c8-46fd-8ad1-dce7ade8b686")
-		)
-		(pin "2"
-			(uuid "e4e5f8cc-b389-41f5-9e09-9d7c34477f27")
-		)
-		(pin "4"
-			(uuid "5cc82dec-267a-4444-b37b-75f00803cc79")
-		)
-		(pin "1"
-			(uuid "ffa6e2e4-7601-46ff-9c21-b9976b29c005")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "STP55NF06L:STP55NF06L")
 		(at 111.76 57.15 0)
 		(unit 1)
@@ -3338,81 +3199,6 @@
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 127 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bce696c2-68cb-426b-b2a0-85bcd838c8a9")
-		(property "Reference" "L7"
-			(at 127 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_WS2812B"
-			(at 127 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 128.27 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 129.54 93.345 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 127 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "48e0af1e-d9a3-40c7-98c5-20579259f03d")
-		)
-		(pin "2"
-			(uuid "b4b52931-06f9-4e94-9db4-d9ba8c1dc9fc")
-		)
-		(pin "4"
-			(uuid "d0c5b6cc-98e1-470d-aa5c-2f4da4888301")
-		)
-		(pin "1"
-			(uuid "630489b6-b625-44b0-ab16-21fdd7bfe592")
-		)
-		(instances
-			(project "motor subsystem"
-				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "L7")
 					(unit 1)
 				)
 			)
