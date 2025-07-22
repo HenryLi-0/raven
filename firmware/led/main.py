@@ -2,6 +2,7 @@ import board
 import time
 
 from constants import *
+from library.ledData import *
 from subsystems.clock import *
 from subsystems.leds import *
 from subsystems.hall import *
@@ -63,16 +64,19 @@ BOARD.fill(LEDs_Status.NONE)
 '''                                             START                                             '''
 '''###############################################################################################'''
 
-updater = Updater()
+# init logic
+poseUpdater = Updater()
 hallCounter = Counter()
+data = Data()
 
+# main loop!
 while State.status == SubsystemStatus.OPERATIONAL:
     State.timestamp = CLOCK.getTime()
     
     if HALL.getValue():
         hallCounter.ping()
         
-    if updater.needUpdate():
+    if poseUpdater.needUpdate():
         State.currentRPM = hallCounter.getPings()
         if State.currentRPM == 0:
             State.currentRPM = 1e-9
@@ -80,4 +84,7 @@ while State.status == SubsystemStatus.OPERATIONAL:
     
     State.position = (State.timestamp % State.rotationTime)/(State.rotationTime)
 
-    
+    for i in range(Constants.Pins.NUMBER_OF_PANELS):
+       PANEL[i].load(data.getFrame(State.timestamp, Constants.Pins.PANEL_OFFSET(i) + State.position*360))
+
+# blep

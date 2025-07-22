@@ -5,6 +5,9 @@ from constants import Constants
 class LEDs_Panel(NeoPixel):
     def __init__(self, pin):
         super.__init__(pin, Constants.Pins.PANEL_LENGTH)
+    def load(self, data):
+        for i, led in enumerate(data):
+            self[i] = led
 
 class LEDs_Status:
     PASS = (  0, 255,   0)
