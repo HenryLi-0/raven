@@ -1,6 +1,6 @@
 import digitalio
 
-from constants import *
+from constants import Constants
 
 class Hall:
     def __init__(self, pin):

@@ -10,7 +10,7 @@ class LEDs_Status:
 
 class LEDs_Board(NeoPixel):
     def __init__(self, pin):
-        super.__init__(pin, Constants.Pins.LEDS_LEN)
+        super.__init__(pin, Constants.Pins.LEDS_LENGTH)
         self.fill((0,0,0))
 
 

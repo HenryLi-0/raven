@@ -7,7 +7,8 @@ class Motor:
         self.mosfet = digitalio.DigitalInOut(mosfetPin)
         self.mosfet.direction = digitalio.Direction.OUTPUT
         self.mosfet.value = False
-    def setValue(self, value):
+    def setPower(self, value):
+        # Turns the MOSFET on/off. Unfortunately no specific voltages (unless you consider PWM?).
         self.mosfet.value = value
 
 MOTOR = Motor(Constants.Pins.MOSFET)

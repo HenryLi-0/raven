@@ -40,11 +40,11 @@ time.sleep(1)
 if not(success):
     print("Safety Exit (Unsuccessful Systems Check)")
     BOARD.fill(LEDs_Status.FAIL)
-    status = SubsystemStatus.DANGER
+    State.status = SubsystemStatus.DANGER
     exit()
 else:
     BOARD.fill(LEDs_Status.PASS)
-    status = SubsystemStatus.OPERATIONAL
+    State.status = SubsystemStatus.OPERATIONAL
 time.sleep(1)
 BOARD.fill(LEDs_Status.NONE)
 
@@ -52,18 +52,27 @@ BOARD.fill(LEDs_Status.NONE)
 '''                                             START                                             '''
 '''###############################################################################################'''
 
+# init logic
+poseUpdater = Updater()
+hallCounter = Counter()
+
 pid = PIDController(Constants.Motor.kP, Constants.Motor.kI, Constants.Motor.kD)
 motorPWM = PWM()
 
-while status == SubsystemStatus.OPERATIONAL:
+while State.status == SubsystemStatus.OPERATIONAL:
     State.timestamp = CLOCK.getTime()
-    CLOCK.ping()
     
+    if HALL.getValue():
+        hallCounter.ping()
+    
+    if poseUpdater.needUpdate():
+        State.currentRPM = hallCounter.getPings()
 
 
     # PID controlling motor PWM
     fb = pid.calculate(State.currentRPM, State.targetRPM, State.timestamp)
     print(fb)
     motorPWM.set(fb)
-    MOTOR.setValue(motorPWM.get(State.timestamp))
+    MOTOR.setPower(motorPWM.get(State.timestamp))
 
+    
