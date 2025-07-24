@@ -5,6 +5,362 @@
 	(uuid "4cf0086b-fa07-4566-99be-a226804ba080")
 	(paper "A4")
 	(lib_symbols
+		(symbol "AOD424:AOD424"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 3.048 5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -6.35 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -6.35 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -6.35 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at -6.35 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AOD424_0_0"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -2.54) (xy -1.778 -3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.905) (xy -1.778 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0) (xy -1.778 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.762) (xy -1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy -1.778 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 3.175) (xy -1.778 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy -1.778 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 0.762 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 1.27 -3.81)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.81) (xy 1.27 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 0.508) (xy 1.27 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -0.508 0.762) (xy -0.508 -0.762) (xy -1.524 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0.508) (xy 0.762 -0.254) (xy 1.778 -0.254) (xy 1.27 0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "AOD424_0_1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 1.27 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AOD424_1_1"
+				(text "AOD424"
+					(at 3.048 0 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:1N5822"
 			(pin_numbers hide)
 			(pin_names
@@ -144,499 +500,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "STP55NF06L:STP55NF06L"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 8.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Value" "STP55NF06L"
-				(at -10.16 -11.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-				)
-			)
-			(property "Footprint" "STP55NF06L:TO254P1040X460X1935-3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-channel 60 V, 0.014 Ohm typ., 35 A StripFET II Power MOSFET in a TO-220 package"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MF" "STMicroelectronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PACKAGE" "TO-220 STMicroelectronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PRICE" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "TO-220-3 STMicroelectronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/STP55NF06L/STMicroelectronics/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "IPC7351B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/STP55NF06L/STMicroelectronics/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "STP55NF06L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "\n                        \n                            N-Channel 60V 55A (Tc) 95W (Tc) Through Hole TO-220AB\n                        \n"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "STMicroelectronics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "STP55NF06L_0_0"
-				(circle
-					(center 0 -2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -2.54) (xy -1.778 -3.175)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.905) (xy -1.778 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0) (xy -1.778 -0.762)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0.762) (xy -1.778 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.54) (xy -1.778 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.54) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 3.175) (xy -1.778 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy -1.778 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.508 0.254)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.508) (xy 0.762 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.508) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 1.27 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.778 0.508) (xy 1.27 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.032 0.762) (xy 1.778 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0) (xy -0.508 0.762) (xy -0.508 -0.762) (xy -1.524 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.508) (xy 0.762 -0.254) (xy 1.778 -0.254) (xy 1.27 0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 0.3592)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1617,67 +1480,79 @@
 		)
 	)
 	(junction
-		(at 81.28 91.44)
+		(at 111.76 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16acd959-805a-485f-adaa-cfd59b39f1dc")
 	)
 	(junction
-		(at 66.04 76.2)
+		(at 96.52 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16dce3a2-d890-4321-bcb2-814e0ab5e5d9")
 	)
 	(junction
-		(at 81.28 76.2)
+		(at 111.76 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3516667c-0e9f-46a9-ab43-823ff2f19a53")
 	)
 	(junction
-		(at 66.04 91.44)
+		(at 96.52 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3665cc0e-87b2-46cc-ad16-eb4b03fdf98c")
 	)
 	(junction
-		(at 50.8 76.2)
+		(at 81.28 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a1b4563-9093-48a9-9087-e09573d90b6f")
 	)
 	(junction
-		(at 50.8 91.44)
+		(at 101.6 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75b91cfc-d540-4313-8c8c-50b72b5d5246")
+	)
+	(junction
+		(at 81.28 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "83352582-aafb-439d-806e-04e7ec8798dc")
 	)
 	(junction
-		(at 96.52 76.2)
+		(at 127 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92416d70-7773-40f1-aec8-2d2c14045be7")
 	)
 	(junction
-		(at 96.52 91.44)
+		(at 101.6 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7436630-e1e0-47da-a7fe-6c5f1b203776")
+	)
+	(junction
+		(at 127 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be60f0a7-9c6e-4b1d-b06a-d062a759b78a")
 	)
 	(junction
-		(at 35.56 76.2)
+		(at 66.04 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5738b42-cd47-4a87-bfc4-7ddc7fd34a84")
 	)
 	(junction
-		(at 96.52 59.69)
+		(at 93.98 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d02ba7da-2af6-4b81-b4b9-b8d84b7e879f")
 	)
 	(junction
-		(at 35.56 91.44)
+		(at 66.04 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1d45131-a1b1-4d50-afa0-0b776d583561")
@@ -1694,13 +1569,23 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 46.99) (xy 124.46 46.99)
+			(xy 101.6 49.53) (xy 101.6 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0afacfa0-9c06-414d-982c-1df6037694f2")
+		(uuid "1e8bf6c9-fff5-4571-a4fb-cf1f4103e407")
+	)
+	(wire
+		(pts
+			(xy 115.57 46.99) (xy 115.57 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221e5da3-5897-454b-983d-95c1ea5099cc")
 	)
 	(wire
 		(pts
@@ -1714,7 +1599,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 91.44) (xy 35.56 91.44)
+			(xy 55.88 88.9) (xy 66.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1724,27 +1609,37 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 59.69) (xy 95.25 59.69)
+			(xy 101.6 57.15) (xy 101.6 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2895e7e9-748b-489a-8eef-3fd08691a720")
+		(uuid "2a405756-e600-4c78-9c18-d1ddb00ad96d")
 	)
 	(wire
 		(pts
-			(xy 86.36 57.15) (xy 87.63 57.15)
+			(xy 115.57 46.99) (xy 116.84 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31418015-e4fb-407c-98e8-eb747223225c")
+		(uuid "2b3e0db9-05e6-4773-bdab-3fa93c4ccbfc")
 	)
 	(wire
 		(pts
-			(xy 81.28 91.44) (xy 96.52 91.44)
+			(xy 101.6 59.69) (xy 102.87 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3089f9e4-3ac7-470b-b6fb-5fe9d5f81938")
+	)
+	(wire
+		(pts
+			(xy 111.76 88.9) (xy 127 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1754,33 +1649,13 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 57.15) (xy 96.52 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3acf6689-4b94-451e-8e6f-b030729d2f3a")
-	)
-	(wire
-		(pts
-			(xy 66.04 76.2) (xy 81.28 76.2)
+			(xy 96.52 73.66) (xy 111.76 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3c23082b-5d4b-43ba-95a1-e6b8c57e85eb")
-	)
-	(wire
-		(pts
-			(xy 86.36 59.69) (xy 87.63 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40f5ef9a-da82-4a27-9b89-f4edf398bdb6")
 	)
 	(wire
 		(pts
@@ -1794,7 +1669,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 91.44) (xy 81.28 91.44)
+			(xy 96.52 88.9) (xy 111.76 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1804,27 +1679,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 46.99) (xy 111.76 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5045a183-fee7-41c4-9021-4ac70cb9530d")
-	)
-	(wire
-		(pts
-			(xy 96.52 59.69) (xy 97.79 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5414dd03-196a-4eb2-b240-dfc5433f46ac")
-	)
-	(wire
-		(pts
-			(xy 81.28 76.2) (xy 96.52 76.2)
+			(xy 111.76 73.66) (xy 127 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1834,7 +1689,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 91.44) (xy 50.8 91.44)
+			(xy 66.04 88.9) (xy 81.28 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1844,7 +1699,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 40.64) (xy 111.76 43.18)
+			(xy 115.57 40.64) (xy 115.57 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1854,7 +1709,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 76.2) (xy 50.8 76.2)
+			(xy 66.04 73.66) (xy 81.28 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1864,7 +1719,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 43.18) (xy 114.3 43.18)
+			(xy 115.57 43.18) (xy 116.84 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1874,7 +1729,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 91.44) (xy 111.76 91.44)
+			(xy 127 88.9) (xy 142.24 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1884,7 +1739,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 57.15) (xy 96.52 59.69)
+			(xy 93.98 57.15) (xy 93.98 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1904,33 +1759,13 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 76.2) (xy 66.04 76.2)
+			(xy 81.28 73.66) (xy 96.52 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "99219419-8993-4073-953d-1482fb9ed141")
-	)
-	(wire
-		(pts
-			(xy 121.92 43.18) (xy 124.46 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99ec6667-fcba-4312-bd8b-1d787198d997")
-	)
-	(wire
-		(pts
-			(xy 105.41 59.69) (xy 106.68 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fa06b70-c2f4-4bfa-9af9-2d9a9f27c6d6")
 	)
 	(wire
 		(pts
@@ -1954,7 +1789,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 76.2) (xy 111.76 76.2)
+			(xy 127 73.66) (xy 142.24 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1964,7 +1799,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 91.44) (xy 66.04 91.44)
+			(xy 81.28 88.9) (xy 96.52 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1974,7 +1809,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 76.2) (xy 35.56 76.2)
+			(xy 55.88 73.66) (xy 66.04 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1994,13 +1829,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 46.99) (xy 111.76 46.99)
+			(xy 101.6 59.69) (xy 93.98 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3928084-c5f7-4e39-86fd-4f2b73281027")
+		(uuid "f6f6adfb-cb76-4da7-9efb-3cf53a98fb3f")
 	)
 	(wire
 		(pts
@@ -2012,9 +1847,22 @@
 		)
 		(uuid "fcaec6fb-d08f-46f1-bb58-816049071cb9")
 	)
+	(text "10 kΩ"
+		(exclude_from_sim no)
+		(at 104.14 53.34 90)
+		(effects
+			(font
+				(face "KiCad Font")
+				(size 1.27 1.27)
+				(thickness 0.1588)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "2d2b5b6b-f69b-4d35-905c-09d99db8d51c")
+	)
 	(text "NOTE:\nTHESE MUST BE RATED\nFOR 12+V @20A!\n\nI AM USING A PLACEHOLDER\nDIODE FOOTPRINT!"
 		(exclude_from_sim no)
-		(at 135.128 33.528 0)
+		(at 133.858 31.496 0)
 		(effects
 			(font
 				(face "Orbitron")
@@ -2053,7 +1901,7 @@
 	)
 	(text "100 Ω"
 		(exclude_from_sim no)
-		(at 101.6 62.484 0)
+		(at 106.68 62.23 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -2066,7 +1914,7 @@
 	)
 	(global_label "12V @20A GND"
 		(shape input)
-		(at 111.76 62.23 0)
+		(at 115.57 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2076,7 +1924,7 @@
 		)
 		(uuid "15d96e78-6610-4305-8271-b957ee4785ad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.199 62.23 0)
+			(at 133.009 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2088,7 +1936,7 @@
 	)
 	(global_label "5V GND"
 		(shape input)
-		(at 25.4 91.44 180)
+		(at 55.88 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2098,7 +1946,7 @@
 		)
 		(uuid "406a3ede-0f9a-45d2-be96-2d8f260e5615")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.2786 91.44 0)
+			(at 45.7586 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,7 +1978,7 @@
 			)
 		)
 	)
-	(global_label "A3144E GND"
+	(global_label "HALL GND"
 		(shape input)
 		(at 151.13 53.34 270)
 		(fields_autoplaced yes)
@@ -2142,7 +1990,7 @@
 		)
 		(uuid "5dcd2975-b88d-491c-b06f-86858a34d290")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.13 68.2389 90)
+			(at 151.13 65.6386 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2154,7 +2002,7 @@
 	)
 	(global_label "LED"
 		(shape input)
-		(at 27.94 83.82 180)
+		(at 58.42 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2164,7 +2012,7 @@
 		)
 		(uuid "608eeed7-f077-4de0-b326-190277f29aea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.5077 83.82 0)
+			(at 51.9877 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2174,7 +2022,7 @@
 			)
 		)
 	)
-	(global_label "A3114E POW"
+	(global_label "HALL POW"
 		(shape input)
 		(at 147.32 53.34 270)
 		(fields_autoplaced yes)
@@ -2186,7 +2034,7 @@
 		)
 		(uuid "66113eaa-5572-460b-bcf6-ac4728219fe1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.32 68.4203 90)
+			(at 147.32 65.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +2088,7 @@
 			)
 		)
 	)
-	(global_label "A3144E GPIO"
+	(global_label "HALL GPIO"
 		(shape input)
 		(at 86.36 52.07 0)
 		(fields_autoplaced yes)
@@ -2252,7 +2100,7 @@
 		)
 		(uuid "b414f86f-fd27-4215-8689-566447669cb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 101.8637 52.07 0)
+			(at 99.2634 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2284,7 +2132,7 @@
 			)
 		)
 	)
-	(global_label "A3144E GPIO"
+	(global_label "HALL GPIO"
 		(shape input)
 		(at 154.94 53.34 270)
 		(fields_autoplaced yes)
@@ -2296,7 +2144,7 @@
 		)
 		(uuid "c4f503a7-5018-4286-89ac-9ed886b39f48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.94 68.8437 90)
+			(at 154.94 66.2434 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2308,7 +2156,7 @@
 	)
 	(global_label "12V @20A POW"
 		(shape input)
-		(at 111.76 40.64 90)
+		(at 115.57 40.64 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2318,7 +2166,7 @@
 		)
 		(uuid "ca0ec1a6-49f7-46f0-8aa7-3230348cae16")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.76 23.0196 90)
+			(at 115.57 23.0196 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2396,7 +2244,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 25.4 76.2 90)
+		(at 55.88 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2405,7 +2253,7 @@
 		(fields_autoplaced yes)
 		(uuid "1da23791-f887-4386-bf15-abae8265bce7")
 		(property "Reference" "#PWR06"
-			(at 29.21 76.2 0)
+			(at 59.69 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2414,7 +2262,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 21.59 76.1999 90)
+			(at 52.07 73.6599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2423,7 +2271,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 76.2 0)
+			(at 55.88 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,7 +2280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 76.2 0)
+			(at 55.88 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2441,7 +2289,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 25.4 76.2 0)
+			(at 55.88 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2530,7 +2378,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 81.28 83.82 0)
+		(at 111.76 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2538,7 +2386,7 @@
 		(dnp no)
 		(uuid "480a8826-a0fe-4f36-ad69-4d376e3c3c4c")
 		(property "Reference" "L4"
-			(at 81.28 95.25 0)
+			(at 111.76 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +2394,7 @@
 			)
 		)
 		(property "Value" "LED_WS2812B"
-			(at 81.28 97.79 0)
+			(at 111.76 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2554,7 +2402,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 82.55 91.44 0)
+			(at 113.03 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2564,7 +2412,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 83.82 93.345 0)
+			(at 114.3 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2574,7 +2422,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 81.28 83.82 0)
+			(at 111.76 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +2557,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 35.56 83.82 0)
+		(at 66.04 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2717,7 +2565,7 @@
 		(dnp no)
 		(uuid "6a875db6-20a4-4d94-8cdb-c108e99f0c6d")
 		(property "Reference" "L1"
-			(at 35.56 95.25 0)
+			(at 66.04 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +2573,7 @@
 			)
 		)
 		(property "Value" "LED_WS2812B"
-			(at 35.56 97.79 0)
+			(at 66.04 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2581,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 36.83 91.44 0)
+			(at 67.31 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +2591,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 38.1 93.345 0)
+			(at 68.58 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2753,7 +2601,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 35.56 83.82 0)
+			(at 66.04 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,44 +2765,33 @@
 		)
 	)
 	(symbol
-		(lib_id "STP55NF06L:STP55NF06L")
-		(at 111.76 57.15 0)
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 101.6 53.34 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b4457c41-f15d-4390-a7f4-96cff07d8db9")
-		(property "Reference" "U2"
-			(at 114.554 56.388 0)
+		(uuid "9c81aea0-8caa-47ae-9502-b071cc03c9fb")
+		(property "Reference" "R3"
+			(at 105.41 47.498 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "IRLZ44N"
-			(at 114.554 58.928 0)
+		(property "Value" "Resistor"
+			(at 105.664 49.276 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "STP55NF06L:TO254P1040X460X1935-3"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 57.15 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal"
+			(at 99.822 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,8 +2799,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 111.76 57.15 0)
+		(property "Datasheet" "~"
+			(at 101.6 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,149 +2808,25 @@
 				(hide yes)
 			)
 		)
-		(property "MF" "STMicroelectronics"
-			(at 111.76 57.15 0)
+		(property "Description" "Resistor"
+			(at 101.6 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 				(hide yes)
 			)
-		)
-		(property "DESCRIPTION" "N-channel 60 V, 0.014 Ohm typ., 35 A StripFET II Power MOSFET in a TO-220 package"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "TO-220 STMicroelectronics"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PRICE" "None"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "TO-220-3 STMicroelectronics"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/STP55NF06L/STMicroelectronics/view-part/?ref=eda"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC7351B"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/STP55NF06L/STMicroelectronics/view-part/?ref=snap"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "STP55NF06L"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "\n                        \n                            N-Channel 60V 55A (Tc) 95W (Tc) Through Hole TO-220AB\n                        \n"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "STMicroelectronics"
-			(at 111.76 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2c4cb4f4-c160-4f19-885c-e9da92aa7ecb")
 		)
 		(pin "1"
-			(uuid "07f7fd68-2123-4a68-a8d5-5fb89ea9918f")
+			(uuid "c2aa1f5f-cd8e-4b53-867a-c4b5346c1fad")
 		)
-		(pin "3"
-			(uuid "83b63ba6-829c-474b-ac9a-ed8f674b0255")
+		(pin "2"
+			(uuid "51b87f8e-8137-4704-86cb-11ddebfb0f8b")
 		)
 		(instances
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
-					(reference "U2")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3121,7 +2834,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 91.44 59.69 180)
+		(at 90.17 59.69 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3129,7 +2842,7 @@
 		(dnp no)
 		(uuid "b597bb89-061c-41fa-8fa0-88e3670f6e4d")
 		(property "Reference" "D5"
-			(at 88.9 61.976 0)
+			(at 87.63 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3137,7 +2850,7 @@
 			)
 		)
 		(property "Value" "Diode"
-			(at 93.218 61.976 0)
+			(at 91.948 61.976 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3145,7 +2858,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 91.44 59.69 0)
+			(at 90.17 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,7 +2867,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 59.69 0)
+			(at 90.17 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3163,7 +2876,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 91.44 59.69 0)
+			(at 90.17 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3172,7 +2885,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 91.44 59.69 0)
+			(at 90.17 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3181,7 +2894,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 91.44 59.69 0)
+			(at 90.17 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,8 +2918,80 @@
 		)
 	)
 	(symbol
+		(lib_id "AOD424:AOD424")
+		(at 115.57 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c8b45ae4-ba08-4010-a046-10fd2fed2a75")
+		(property "Reference" "U2"
+			(at 119.634 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 120.65 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STP55NF06L:AOD424"
+			(at 109.22 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb676317-6d22-44d8-96cf-193fcac90b87")
+		)
+		(pin "1"
+			(uuid "d235e71d-825b-472d-8202-2c0348a950fa")
+		)
+		(pin "3"
+			(uuid "62245ba9-340e-4e0f-bc45-3a40a593d841")
+		)
+		(instances
+			(project ""
+				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 111.76 83.82 0)
+		(at 142.24 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3214,7 +2999,7 @@
 		(dnp no)
 		(uuid "d57c2290-7ec1-4793-8dc1-a58363610999")
 		(property "Reference" "L6"
-			(at 111.76 95.25 0)
+			(at 142.24 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3222,7 +3007,7 @@
 			)
 		)
 		(property "Value" "LED_WS2812B"
-			(at 111.76 97.79 0)
+			(at 142.24 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3230,7 +3015,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 113.03 91.44 0)
+			(at 143.51 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3240,7 +3025,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 114.3 93.345 0)
+			(at 144.78 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3250,7 +3035,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 111.76 83.82 0)
+			(at 142.24 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,7 +3066,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 66.04 83.82 0)
+		(at 96.52 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3289,7 +3074,7 @@
 		(dnp no)
 		(uuid "e25fce81-bc8e-4819-9ff0-db68ed834d57")
 		(property "Reference" "L3"
-			(at 66.04 95.25 0)
+			(at 96.52 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,7 +3082,7 @@
 			)
 		)
 		(property "Value" "LED_WS2812B"
-			(at 66.04 97.79 0)
+			(at 96.52 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3305,7 +3090,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 67.31 91.44 0)
+			(at 97.79 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3315,7 +3100,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 68.58 93.345 0)
+			(at 99.06 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3325,7 +3110,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 66.04 83.82 0)
+			(at 96.52 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,7 +3141,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 96.52 83.82 0)
+		(at 127 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3364,7 +3149,7 @@
 		(dnp no)
 		(uuid "e7f179c7-1f44-469d-ac9b-be32f81f556d")
 		(property "Reference" "L5"
-			(at 96.52 95.25 0)
+			(at 127 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3372,7 +3157,7 @@
 			)
 		)
 		(property "Value" "LED_WS2812B"
-			(at 96.52 97.79 0)
+			(at 127 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3380,7 +3165,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 97.79 91.44 0)
+			(at 128.27 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3390,7 +3175,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 99.06 93.345 0)
+			(at 129.54 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3400,7 +3185,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 96.52 83.82 0)
+			(at 127 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,7 +3216,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:LED_WS2812B")
-		(at 50.8 83.82 0)
+		(at 81.28 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3439,7 +3224,7 @@
 		(dnp no)
 		(uuid "ead52b4d-0b87-42ed-adc4-c72a48eee0e7")
 		(property "Reference" "L2"
-			(at 50.8 95.25 0)
+			(at 81.28 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3447,7 +3232,7 @@
 			)
 		)
 		(property "Value" "LED_WS2812B"
-			(at 50.8 97.79 0)
+			(at 81.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3455,7 +3240,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:LED_WS2812B"
-			(at 52.07 91.44 0)
+			(at 82.55 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3465,7 +3250,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 53.34 93.345 0)
+			(at 83.82 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3475,7 +3260,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 50.8 83.82 0)
+			(at 81.28 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3506,7 +3291,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 91.44 57.15 180)
+		(at 90.17 57.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3514,7 +3299,7 @@
 		(dnp no)
 		(uuid "eb3d3097-9391-479d-90ab-c7a5e1168efa")
 		(property "Reference" "D4"
-			(at 88.9 54.864 0)
+			(at 87.63 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3522,7 +3307,7 @@
 			)
 		)
 		(property "Value" "Diode"
-			(at 93.218 54.864 0)
+			(at 91.948 54.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3530,7 +3315,7 @@
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Components:Diode_DO-35"
-			(at 91.44 57.15 0)
+			(at 90.17 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3539,7 +3324,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 57.15 0)
+			(at 90.17 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3548,7 +3333,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 91.44 57.15 0)
+			(at 90.17 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3557,7 +3342,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 91.44 57.15 0)
+			(at 90.17 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,7 +3351,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 91.44 57.15 0)
+			(at 90.17 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3591,7 +3376,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 118.11 43.18 180)
+		(at 120.65 43.18 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3600,7 +3385,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecaac7ff-8ce0-419b-87ee-e492692b925f")
 		(property "Reference" "D2"
-			(at 118.11 36.83 0)
+			(at 120.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3608,7 +3393,7 @@
 			)
 		)
 		(property "Value" "30SQ045"
-			(at 118.11 39.37 0)
+			(at 120.65 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +3401,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
-			(at 118.11 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +3410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +3419,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 118.11 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3428,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 118.11 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3652,7 +3437,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 118.11 43.18 0)
+			(at 120.65 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3462,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Resistor")
-		(at 101.6 59.69 0)
+		(at 106.68 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3685,7 +3470,7 @@
 		(dnp no)
 		(uuid "f6e570d8-033f-42d6-a534-8501569941e4")
 		(property "Reference" "R1"
-			(at 101.6 55.626 0)
+			(at 106.68 55.626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,15 +3478,15 @@
 			)
 		)
 		(property "Value" "Resistor"
-			(at 101.6 57.404 0)
+			(at 106.68 57.404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal"
-			(at 101.6 61.468 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal"
+			(at 106.68 61.468 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,7 +3495,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 59.69 90)
+			(at 106.68 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3719,7 +3504,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 101.6 59.69 0)
+			(at 106.68 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3744,7 +3529,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 118.11 46.99 0)
+		(at 120.65 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3752,7 +3537,7 @@
 		(dnp no)
 		(uuid "f783a148-4684-4e1a-85e9-959ad5927614")
 		(property "Reference" "D3"
-			(at 118.11 49.784 0)
+			(at 120.65 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +3545,7 @@
 			)
 		)
 		(property "Value" "30SQ045"
-			(at 118.11 52.324 0)
+			(at 120.65 52.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3768,7 +3553,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
-			(at 118.11 46.99 0)
+			(at 120.65 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3777,7 +3562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 46.99 0)
+			(at 120.65 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3786,7 +3571,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 118.11 46.99 0)
+			(at 120.65 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3795,7 +3580,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 118.11 46.99 0)
+			(at 120.65 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3804,7 +3589,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 118.11 46.99 0)
+			(at 120.65 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
