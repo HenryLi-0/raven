@@ -6,46 +6,47 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 ## Structure
 *structural bits*
 
-| Part                      | Price         | Link          |
-|---------------------------|---------------|---------------|
-| **STRUCTURAL ALIEXPRESS** | ???           | AliExpress    |
-| *M4 Screws (x20, 40mm)*   | *$2.62*       | [AliExpress](https://www.aliexpress.us/item/3256804341271555.html) |
-| *M4 Screws (x20, 30mm)*   | *$2.29*       | ^^^           |
-| *M4 Screws (x80, 16mm)*   | *$7.32*       | ^^^           |
-| *M4 Nuts*                 | *$8.60*       | [AliExpress](https://www.aliexpress.us/item/3256807407546447.html) |
-| *Shipping (to NYC)*       | ???           | (AliExpress)  |
-| **3D Printed Parts**      | **$0.00**     | (self print)  |
+| Part                          | Price         | Link          |
+|-------------------------------|---------------|---------------|
+| **STRUCTURAL ALIEXPRESS**     | **$20.83**    | AliExpress    |
+| *M4 Screws (x20, 40mm)*       | *$2.62*       | [AliExpress](https://www.aliexpress.us/item/3256804341271555.html) |
+| *M4 Screws (x20, 30mm)*       | *$2.29*       | ^^^           |
+| *M4 Screws (x80, 16mm)*       | *$7.32*       | ^^^           |
+| *M4 Nuts*                     | *$8.60*       | [AliExpress](https://www.aliexpress.us/item/3256807407546447.html) |
+| *Shipping (to NYC)*           | *$0.00*       | (AliExpress)  |
+| **3D Printed Parts**          | **$0.00**     | (self print)  |
 
 ## PCBs
 *pcbs*
 
 Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10x10cm boards are $2 as part of some deal. This is just incase that deal ends. These prices may also fluctuate because of certain people.
 
-| Part                      | Price         | Link          |
-|---------------------------|---------------|---------------|
-| **ALL PCBS FROM JLCPCB**  | **$20.00**    | JLCPCB        |
-| *LED Panels (min 5)*      | *$4.00*       | ^^^           |
-| *LED Subsystem (min 5)*   | *$4.00*       | ^^^           |
-| *Motor Subsystem (min 5)* | *$4.00*       | ^^^           |
-| *Shipping (to NYC)*       | ~*$8.00*      | ^^^           |
+| Part                          | Price         | Link          |
+|-------------------------------|---------------|---------------|
+| **ALL PCBS FROM JLCPCB**      | **$20.00**    | JLCPCB        |
+| *LED Panels (min 5)*          | *$4.00*       | ^^^           |
+| *LED Subsystem (min 5)*       | *$4.00*       | ^^^           |
+| *Motor Subsystem (min 5)*     | *$4.00*       | ^^^           |
+| *Shipping (to NYC)*           | ~*$8.00*      | ^^^           |
 
 
 ## Small Electronics
 *small stuff like microcontrollers and resistors*
-| Part                      | Price         | Link          |
-|---------------------------|---------------|---------------|
-| **ALL MICROCONTROLLERS**  | **$19.00**    | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
-| *XIAO ESP32-C3 (x2)*      | *$10.00*      | ^^^           |
-| *Shipping (to NYC)*       | ~*$9.00*      | ^^^           | (need to find better options)
-| **LCSC Parts**            | **???**       | LCSC          |
-| *A3144 (min 5)*           | *$1.12*       | [LCSC](https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html) |
-| *30SQ045 (x2)*            | *$1.06*       | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html) |
-| *WS2812B (x65, mul 5)*    | *$4.28*       | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html) |
-| x2 1N4148| |
-| x? 10 kΩ resistor| |
-| x? 100 Ω resistor| |
-| x2 xiao diode| |
-| shipping| |
+| Part                          | Price         | Link          |
+|-------------------------------|---------------|---------------|
+| **ALL MICROCONTROLLERS**      | **$19.00**    | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
+| *XIAO ESP32-C3 (x2)*          | *$10.00*      | ^^^           |
+| *Shipping (to NYC)*           | ~*$9.00*      | ^^^           | (need to find better options)
+| **LCSC Parts**                | **$21.94**    | LCSC          |
+| *A3144 (min 5)*               | *$1.12*       | [LCSC](https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html) |
+| *30SQ045 (x3)*                | *$1.76*       | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html) |
+| *WS2812B (x65, mul 5)*        | *$4.28*       | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html) |
+| *1N4148 (x2, min 20)*         | *$0.50*       | [LCSC](https://lcsc.com/product-detail/Switching-Diodes_onsemi-1N4148_C258182.html) |
+| *PR01000101002JA100 (min 5)*  | *$0.60*       | [LCSC](https://lcsc.com/product-detail/Through-Hole-Resistors_VISHAY-PR01000101002JA100_C1366567.html) |
+| *MF1W-100Ω±1% T (min 10)*     | *$0.45*       | [LCSC](https://lcsc.com/product-detail/Through-Hole-Resistors_CCO-Chian-Chia-Elec-MF1W-100-1-T_C119469.html) |
+| *1N5819 (x2, min 10)*         | *$0.73*       | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_ST-1N5819_C110032.html) |
+| *Handling Fee*                | *$3.00*       | LCSC          |
+| *Shipping (to NYC)*           | ~*$9.50*      | LCSC          |
 
 **solder?**
 
@@ -55,31 +56,35 @@ Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10
 
 Note: This is, again, the **WORST CASE**. I'll try to use the AliExpress Welcome Deal on the 775 Motor, then take advantage of a current sale on the batteries (drops all the batteries down to ~$26, including shipping and taxes).
 
-| Part                      | Price         | Link          |
-|---------------------------|---------------|---------------|
-| **ELECTRICAL ALIEXPRESS** | ???           | AliExpress    |
-| *775 Motor (288W, 12k)*   | *$16.77*      | [AliExpress](https://www.aliexpress.us/item/3256807114067845.html) |
-| *Overdischarge (1S 16A)*  | *$1.16*       | [AliExpress](https://www.aliexpress.us/item/3256805852468677.html) |
-| *Overdischarge (4S 20A)*  | ???           | [AliExpress]() |
-| **BATTERIES**             | ~**$26 - 42** | IMR Batteries |
-| *Samsung 25R 18650...*    | *$15 - $30*   | [IMR Batteries](https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery) |
-| *Shipping (to NYC)*       | *$9.13*       | ^^^           |
-| *Taxes*                   | *$2.07*       | ^^^           |
+| Part                          | Price         | Link          |
+|-------------------------------|---------------|---------------|
+| **ELECTRICAL ALIEXPRESS**     | **$29.63**    | AliExpress    |
+| *775 Motor (288W, 12k)*       | *$16.77*      | [AliExpress](https://www.aliexpress.us/item/3256807114067845.html) |
+| *Overdischarge (1S 16A)*      | *$1.16*       | [AliExpress](https://www.aliexpress.us/item/3256805852468677.html) |
+| *Overdischarge (4S 20A std.)* | *$5.72*       | [AliExpress](https://www.aliexpress.us/item/3256806720463818.html) |
+| *LM2596 (x1, Step Down)*      | *$1.62*       | [AliExpress](https://www.aliexpress.us/item/3256805963034065.html) |
+| *XL6019 (x1, Step Up)*        | *$1.87*       | [AliExpress](https://www.aliexpress.us/item/2255800011462620.html) |
+| *TP4056 (x5, USB-C, safety)*  | *$2.49*       | [AliExpress](https://www.aliexpress.us/item/3256807959506419.html) |
+| *Shipping (to NYC)*           | *$0.00*       | (AliExpress)  |
+| **BATTERIES**                 | ~**$26 - 42** | IMR Batteries |
+| *Samsung 25R 18650...*        | *$15 - $30*   | [IMR Batteries](https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery) |
+| *Shipping (to NYC)*           | *$9.13*       | ^^^           |
+| *Taxes*                       | *$2.07*       | ^^^           |
 
 
 ## Total
 *a + b = c*
 
-Once again, this is the theoretical **MAX**. This is the theoretical most this would cost on a **VERY BAD DAY** and all the odds are **AGAINST YOU**. This is the theoretical price in a **WORST CASE SCENARIO** where you have lost **EVERY DEAL AND PROMOTION**. This does not take into account certain people's actions that may affect shipping/manufacturing prices.
+Once again, this is the theoretical **MAX**. This is the theoretical most this would cost on a **VERY BAD DAY** and all the odds are **AGAINST YOU**. This is the theoretical price in a **WORST CASE SCENARIO** where you have lost **EVERY DEAL AND PROMOTION**. All amounts previously listed are rounded up to the nearest dollar. These calculations do not take into account certain people's actions that may affect shipping/manufacturing prices.
 
-| Group (Everything bolded) | Price         |
-|---------------------------|---------------|
-| STRUCTURAL ALIEXPRESS     | ???           |
-| 3D Printed Parts          | $0            |
-| ALL PCBS FROM JLCPCB      | $20           |
-| ALL MICROCONTROLLERS      | $19           |
-| LCSC Parts                | ???           |
-| ELECTRICAL ALIEXPRESS     | ???           |
-| BATTERIES                 | ~$26 - 42     |
-| ESTIMATED EXTRAS          | ~$5           |
-| **TOTAL**                 | **???**       |
+| Group                         | Price     |
+|-------------------------------|-----------|
+| STRUCTURAL ALIEXPRESS         | ~$21      |
+| 3D Printed Parts              | ~$0       |
+| ALL PCBS FROM JLCPCB          | ~$20      |
+| ALL MICROCONTROLLERS          | ~$19      |
+| LCSC Parts                    | ~$22      |
+| ELECTRICAL ALIEXPRESS         | ~$30      |
+| BATTERIES                     | ~$26 - 42 |
+| ESTIMATED EXTRAS              | ~$5       |
+| **TOTAL**                     | **???**   |

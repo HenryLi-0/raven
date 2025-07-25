@@ -1902,7 +1902,7 @@
 		)
 		(uuid "2d2b5b6b-f69b-4d35-905c-09d99db8d51c")
 	)
-	(text "NOTE:\nTHESE MUST BE RATED\nFOR 12+V @20A!\n\nI AM USING A PLACEHOLDER\nDIODE FOOTPRINT!"
+	(text "NOTE:\nTHESE MUST BE RATED\nFOR 16.8+V @20A!\n\nI AM USING A PLACEHOLDER\nDIODE FOOTPRINT!"
 		(exclude_from_sim no)
 		(at 133.858 31.496 0)
 		(effects
@@ -1965,7 +1965,7 @@
 		)
 		(uuid "c0fea250-0753-4a1e-afba-a867dd8d15de")
 	)
-	(global_label "12V @20A GND"
+	(global_label "16V @20A GND"
 		(shape input)
 		(at 115.57 63.5 0)
 		(fields_autoplaced yes)
@@ -2207,7 +2207,7 @@
 			)
 		)
 	)
-	(global_label "12V @20A POW"
+	(global_label "16V @20A POW"
 		(shape input)
 		(at 115.57 40.64 90)
 		(fields_autoplaced yes)
