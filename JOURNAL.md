@@ -1204,3 +1204,336 @@ ok, its 1 AM now, good night! so we just have to assume a BOM, change some screw
 ok, good night! (uh oh gotta update journal for a lot of days...)
 
 **Time Spent: 3.5 hrs**
+
+## 07-19-2025: Day 24: BOM (again)
+**and the zoo**
+
+so today i went to the zoo. for like the entire day. was pretty fun, but that was a LOT of walking. why is hackatime say that i spent 2 minutes ai coding. what does that mean (i removed all the copilot extensions and disabled the features a while ago?). anyways, back to CAD! currently have mc open in the background just clearing out a large area automatically (if only we could achieve such good pathfinding in frc...), so yeah, time to fix some CAD and write firmware! (9:00 PM right now!)
+
+thinking back to yesterday, i think that its probably better if we just make the entire spacer have a smaller inner diameter, instead of a just a bit on the top and bottom, since we'd want the entire length of the screw inside material (it will be a pain to thread it though)
+
+the entire assembly, in fact, did not explode! thats shocking... mightve said that too early, all the M4 30mm screw replicates contain errors
+
+9:30 PM now, gonna quickly do something and be back, back at 9:45 PM!
+
+so i cant really solve this screw problem. yeah. so i guess ill figure that out in the future? ok, BOM time! ill assemble this into a chart, but im just gonna toss over some links and stuff for now
+
+
+
+- Structure: $20.83
+    - [M4 Screws](https://www.aliexpress.us/item/3256804341271555.html?spm=a2g0o.productlist.main.2.461ac14e7BXtJq&algo_pvid=43910c63-45e0-4ecd-b9b1-ad107835e2ab&algo_exp_id=43910c63-45e0-4ecd-b9b1-ad107835e2ab-1&pdp_ext_f=%7B%22order%22%3A%225870%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.16%210.99%21%21%211.16%210.99%21%402101ea7117513433620995216eb46a%2112000029486656871%21sea%21US%216405565024%21ABX&curPageLogUid=FRqi06trgT20&utparam-url=scene%3Asearch%7Cquery_from%3A): $12.23
+        - Note: only allows M4 sizes in groups of 20
+        - ALSO REQUIRES SOLVING THE SCREW ISSUE
+        - $2.62 for x20 40mm
+        - $2.29 for x20 30mm
+        - $7.32 for x80 16mm
+    - [M4 Nuts](https://www.aliexpress.us/item/3256807407546447.html?spm=a2g0o.productlist.main.2.368eNuFVNuFVPm&algo_pvid=8fe920d4-ae35-4001-9942-7d798b919b5b&algo_exp_id=8fe920d4-ae35-4001-9942-7d798b919b5b-1&pdp_ext_f=%7B%22order%22%3A%2211553%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%211.56%210.99%21%21%2111.08%217.02%21%402101e07217513438147161886eaffb%2112000041426239344%21sea%21US%216405565024%21ABX&curPageLogUid=GygBYXASGNU6&utparam-url=scene%3Asearch%7Cquery_from%3A): $8.60
+        - Note: only allows M4 in 25 pieces
+        - $8.60 for x125 M4
+    - 3D Printer Parts
+        - $0 (will use my own filament!) (im guessing i might run out of yellow/black filament, might get more)
+
+- Electronics: 
+    - PCBs (using JLCPCB): $19
+        - Note: I think 10cm x 10cm boards are $2, but I'm just setting them as the undiscounted price just in case
+        - $4 for motor subsystem
+        - $4 for led subsystem
+        - $4 for all LED panels
+        - $7 for shipping (might change)
+    - Electronic bits:
+        - $10 for x2 [XIAO ESP32-C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)
+            - $9 for shipping? looking for better solutions...
+        - $1.12 for x5 [A3144 (hall effect sensor)](https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html?s_z=n_a3144) (min of 5)
+        - $1.42 for x5 [IRLZ44N (MOSFET)](https://lcsc.com/product-detail/MOSFETs_UMW-Youtai-Semiconductor-Co-Ltd-IRLZ44N-UMW_C42370423.html?s_z=n_IRLZ44N) (min of 5)
+        - $1.06 for x2 [30SQ045 (motor diodes)](https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html?s_z=n_30SQ045)
+        - $4.28 for x65 [WS2812B](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html) (multiples of 5)
+        - $0 for solder (will use whats left from the hackpad thing) (it would be nice if you could send some :D)
+        - x2 1N4148
+        - x2 10 kΩ resistor
+        - x1 100 Ω resistor
+        - x2 DIODE FOR XIAO
+    - Motor: $16.77 (assuming no welcome deal)
+        - $16.77 for x1 [775 Motor (288W, 12k RPM)](https://www.aliexpress.us/item/3256807114067845.html?spm=a2g0o.productlist.main.1.16cd6776Vgc891&algo_pvid=26af35e1-df73-4cc4-ac55-c5f83bc87477&algo_exp_id=26af35e1-df73-4cc4-ac55-c5f83bc87477-17&pdp_ext_f=%7B%22order%22%3A%22554%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%2116.50%210.99%21%21%21117.41%217.03%21%402101c59117513426452444616e02a5%2112000040117671201%21sea%21US%216405565024%21ABX&curPageLogUid=Umbp8PlZyzJa&utparam-url=scene%3Asearch%7Cquery_from%3A)
+            - Note: I'll try to use the welcome deal to get this down to $0.99, but this isn't certain
+    - Batteries: $25.45 - $41.20 ($41.20 being the absolute MAX)
+        - $30 for x5 [Samsung 25R 18650 2500mAh 20A Battery](https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery?_pos=1&_sid=150b0caf3&_ss=r)
+            - NOTE: THERES CURRENTLY A SALE WHERE IT ONLY COSTS $14.25 IN TOTAL AS OF 7/19/2025
+            - $9.13 shipping
+            - $2.07 taxes
+    - Overdischarge Protection
+        - $1.16 for x1 [1S 16A Overdischarge Protection](https://www.aliexpress.us/item/3256805852468677.html?spm=a2g0o.productlist.main.9.302f5e3czX8KX7&algo_pvid=25c9b235-06aa-403b-ad23-0fdd63fde68e&algo_exp_id=25c9b235-06aa-403b-ad23-0fdd63fde68e-8&pdp_ext_f=%7B%22order%22%3A%22570%22%2C%22eval%22%3A%221%22%7D&pdp_npi=4%40dis%21USD%210.88%210.88%21%21%216.26%216.26%21%402101e9a217518566248628615e1e4a%2112000035437067506%21sea%21US%216405565024%21ABX&curPageLogUid=mvB8T0ck0sas&utparam-url=scene%3Asearch%7Cquery_from%3A)
+        - 4S 20A not found yet
+
+
+
+why is digikey loading so slowly
+
+ok, still writing the BOM (yes, these messages will not be in order for you, but whatever), and its 11:20 PM. im feeling kinda tired so ill be back in like 10 minutes or so.
+
+*comes back at 1 AM*
+
+ok time to continue
+
+im tired, list almost complete, just some electronic bits for the board and finding the 4S 20A overdischarge protection and assembling the list! good night!
+
+**Time Spent: 1.75 hrs**
+
+## 07-20-2025: Day 25: Code and MOSFET Nightmares
+**there must be one out there...**
+
+ok, got some motivation today, its 1 PM, and ive decided that today shall be the last day to work on this! i really need to get started on other stuff, and this has simply taken almost a month (which is kinda crazy long, given that we thought we could finish this in like 1-2 weeks). anyways, after this, ill be working on IVO v3, until i get some update on what will come of this project! (then parts should ship by august 4th or someting, then building by august 8th).
+
+ok, first things first, i decided last night to look at yet another MOSFET, since im absolutely terrified if the MSOFET we choose isnt able to fully turn on at 3.3V. this time, i already memorized its name, the `IRLB8721PBF`. its lead free too, which i guess is a neat bonus. just check the datasheet and im not sure if this works. basically, the issue is that the graphs are confusing as heck, and that 3.3V GPIO pins seem to just "turn on" the MOSFET, but not all the way. really considering just having another switch just control the MOSFET at this point, connected to the 5V line and having that output feed into the logic pin of the motor MOSFET.
+
+ive been looking at a lot of MOSFETs. oh wow its already lunch time (i just ate breakfast), i have an idea for the screw solution, but i requires me removing two LEDs on the motor subsystem (which im alright doing)
+
+ok, 1:30 PM now, gonna look at some MOSFETs while eating lunch, back at 2:15 PM, ive looked at way too many datsheets and videos. its been a bit and just watched [this](https://www.youtube.com/watch?v=AwRJsze_9m4) video for how MOSFETs work, and i think ive confused myself (how do you wire it???)
+
+ok so i need to find a heat sink or something (im just gonna find some big piece of metal somewhere)
+
+yeah so our wiring for the mosfet is kinda sus
+
+its 3PM and i feel like falling asleep so im gonna take a break
+
+its 5:15 PM and i think im gonna pause the MOSFET thing until later. worst comes to worst, i grab a BJT and use that on the 5V to output 5V into the MOSFET and that should do the trick. for now, im gonna work on mounting, then work on the programming side!
+
+yes i just spent the last 15 minutes redrawing a qr code image into a 29x29 image in microsoft paint.
+
+just realized i was doing all my work in the wrong assembly. anyways, had some fun with vanity, added the hc inside sticker and a qr code to the repository on the PCB! 6:45 PM now, heading off to dinner.
+
+its 12:00 AM and im back (no i did not spend 5.25 hours eating, i was forced to touch grass and do other stuff). so we didnt exactly finish today, but let's keep going!
+
+CAD updated, here's a quick picture (notice the changes at the base)
+
+![woo](</updatelogs/images/202507/07202025 - 1.png>)
+
+ok, quick commit, then some coding!
+
+yeah so im pretty sure we aren't hitting `62499999987.267075` FPS.
+
+ok, updated the motor subsystem firmware, its 1:15 AM, gonna head to bed now. got a couple things done (PWM, clock, docs), i guess finishing everything today was a bit ambitious, hopefully ill wake up earlier tomorrow? (wow these docs are way too formal but whatever) ok good night!
+
+**Time Spent: 4 hrs**
+
+## 07-21-2025: Day 26: Code!
+**programming stuff!**
+
+today does not exist (as in, shouldnt have). anyways, its 11:23 AM (my sleep schedule is horrible), time to continue writing code! ok its 11:29 AM and now its lunch time.
+
+ok its 6:23 PM, came home a bit ago, but back to programming!
+
+ok, lots of work going on in the led firmware, currently thinking of the equation to measure the rotation position, at least mathematically wise. ok, this markdown file shall be my rubber duck.
+
+so we need to find the rotation position in a given timestamp (now). so, using the hall effect sensor, we can estimate the RPM, which is good. say, we are currently at 1k RPM, we can tell how long each rotation takes by taking the reciprocal (so, 1/1k = 0.001 seconds). however, we need to find our position, so we can take our timestamp and modulus it by the length of time per rotation, so we can find out how much time "into" the rotation we are. for instance, (0.0015 % 0.001 = 0.0005), meaning we are 0.0005 seconds into the rotation. then, we have to divide by the length of time per rotation to get how much of the rotation is complete (0.0005/0.001 = 0.5). therefore, we are 50% into the rotation!
+
+so therefore, our calculation is `(TIME % (1/RPM))/(1/RPM)`. we might as well store `1/RPM` into a variable to make it more compact, say `(TIME % n)/n`. looking back, this logic is a little flawed when we consider that rapidly changing hall effect sensor number will confuse the heck out of the system (since, modulus doesn't fit "exactly" into everything), so we might need to implement something with a counter and time difference if this appears broken. we also need to take care of when `RPM = 0`, i guess just add `1e-6` or something there
+
+now thinking about how to implement the color data stuff (for now)...
+
+ok 7:17 PM now, gonna commit and eat dinner!
+
+got distracted by mosim and its now 9:14 PM (oops). anyways, more led work time! for now, i guess we'll just have a simple scripting system that just has a rainbow swirling around (more advanced stuff if we can find out how to do this). 
+
+so ngl, every time i want a smooth LED rainbow, i always go back to the [LED subsystem from our 2024 robot](https://github.com/SciBorgs/Crescendo-2024/blob/main/src/main/java/org/sciborgs1155/robot/led/LedStrip.java#L52) and copy that function (since, it worked really well, imo)
+
+well, that seems to be working! gonna quickly make a visual testing setup (no we are not bringing in IVO... yet)
+
+ok, got the matplotlib thing working, seems good so far!
+
+![woo](</updatelogs/images/202507/07212025 - 1.png>)
+
+i think the LED subsystem code is good for now? i mean, sure, needs testing irl, but i think the logic works ok for now? added some docs too! ok, time to finish the motor subsystem firmware...
+
+still need to implement the bluetooth stuff, but its probably better to figure that out before soldering anything
+
+ok its 10:05 PM, im gonna go check mc quickly
+
+my internet just blew up again. anyways, im gonna watch a movie
+
+ok, back at 12:06 AM! i think the motor subsystem is pretty much good (only thing for now could be feedforward?), so im gonna commit it! we're gonna need to figure out the bluetooth stuff before writing more control code, but im gonna have to have the microcontroller in hand to test it with! ok, quick commit, then back to cad, hope that i dream up some solution to the MOSFET issue tonight (it would be really funny if i magically had a lucid dream tonight (ive been trying here and there for like 2 years at this point, maybe i actually try in august? oh wow a third of summer is over already))
+
+ok, we have x80 ($\frac{27.038031}{0.337975}$) 16mm screws! first part of the problem solved... hmm x24 30mm screws, gotta change 4... you know, i cant actually do this without messing up some stuff, since those 24 are used for the 2 layer x 2 screws x 6 arms? wait i just got a good idea, we can just add some spacer to the top or bottom and call it an "expansion" thingy, since we'll have to mount electronics on the extra arm anyway.
+
+yay! the screw issue is solved! we have x80 ($\frac{27.038031}{0.337975}$) 16mm screws, x20 ($\frac{10.278091}{0.513905}$) 30mm screws, and x20 ($\frac{12.791366}{0.639568}$) 40mm screws! and some 86 nuts! in the assembly, there's 100 total instances and 57 mate features!
+
+![yay](</updatelogs/images/202507/07212025 - 2.png>)
+
+ok, its 1 am now, CAD needs a little bit of clean up, but its presentable now! good night, hopefully can assemble a complete BOM and start preparing this repository for presenting tomorrow! (and whatevers left for submitting). ok, good night!
+
+ok quick update, i was about to commit, then i remembered we still need to sort out the MOSFET thing and check for electronics to CAD collisions. but anyways, good night!
+
+**Time Spent: 3 hr**
+
+## 07-22-2025: Day 27: The One MOSFET!
+**found the one!**
+
+idk why are started reading the rust book. but looks pretty interesting, its like python, java, and javascript made a new language together, but this language is kinda on something (read the first three chapters, probably gonna re-read it, guess that another thing for this summer). anyways, found an overdischarge protection thing today too! just gotta move the link over (havent looked over the specs just yet). also, last night, i also started reading some art book. (huh maybe i should start reading some of my summer reading book)
+
+also, ill REALLY try, but hopefully if we finish fast enough, i have time to draw some banner art (i have silly idea). anyways, 5:07 PM, here in NYC, time to get started!
+
+[here](https://www.aliexpress.us/item/3256806283248236.html) it is! (choose 4S 20A Standard). unfortunately, its kinda super sketchy (not too too many buyers, also specs seem a little suboptimal)
+
+ok its 5:48 PM now and im gonna be right back. so its 5:54 PM, and im back, so i just licked a couple crumbs of a snack off my table, then remembered this is the same table i left little microplastics on, soldered on, accidentally dripped super glue on, and opened some cursed keyboard on. yeah, might not have been my best move. anyways, back to aliexpress
+
+hmm [heres](https://www.aliexpress.us/item/3256806720463818.html) another one (why do the links look so similar) (choose 4S 20A Standard)! i do not understand what this chart is saying. seems good though, not sure how 20A fits on those traces, but reviews and reviews look real!
+
+ok, gonna check that CAD is good, gotta figure out the MOSFET thing, then BOM!
+
+just updated some mates being a tiny bit off, should be centered now!
+
+ok, CAD looks good! also, last night, i had an idea, what if we use like those little adapter or whatever they're called, but the things that you screw that squish a wire and creates a connection? i think its called a set screw terminal? soldering is probably ok, not gonna lie
+
+ok, electronics updated, its 7:08 PM, im going off to dinner, gonna think about the MOSFET stuff!
+
+back at 9:46 PM, time to look at MOSFETs again! gonna double check on the `IRLZ8721PBF` datasheet again, yep probably not. turns out digikey has a nice thing that says "Drive Voltage (Max Rds On, Min Rds On)".
+
+i am now in a [reddit rabbit hole](https://www.reddit.com/r/AskElectronics/comments/13n50i8/help_choosing_the_right_mosfets/)
+
+ive found the [digikey](https://www.digikey.com/en/products/filter/transistors/fets-mosfets/single-fets-mosfets/278?s=N4IgjCBcpgnLBmKoDGUBmBDANgZwKYA0IA9lANogAsAHPEsQKyM2OwjEBsYVsVH4BACYENfgF1iABwAuUEAGUZAJwCWAOwDmIAL7EAtBGgg0kLHiKkKIAOysQ4nU6A)
+
+thank you digikey! ([here's](https://www.digikey.com/en/products/filter/transistors/fets-mosfets/single-fets-mosfets/278?s=N4IgjCBcoGwAwA4qgMZQGYEMA2BnApgDQgD2UA2uACwBMcMAzCMWLfVc9XVQJycDsMAKxCeQzqzrCBDITTqcEVMAjgRiVIQn40OLNjBicY-OPwTqQO-vzD8JB%2B-qlJn9Pm9PHTqmpyq2PHYOdLb%2BWkKMioiqcOHaNOIaVAwINK5cZn6eTJ56mfxJBUaeTgUZkmYeVjz8AdlWVNr8uZmqIYiWgjwI8AK1AZaVaR0IrUoqcA3D%2BcNFwyVtZSZmfRo0PLRlwxkwYqJDbAjVlTxxGgxUVIYSqfAVdwhFTQxg0iypNvm9cFNF3dpFmBUpsHsdeLdjkJzuAQUIhgwztdor9lLckWUXm9vrpbPkUk04CdEWBScYYGloejSdNEYhqkI6jAIcQxvweIj0TRzCAALrEAAOABcoCAAMpCgBOAEsAHYAcxAAF8WDwOcgQGhIFg8ERSBQQDBWJtbjRUrMGGannzBSLIOKpXLFUqXUA) the search) even though im gonna look if lcsc has it! thank you digikey!
+
+what is texas instruments doing, just searched up `CSD25310Q2T` and theres no way that 0.2cm x 0.2cm thing handles 20A. anyways, that would be quite the pain to solder on. ok, gotta keep search, filters might be too small
+
+ok, played around with the filters a bit more, [here's](https://www.digikey.com/en/products/filter/transistors/fets-mosfets/single-fets-mosfets/278?s=N4IgjCBcoGwAwA4qgMZQGYEMA2BnApgDQgD2UA2uACwBMcMAzCMWAKxtVzPisKc3cwMVgxoQWwhlVaCEDVnVlgqVJCwQIwATi4stDBDTXh9crdxoMA7FZEWqDYVXuPW54jVYwYijz6ta4iA0VghWKhb63sY0WlpuQVaIDOYAusQADgAuUCAAylkATgCWAHYA5iAAvnr6yCBokFh4RKQUIFQ6YMaqcUzEnXDa3INi3AY27iAT4dysvKzOxKzJCFMwyiHcG1SzxDvs28paSyByYFYbR50wIOkg2bkFJRXVHvRI0A0YOATEZJBKEIAAQANVkYMEWkh7xhwVYcKMcIYcDhnDhKwxCPB%2B1ROJAtjh2jxFjgJPuj0gIAAqqVilkAPLoACy%2BEwuAAroV8NUqlUgA) the new search!
+
+im just gonna make a list at this point (so many of these arent available on LCSC)
+
+- [DIODES DMP2005UFG-13](https://lcsc.com/datasheet/lcsc_datasheet_2411220053_DIODES-DMP2005UFG-13_C2922355.pdf)
+- [TI CSD25404Q3T](https://lcsc.com/datasheet/lcsc_datasheet_2410010332_TI-CSD25404Q3T_C202154.pdf)
+- [AOS AO4402G](https://lcsc.com/datasheet/lcsc_datasheet_2410121810_AOS-AO4402G_C2931062.pdf)
+- [AOS AOD424](https://lcsc.com/datasheet/lcsc_datasheet_2410121845_AOS-AOD424_C357852.pdf)
+
+i think i mightve just found the one! the [AOS AOD424](https://lcsc.com/datasheet/lcsc_datasheet_2410121845_AOS-AOD424_C357852.pdf), with specs of:
+- 20V N-Channel MOSFET
+- VDS 20V, ID (at VGS=4.5V) 45A
+- RDS(ON) (at VGS=4.5V) < 4.4mΩ
+- RDS(ON) (at VGS=2.5V) < 5.7mΩ
+- Drive Voltage (Max Rds On, Min Rds On) 2.5V, 4.5V
+- Rds On (Max) @ Id Vgs 4.4mOhm @ 20A 4.5V
+
+[here's](https://lcsc.com/product-detail/MOSFETs_AOS-AOD424_C357852.html) the page! ok, so it seems to able to be driven at 3.3V? if VGS=4.5V allows 45A nicely, then 3.3V should be able to fit 20A? 
+
+ok, being told to go to sleep already (its 12 AM), guess ill try to wake up earlier and finish the electronic tomorrow? glad the MOSFET situation is ok now? (we need a heatsink though)
+
+ok, good night!
+
+**Time Spent: 4.25 hrs**
+
+## 07-23-2025: Day 28: Adding That MOSFET!
+**more mosfet stuff!**
+
+yeah so i woke up at 8 AM, then fell asleep and woke up like three times, but now its 11:22 AM. i have like, maybe 10 minutes before i gotta eat lunch and head out, so lets make this super quick!
+
+hunting down the `AOD424` footprint thingy (snapeda time). uh theres no symbol but there is a footprint. hmm, imma just, send a request
+
+so it seems like the `STP55NF06L` has a similar symbol (except... is that a squiggly?) also, we have to pull down this line too (i think? saw something like that somewhere, gotta look into that), so i guess we're making symbols today?
+
+ok, 11:36 AM now, gonna look into how to make kicad symbols (gotta go eat lunch and go outside now) (and read more of that rust book)
+
+ok, back at 6:12 PM, just realized we have a lot of stuff to update in the journal... anyways, think im ready to try making this symbol! just gonna check if snapeda did it yet... nope, they just released some bot or something. anyways, to kicad!
+
+![woo](</updatelogs/images/202507/07232025 - 1.png>)
+
+woo! added made my first symbol! i think it looks pretty similar to the datasheet! couldnt figure out how to make another symbol field, but whatever, yay! now gotta figure out how to wire this... ok, so to my understanding, we shove power down the gain of the N mosfet gain, and that creates a connection between source and drain, so more power, more speed, but the capcitor stays loaded, so you have to connect the capciator to gnd, or else gate stays too open?
+
+ok, i think i got the wiring down, i just need to recalculate the heat thing to make sure we dont get a fire
+
+its 6:48 PM, currently trying to find what footprint i used for the 10kΩ resistor last time, and yeah, updating the PCB! (off to dinner now!)
+
+ok, back at 8:30 PM! so for later, im thinking about the reveal video for this (yeah theres gonna be one!). i was thinking of the background music, and i have two choices, gotta decide on it! anyways, back to kicad! im now confused on how to wire it and im watching the video again
+
+just watched that video and [another one](https://www.youtube.com/watch?v=t1WRxmG3h3I), seems like the wiring is ok! moved around a couple resistor positions, then renamed the `A3144E` stuff to just `HALL`, PCB time!
+
+ok, 10:26 PM, watched lots of MOSFET videos, looked at chart 1 of the datasheet a couple times, i think it looks ok? (side note: it seems that asking the omniscient ai does not work very well for this, since it cant exactly convey the information very well. its also lots of times wrong.)
+
+also, broke symmetry on the motor power pads in order to all for more space for the MOSFET stuff, hopefully thats a good enough space? ok, added back symettry, should still function though (dont worry, mosfet still has the same amount of space!) DRC seems ok, time to do BOM! gonna actually do this in another file...
+
+huh internet blew up again, why is it always at 10:40 PM ish, im gonna watch a movie now (its 10:48 PM now)
+
+ok, back at 12:12 AM, seems like the internet blew up from my side (internet adapter or whatever sometimes does this i think?)
+
+![sus](</updatelogs/images/202507/07232025 - 2.png>)
+
+wow thats crazy, i dont have an ethernet port, and the wifi works perfectly fine! idk what the issue is but i guess this model of computers just breaks the wifi stuff side of things whenever put into sleep? ok, restarted, and we're back! BOM time!
+
+ok, just need to find some links tomorrow, and we should be almost there! phew, cant believe its been 28 updates already... also, note to the first update log, doing three projects at once isn't a good idea since youll only end up doing one of them at a time (and its this one!)! ok, its 1 AM, i think i put a couple too many notices about the BOM being the worst possible case that could happen to you (like the theoretical max price, as in, no deals or promotions), but yeah, hopefully nothing bad happens that raises the prices (no, do not say subtle foreshadowing.)
+
+ok, good night! (wow, i have 5 update logs for the journal...) good night!
+
+**Time Spent: 3.75 hrs**
+
+## 07-24-2025: Day 29: More BOM Stuff!
+**and parts finding!**
+
+ok, 11:49 AM right now! last night i remembered something about flyback diodes, so imma look into that in a bit. also, i forgot to add magnets to the BOM... wait is copper magnetic? oh ok it isnt, gotta double check that out crews and nuts arent magnetic either... so the screws are magentic (they arent magnets, they would just be attracted to them if brought near though) and the nuts shouldnt be. thats alright, just gotta position these things well (depends on when we actually get these parts!)
+
+well, i went to lunch after that at 12:00 PM...
+
+back at the 5:55 PM timing circuit (get it the 555 timing circuit, anyways), gonna watch a couple videoes.. big thanks to [this](https://www.youtube.com/shorts/AZIxAX7fGqk) video for speedy info, and [this](https://www.youtube.com/watch?v=6R_3jHeimiE) video for more deeper stuff!
+
+wait, just remembered that i wanted to calculate the tangental velocity or whatever its called in the even that an LED or something detaches and flies off... so for a 2k RPM at 12.5cm radius, we have a tangential velocity of 26-ish m/s, according to this calculator, or 58.6-ish mph. 1000 rpm does 13-ish m/s, or 29-ish mph. ok, so theoretically not too bad if it hits (well, an LED, if the entire 2-ish pound disc slammed into your face, you probably wont feel so good). still gonna first test this from a different room lol
+
+anyways, back to looking at flyback diodes! hate to sound like one of those youtube bot comments, but the second video really pulled the whole idea together (i recommend if you're also doing a motor mosfet setup thingy). anyways, time to implement it! (java reference?) (java reference reference?)
+
+wait i just did a big silly, i did not need to leave that much clearance since the top of the board is the bottom on the actual thing.
+
+this might be one of the most cursed things ive done in a while but ok, we're gonna have to mark which ways the diodes are supposed to go. its 6:48 PM, off to dinner!
+
+8:00 PM and back, just had an idea for a bit more vanity on the PCB! actual, on second thought, probably not too good of an idea, lots of it gets clipped by the pads! gotta update the position of a couple stuff since screws are coming way too close for comfort for some of them
+
+![woo](</updatelogs/images/202507/07242025 - 1.png>)
+
+there it is! moved the MOSFET a bit more to the right, (also probably a good idea anyways, since it makes things a bit closer), broke the symettry of the motor pads, but its fine ("close enough"). wait, if we move the vanity (i really dont wanna do this), we could theoretically get better traces (i really dont want a fire/overheating issues you see) on the `MOTOR-`... yeah i guess its a good idea for performance.
+
+currently 8:47 PM, adding a bit of silkscreen art for fun
+
+![owo](</updatelogs/images/202507/07242025 - 2.png>)
+
+moved the motor trace to be more straight (should hopefully not create excess heat), shifted the bottom text to the middle (still looks good!), and added some art
+
+ok back to BOM time! gonna do a quick commit first...
+
+mfw i remember i have 5 or 6 journal updates to do
+
+$9 shipping is crazy
+
+i can not find these resistors. oh, turns out only 2 are in stock for the ones im looking for (i guess its way too specific?) the `Through Hole,D9xL36.5mm` package is crazy. ok, 10W is NOT flowing through this (as in, our load will not need that much), so we do NOT need these mega sized resistors
+
+ok, found some better resistors (cheaper too!), this time not gigantic. its rated for 1W, which should be more than enough headroom. they might be a bit small for the PCB, but it should be fine? now, time to find some diodes for the xiao...
+
+ok, sent them a help quesiton about it (imo the docs are a bit confusing on this), trying to understand what it means (cant be too careful), got hit with this:
+
+![huh](</updatelogs/images/202507/07242025 - 3.png>)
+
+spoiler: i cant really read chinese. i do know what the last character is (i know like a few characters from years ago), but all i know is that its likely a question. which doesnt help because theres already question marks. (luckily, these days we can just translate this, no, i did not give my phone number)
+
+reading the [docs](https://wiki.seeedstudio.com/XIAO_ESP32C3_Pin_Multiplexing/#note-on-xiao-esp32c3-io-allocation), turns out that pin D6 gets possesed by a demon on boot up, so im just gonna change a couple traces real quick... ok, updated now! backup pin has been moved to D6!
+
+just looked at some [video](https://www.youtube.com/watch?v=ymW2C0BO0eQ) with the XIAO ESP32-C3, cool thing, but im just here to note how you're wiring it. seems like it got it ok? just need to find a diode! oh its 10:47 PM and the internet blew up again. oh its back now.
+
+ok, 10:51 PM, brb! ok so its 12:00 AM now. i have no idea what these parameters mean. (i mean, a guess, sure, but never heard of some of these parameters) ok, got a couple `1N5819` for the XIAO, should be rated well for this use case! shipping is terrifying, on the other hand.
+
+we forgot the boost converters. ok, so for the LEDs , we need something that goes 3.7-4.2V -> 5V, and for the motor, something that goes 14.8-16.8V -> 5V (i should update the PCB info, it is NOT 12V.). so one step down, one step up.
+
+ok, just updated the PCB!
+
+hmm 60mA*50 LEDs, worst case, 3000 mA, which is 3A, yeah 2A isnt enough... found [one](https://www.aliexpress.us/item/3256805963034065.html) for step down, not yet for step up... the reviews on [this](https://www.aliexpress.us/item/2261799814341528.html) one is super sus.
+
+we also forgot TP4056 modules oops
+
+looked in the `updatelogs` or `JOURNAL.md` and found a link to [this](https://www.aliexpress.us/item/2255800011462620.html) step up! limited to 5A on either end if im reading this right, some math tells me that 5V 4A on load worst case means 4.2V @4.7A and 3.7V @5.4A. eh, from what i can tell from WS2812Bs is that they dont seem to gobble up too much power (we arent setting the LEDs to pure white all the way round... maybe a future test though), so it should be fine!
+
+i just noticed the little text under the big price that says $0.17 in extra taxes. uh i didnt account for that... i should really put all the stuff in a cart and actually see what aliexpress says.
+
+uh we really are hitting the roof (as in, self imposed $150 limit) here.
+
+ok, we're nearing 1AM now! ignore the little edit in the `README.md`, nothing to see here... (yay cant wait to calculate times for 6 `updatelogs` tomorrow...) anyways, going to school tomorrow, hopefully gonna finally clean stuff up by the end of tomorrow! (so finish BOM, calculate times, update CAD, and polish things up!)
+
+what is this. (random pop up)
+
+![wha](</updatelogs/images/202507/07242025 - 4.png>)
+
+gonna investigate this, but, for now, good night!
+
+**Time Spent: 5 hrs**
