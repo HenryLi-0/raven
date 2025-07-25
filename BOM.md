@@ -10,8 +10,8 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 |---------------------------|---------------|---------------|
 | **STRUCTURAL ALIEXPRESS** | ???           | AliExpress    |
 | *M4 Screws (x20, 40mm)*   | *$2.62*       | [AliExpress](https://www.aliexpress.us/item/3256804341271555.html) |
-| *M4 Screws (x20, 30mm)*   | *$2.29*       | [AliExpress](https://www.aliexpress.us/item/3256804341271555.html) |
-| *M4 Screws (x80, 16mm)*   | *$7.32*       | [AliExpress](https://www.aliexpress.us/item/3256804341271555.html) |
+| *M4 Screws (x20, 30mm)*   | *$2.29*       | ^^^           |
+| *M4 Screws (x80, 16mm)*   | *$7.32*       | ^^^           |
 | *M4 Nuts*                 | *$8.60*       | [AliExpress](https://www.aliexpress.us/item/3256807407546447.html) |
 | *Shipping (to NYC)*       | ???           | (AliExpress)  |
 | **3D Printed Parts**      | **$0.00**     | (self print)  |

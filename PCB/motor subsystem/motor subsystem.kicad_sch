@@ -1492,6 +1492,12 @@
 		(uuid "16dce3a2-d890-4321-bcb2-814e0ab5e5d9")
 	)
 	(junction
+		(at 125.73 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23a9929f-e7cf-4215-848c-fc5c33046f43")
+	)
+	(junction
 		(at 111.76 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1534,6 +1540,12 @@
 		(uuid "a7436630-e1e0-47da-a7fe-6c5f1b203776")
 	)
 	(junction
+		(at 125.73 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aab21e85-abd0-44c4-8568-9f17ff545deb")
+	)
+	(junction
 		(at 127 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1559,13 +1571,23 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 43.18) (xy 147.32 53.34)
+			(xy 149.86 43.18) (xy 149.86 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0465feca-8e1d-4710-80c4-76b6d6598fe5")
+	)
+	(wire
+		(pts
+			(xy 125.73 43.18) (xy 124.46 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c9d0371-c100-447f-8d44-e94b5ad3824d")
 	)
 	(wire
 		(pts
@@ -1576,16 +1598,6 @@
 			(type default)
 		)
 		(uuid "1e8bf6c9-fff5-4571-a4fb-cf1f4103e407")
-	)
-	(wire
-		(pts
-			(xy 115.57 46.99) (xy 115.57 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "221e5da3-5897-454b-983d-95c1ea5099cc")
 	)
 	(wire
 		(pts
@@ -1619,7 +1631,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 46.99) (xy 116.84 46.99)
+			(xy 115.57 50.8) (xy 116.84 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1659,7 +1671,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 50.8) (xy 154.94 53.34)
+			(xy 157.48 50.8) (xy 157.48 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1676,6 +1688,26 @@
 			(type default)
 		)
 		(uuid "4a4a0e66-3b14-4001-b451-2ddeaa77b9df")
+	)
+	(wire
+		(pts
+			(xy 125.73 43.18) (xy 127 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aeb0d4f-cccd-42ea-b724-677e3b785f32")
+	)
+	(wire
+		(pts
+			(xy 125.73 50.8) (xy 127 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506f4870-2da2-438f-aaf4-264b9b955743")
 	)
 	(wire
 		(pts
@@ -1779,13 +1811,23 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 43.18) (xy 154.94 43.18)
+			(xy 149.86 43.18) (xy 157.48 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c4b5f54f-7383-45ac-9af1-e9e9a469ba69")
+	)
+	(wire
+		(pts
+			(xy 124.46 50.8) (xy 125.73 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8e4febe-1dee-4870-ab99-fbc253138d90")
 	)
 	(wire
 		(pts
@@ -1875,7 +1917,7 @@
 	)
 	(text "10 kΩ"
 		(exclude_from_sim no)
-		(at 160.528 49.53 0)
+		(at 163.068 49.53 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -1898,6 +1940,17 @@
 			)
 		)
 		(uuid "7e08c7cb-fe93-4afa-a24c-87b611e7a962")
+	)
+	(text "Flyback ->\nDiode!"
+		(exclude_from_sim no)
+		(at 118.618 47.752 0)
+		(effects
+			(font
+				(face "Orbitron")
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a9ba8084-cd71-4e3c-924c-9172e545447d")
 	)
 	(text "100 Ω"
 		(exclude_from_sim no)
@@ -1958,7 +2011,7 @@
 	)
 	(global_label "MOTOR-"
 		(shape input)
-		(at 124.46 46.99 0)
+		(at 127 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1968,7 +2021,7 @@
 		)
 		(uuid "51286acb-c0ac-4f09-a3d5-1e5be4cfec50")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.3676 46.99 0)
+			(at 137.9076 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1980,7 +2033,7 @@
 	)
 	(global_label "HALL GND"
 		(shape input)
-		(at 151.13 53.34 270)
+		(at 153.67 53.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1990,7 +2043,7 @@
 		)
 		(uuid "5dcd2975-b88d-491c-b06f-86858a34d290")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.13 65.6386 90)
+			(at 153.67 65.6386 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2077,7 @@
 	)
 	(global_label "HALL POW"
 		(shape input)
-		(at 147.32 53.34 270)
+		(at 149.86 53.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2034,7 +2087,7 @@
 		)
 		(uuid "66113eaa-5572-460b-bcf6-ac4728219fe1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.32 65.82 90)
+			(at 149.86 65.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,7 +2099,7 @@
 	)
 	(global_label "5V POW"
 		(shape input)
-		(at 147.32 43.18 180)
+		(at 149.86 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2056,7 +2109,7 @@
 		)
 		(uuid "6adb6a8f-d5d5-43b6-ae7a-57357060af37")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.0172 43.18 0)
+			(at 139.5572 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2068,7 +2121,7 @@
 	)
 	(global_label "5V GND"
 		(shape input)
-		(at 151.13 53.34 90)
+		(at 153.67 53.34 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2078,7 +2131,7 @@
 		)
 		(uuid "766de057-728c-4fb3-93b3-998406fdea60")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.13 43.2186 90)
+			(at 153.67 43.2186 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2112,7 +2165,7 @@
 	)
 	(global_label "MOTOR+"
 		(shape input)
-		(at 124.46 43.18 0)
+		(at 127 43.18 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2122,7 +2175,7 @@
 		)
 		(uuid "b9f5e030-70df-4efb-b54f-5b4e2bcc9237")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.3676 43.18 0)
+			(at 137.9076 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2134,7 +2187,7 @@
 	)
 	(global_label "HALL GPIO"
 		(shape input)
-		(at 154.94 53.34 270)
+		(at 157.48 53.34 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2144,7 +2197,7 @@
 		)
 		(uuid "c4f503a7-5018-4286-89ac-9ed886b39f48")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.94 66.2434 90)
+			(at 157.48 66.2434 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2311,7 +2364,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Resistor")
-		(at 154.94 46.99 270)
+		(at 157.48 46.99 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2319,7 +2372,7 @@
 		(dnp no)
 		(uuid "34a6a27a-bf44-445a-b78d-8fd84ef54388")
 		(property "Reference" "R2"
-			(at 160.528 46.99 90)
+			(at 163.068 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2327,7 +2380,7 @@
 			)
 		)
 		(property "Value" "Resistor"
-			(at 160.528 44.45 90)
+			(at 163.068 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2335,7 +2388,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal"
-			(at 153.162 46.99 0)
+			(at 155.702 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2344,7 +2397,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.94 46.99 90)
+			(at 157.48 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2353,7 +2406,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 154.94 46.99 0)
+			(at 157.48 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,6 +2603,91 @@
 			(project "motor subsystem"
 				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Diode")
+		(at 125.73 46.99 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66a112c9-60a2-405f-b5d6-49807491c9cf")
+		(property "Reference" "D6"
+			(at 132.08 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30SQ045"
+			(at 132.08 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3e03375-1864-454e-8153-b5c3fa7e087a")
+		)
+		(pin "2"
+			(uuid "4e993a31-60a2-4878-b0ff-938081282cae")
+		)
+		(instances
+			(project "motor subsystem"
+				(path "/4cf0086b-fa07-4566-99be-a226804ba080"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -3382,10 +3520,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ecaac7ff-8ce0-419b-87ee-e492692b925f")
 		(property "Reference" "D2"
-			(at 120.65 36.83 0)
+			(at 120.65 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3393,7 +3530,7 @@
 			)
 		)
 		(property "Value" "30SQ045"
-			(at 120.65 39.37 0)
+			(at 127.254 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3529,7 +3666,7 @@
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
-		(at 120.65 46.99 0)
+		(at 120.65 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3537,7 +3674,7 @@
 		(dnp no)
 		(uuid "f783a148-4684-4e1a-85e9-959ad5927614")
 		(property "Reference" "D3"
-			(at 120.65 49.784 0)
+			(at 120.65 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3545,7 +3682,7 @@
 			)
 		)
 		(property "Value" "30SQ045"
-			(at 120.65 52.324 0)
+			(at 127.254 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3553,7 +3690,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0918_L18.0mm_D9.0mm_P25.40mm_Horizontal"
-			(at 120.65 46.99 0)
+			(at 120.65 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3562,7 +3699,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 46.99 0)
+			(at 120.65 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3571,7 +3708,7 @@
 			)
 		)
 		(property "Description" "1N4148 (DO-35) or 1N4148W (SOD-123)"
-			(at 120.65 46.99 0)
+			(at 120.65 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3580,7 +3717,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 120.65 46.99 0)
+			(at 120.65 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3589,7 +3726,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 120.65 46.99 0)
+			(at 120.65 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
