@@ -16,6 +16,7 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 | *Shipping (to NYC)*           | *$0.00*       | (AliExpress)  |
 | **3D Printed Parts**          | **$0.00**     | (self print)  |
 
+
 ## PCBs
 *pcbs*
 
@@ -48,8 +49,6 @@ Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10
 | *Handling Fee*                | *$3.00*       | LCSC          |
 | *Shipping (to NYC)*           | ~*$9.50*      | LCSC          |
 
-**solder?**
-
 
 ## Big Electronics
 *big stuff like motors and batteries*
@@ -58,13 +57,15 @@ Note: This is, again, the **WORST CASE**. I'll try to use the AliExpress Welcome
 
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
-| **ELECTRICAL ALIEXPRESS**     | **$29.63**    | AliExpress    |
+| **ELECTRICAL ALIEXPRESS**     | **$36.32**    | AliExpress    |
 | *775 Motor (288W, 12k)*       | *$16.77*      | [AliExpress](https://www.aliexpress.us/item/3256807114067845.html) |
 | *Overdischarge (1S 16A)*      | *$1.16*       | [AliExpress](https://www.aliexpress.us/item/3256805852468677.html) |
 | *Overdischarge (4S 20A std.)* | *$5.72*       | [AliExpress](https://www.aliexpress.us/item/3256806720463818.html) |
 | *LM2596 (x1, Step Down)*      | *$1.62*       | [AliExpress](https://www.aliexpress.us/item/3256805963034065.html) |
 | *XL6019 (x1, Step Up)*        | *$1.87*       | [AliExpress](https://www.aliexpress.us/item/2255800011462620.html) |
 | *TP4056 (x5, USB-C, safety)*  | *$2.49*       | [AliExpress](https://www.aliexpress.us/item/3256807959506419.html) |
+| *22 AWG wire (5m, 1 roll)*    | *$1.86*       | [AliExpress](https://www.aliexpress.us/item/3256807263561521.html) |
+| *10 AWG wire (1m, Black)*     | *$4.83*       | [AliExpress](https://www.aliexpress.us/item/3256807572728671.html) |
 | *Shipping (to NYC)*           | *$0.00*       | (AliExpress)  |
 | **BATTERIES**                 | ~**$26 - 42** | IMR Batteries |
 | *Samsung 25R 18650...*        | *$15 - $30*   | [IMR Batteries](https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery) |
@@ -84,7 +85,7 @@ Once again, this is the theoretical **MAX**. This is the theoretical most this w
 | ALL PCBS FROM JLCPCB          | ~$20      |
 | ALL MICROCONTROLLERS          | ~$19      |
 | LCSC Parts                    | ~$22      |
-| ELECTRICAL ALIEXPRESS         | ~$30      |
+| ELECTRICAL ALIEXPRESS         | ~$37      |
 | BATTERIES                     | ~$26 - 42 |
 | ESTIMATED EXTRAS              | ~$5       |
 | **TOTAL**                     | **???**   |
