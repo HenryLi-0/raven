@@ -3,6 +3,7 @@ import time
 
 from constants import *
 from library.ledData import *
+from subsystems.bluetooth import *
 from subsystems.clock import *
 from subsystems.leds import *
 from subsystems.hall import *
@@ -73,6 +74,11 @@ data = Data()
 while State.status == SubsystemStatus.OPERATIONAL:
     State.timestamp = CLOCK.getTime()
     
+    BLUETOOTH.ping()
+    BLUETOOTH.check(State.timestamp)
+    if abs(State.timestamp - BLUETOOTH.getLastRecieve()) > Constants.TIMEOUT_UNITL_SHUTDOWN:
+        State.status = SubsystemStatus.DANGER
+
     if HALL.getValue():
         hallCounter.ping()
         

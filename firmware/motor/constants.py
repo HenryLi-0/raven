@@ -18,6 +18,8 @@ board.D10 -
 class Constants:
     # Whether or not to do the startup systems check. Recommended to keep True.
     STARTUP_SYS_CHECK = True
+    # Number of seconds without microcontroller communication before both systems automatically shutdown.
+    TIMEOUT_UNITL_SHUTDOWN = 3.0
 
     class Pins:
         # Board LED Data Pin
