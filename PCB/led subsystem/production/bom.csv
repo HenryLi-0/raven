@@ -1,0 +1,5 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+D1,D_DO-201AD_P15.24mm_Horizontal,1,1N5822,
+"L1, L2, L3",LED_WS2812B,3,LED_WS2812B,
+R1,R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal,1,Resistor,
+U1,Seeed_XIAO_RP2040,1,MCU_Seeed_XIAO_ESP32-C3,
