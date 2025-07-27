@@ -36,7 +36,7 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 |-------------------------------|---------------|---------------|
 | **ALL MICROCONTROLLERS**      | **$19.00**    | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
 | *XIAO ESP32-C3 (x2)*          | *$10.00*      | ^^^           |
-| *Shipping (to NYC)*           | ~*$9.00*      | ^^^           | (need to find better options)
+| *Shipping (to NYC)*           | ~*$9.00*      | ^^^           |
 | **LCSC Parts**                | **$21.29**    | LCSC          |
 | *A3144 (min 5)*               | *$1.18*       | [LCSC](https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html) |
 | *30SQ045 (x3)*                | *$1.76*       | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html) |
