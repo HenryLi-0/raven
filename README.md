@@ -1,7 +1,7 @@
 <div align="center">
     <h2>Raven</h2>
     <p>by <a href= "https://github.com/HenryLi-0/raven"> @HenryLi-0 </a></p>
-    <img src="raven_banner.png" alt="banner"/>
+    <img src="frontimages/raven_banner.png" alt="banner"/>
 </div>
 
 <sub>It's open sourced! Hardware licensed under CERN OHL S v2. Software licensed under GNU GPL v3.</sub>
@@ -39,7 +39,7 @@ This entire system is packaged inside a cylinderical shape with diameter of roug
 
 And that's Raven, an open source spinning light display!
 
-![](</raven_cad.png>)
+![](</frontimages/raven_cad.png>)
 
 
 
@@ -61,11 +61,11 @@ Wanna know more? Here's some quick places to get started!
 
 ---
 
-![](</raven_pcb_led.png>)
+![](</frontimages/raven_pcb_led.png>)
 
-![](</raven_pcb_motor.png>)
+![](</frontimages/raven_pcb_motor.png>)
 
-![](/raven_pcb_panel.png)
+![](</frontimages/raven_pcb_panel.png>)
 
 ---
 
@@ -84,7 +84,7 @@ Wanna know more? Here's some quick places to get started!
 9. Test that each system works individually! If so, head on over to the [firmware](</firmware/README.md>) and flash both of them!
 10. Enjoy and check back for any firmware/general updates!
 
-![](</raven_wiring.png>)
+![](</frontimages/raven_wiring.png>)
 
 
 
