@@ -10,7 +10,7 @@
 
 ## Raven
 
-[Raven](https://github.com/HenryLi-0/raven/) is an open source spinning LED light display, built for (and generously funded by)Hack Club's [Highway](https://highway.hackclub.com/)!
+[Raven](https://github.com/HenryLi-0/raven/) is an open source spinning LED light display, built for (and generously funded by) Hack Club's [Highway](https://highway.hackclub.com/)!
 
 
 

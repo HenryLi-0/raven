@@ -9,6 +9,8 @@ created_at: "2025-06-25"
 
 *Note: This is the accumulated (and condensed) version of the documenting and logging I typically do! Check out [the repository](https://github.com/HenryLi-0/raven) for [more organized files and full logs](</updatelogs/>)!*
 
+**Total Time Spent: 105 hrs!**
+
 ## 06-24-2025: Day 0: Or Day One? Who knows!
 **Setup!**
 
@@ -1606,3 +1608,60 @@ ok, since im being forced to go to sleep right now, lots of things are going on,
 yeah im really being forced to go to sleep right now. ok good night! (oh right, need to get rid of unused files, guess that'll be part of cleanup tomorrow.) ok, good night!
 
 **Time Spent: 4 hrs**
+
+## 07-26-2025: Day 31: There!
+**...and back again!**
+
+aaaaa almost there! ok, so its 7:57 PM, updated the journal and some other stuff from like 6:30 PM to 6:45 PM, but yeah, time to continue! what did i do today? i watched some movie in the theater, which was pretty interesting (it was free, since it was meant to be some "event" from some organization). anyways, i got to watch the movie at a very cursed angle (front row, second seat from the very very left).
+
+anyways, just remembered that we need to update the pin info on the firmwares for both since we moved the pins for the led subsystem and never added it for the motor subsystem.
+
+ok, everything has been listed, was gonna change all the "A3144E" names on the led subsystem to just "HALL" (like the motor subsystem), but turns out i do NOT want to deal with the nets and stuff and updating it (doesnt raelly matter either way, it'll be the same board)
+
+i really want to get a blender render of this stuff! (i forgot everything from the donut tutorials)
+
+so, images and wiring diagram is on the todo!
+
+ok, for the blender stuff just watched [this video](https://www.youtube.com/watch?v=yMfAVJGHMrM), gonna also watch a longer one. yeah, couldn't pay attention very well, but [here](https://www.youtube.com/watch?v=0B0OUAdQ6UI) it is if you're interested! (im just gonna try the first one now)
+
+i... i have no clue how to use blender. dont know what i clicked, but its just frozen now.
+
+yeah so i have to be careful on every button i press in blender, since i dont think i have the supercomputer computing for this. huh, guess its working a bit?
+
+![hmm](</updatelogs/images/202507/07262025 - 1.png>)
+
+oh. oh, you gotta change your renderer, did a couple extra stuff, blenders telling me cycles is gonna take more than an hour, after eating up all my ram and cpu, but heres what 35 samples looks like!
+
+![waw](</updatelogs/images/202507/07262025 - 2.png>)
+
+ok, gotta find out how to get some GPU to run this, since my tables getting really hot. pretty happy with the image already though! here's the full image...
+
+![waw](</updatelogs/images/202507/07262025 - 3.png>)
+
+huh i guess google colab is the solution
+
+![hmm](</updatelogs/images/202507/07262025 - 4.png>)
+
+kinda upset that i didnt change the color of the XIAO (its yellow oops), but looks good! gonna commit to see if this works on github...
+
+oh, it doesn't guess this might fix it? oh it did! ok, time to update the wiring diagram! (on paper, of course)
+
+just read over the 4S overdischarge protection specs and it has a "upper limit working current" of 10A, with bursts of 20A, but does that mean we can draw the full 20A? idk. not sure if we have to switch from our 288W to 150? i mean, it should have enough torque (in theory) to only require that much power intially (to ramp up?), which should really be the only draw spike? we range from 148-168W on 10A with 4 cells, and 296-336W on 20A with 4 cells. basically, should be fine? (if not, we can just make the mosfet pulse it)
+
+ok, how do i wire the 4S 20A BMS now. uh it does not say. it does not (the 4S 20A version seems to be the only one thats square and weird, so i think i might need to find another one?) guess what, turns out 4S 20A on aliexpress is very unfindable (other sites exist, but for aliexpress, where where where). however, while searching for it, i stumbled upon [this](https://www.youtube.com/watch?v=pwYRDDrYAM4) youtube video out of nowhere, and it looks fairly similar (same markings on the silkscreen), so it should be alright!
+
+ok, 10:38 PM, wiring diagram done! just kidding, fixed some stuff, 10:47 PM, and the internets exploded, oh look its back
+
+also, very important, i need to add little battery contacts/cases to the BOM!
+
+woo! lots of writing, almost there! a bit more writing, need to remember to do cleanup! oh right, battery cases! whys aliexpress in spanish now. oh, found [some](https://www.aliexpress.us/item/3256806864993334.html)!
+
+ok, battery cases added, gonna commit and start cleaning stuff up! ok, deleted lots of stuff! also copied the gerbers from inside each PCB and pasted them in [`/PCB/GERBERS/`](</PCB/GERBERS/>)!
+
+well, almost there! gonna check the requirements once more! seems good! planning on releasing in a couple minutes! (once i update the journal, not gonna update in this file!) ok, just gonna reread all submissions stuff, this is gonna be released at 11:59 PM on 7/26/2025 to the public!
+
+wow, what a journey! gotta tally up the hours... but yeah, learned a bunch, just kinda nervous for submitting (this was 100+ hours of work across 31 days, so its a lot!), but yeah! probably gonna go back to programming for the rest of summer (well, other than building this), so that was fun! ok, good night, and the next update log will contain stuff about building!
+
+see ya!
+
+**Time Spent: 4.25 hrs**
