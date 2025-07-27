@@ -56,7 +56,7 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
-| **ELECTRICAL ALIEXPRESS**     | **$40.18**    | AliExpress    |
+| **ELECTRICAL ALIEXPRESS**     | **$46.69**    | AliExpress    |
 | *775 Motor (288W, 12k)*       | *$17.65*      | [AliExpress](https://www.aliexpress.us/item/3256807114067845.html) |
 | *Overdischarge (1S 16A)*      | *$1.26*       | [AliExpress](https://www.aliexpress.us/item/3256805852468677.html) |
 | *Overdischarge (4S 20A std.)* | *$5.89*       | [AliExpress](https://www.aliexpress.us/item/3256806720463818.html) |
@@ -65,6 +65,8 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 | *TP4056 (x5, USB-C, safety)*  | *$2.70*       | [AliExpress](https://www.aliexpress.us/item/3256807959506419.html) |
 | *22 AWG wire (5m, 1 roll)*    | *$2.02*       | [AliExpress](https://www.aliexpress.us/item/3256807263561521.html) |
 | *10 AWG wire (1m, Black)*     | *$6.86*       | [AliExpress](https://www.aliexpress.us/item/3256807572728671.html) |
+| *Battery Holder (x1, 1B)*     | *$2.79*       | [AliExpress](https://www.aliexpress.us/item/3256806864993334.html) |
+| *Battery Holder (x1, 4B)*     | *$3.72*       | [AliExpress](https://www.aliexpress.us/item/3256806864993334.html) |
 | *Shipping (to NYC)*           | *$0.00*       | (AliExpress)  |
 | **BATTERIES**                 | **$26.23**    | IMR Batteries |
 | *Samsung 25R 18650...*        | *$15.00*      | [IMR Batteries](https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery) |
@@ -82,7 +84,7 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 | ALL PCBS FROM JLCPCB          | $20.30        |
 | ALL MICROCONTROLLERS          | $19.00        |
 | LCSC Parts                    | $21.29        |
-| ELECTRICAL ALIEXPRESS         | $40.18        |
+| ELECTRICAL ALIEXPRESS         | $46.69        |
 | BATTERIES                     | $26.23        |
 | BUFFER                        | $5.00         |
-| **TOTAL**                     | **$154.75**   |
+| **TOTAL**                     | **$161.26**   |

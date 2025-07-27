@@ -4,19 +4,22 @@
     <img src="raven_banner.png" alt="banner"/>
 </div>
 
+<sub>It's open sourced! Hardware licensed under CERN OHL S v2. Software licensed under GNU GPL v3.</sub>
+
 ---
 
-[Raven](https://github.com/HenryLi-0/raven/) is an open source spinning LED light display (like a disco party light of sorts), built for Hack Club's [Highway](https://highway.hackclub.com/)! 
+## Raven
+
+[Raven](https://github.com/HenryLi-0/raven/) is an open source spinning LED light display, built for (and generously funded by)Hack Club's [Highway](https://highway.hackclub.com/)!
 
 
 
 ## Introduction
 Since being introduced to an LED strip during FRC at the start of 2024, I realized I really like LEDs. Like a little too much. This could also be seen with the 10 LEDs from my [Hackpad](https://github.com/hackclub/hackpad/pull/224) back in October 2024 and when I brought it on a robotics trip to BattleCry in June 2025 (iykyk). Simply, I kinda like LEDs a lot. 
 
-Now inspired by the lights at the venue of the aforementioned robotics trip (and the lights show that occured near the end of the event), that brings us here! Introducting Raven, a spinning LED display that uses 50 LEDs spread across 5 panels, spinning *really* fast. Using a Hall Effect Sensor for speed measurement, the measured values for angular prediction, and wireless control for wireless communications, Raven is capable of producing sector-based effects, rainbow gradients, strobes, and more, with a full 360 degree range of the room, or any sector of it! This project took over a hundred hours to make (with tons of redesigns!), and, retrospectively, I guess it's just because I think LEDs look pretty cool. The idea of replicating what happened in the venue really kept me going, and, now staring at what's been created, I think those hours were worth it.
+Now inspired by the lights at the venue of the aforementioned robotics trip (and the lights show that occured near the end of the event), that brings us here! Introducting Raven, a spinning LED display that uses 50 LEDs spread across 5 panels, spinning *really* fast. Using a Hall Effect Sensor for speed measurement, the measured values for angular prediction, and wireless control for wireless communications, Raven is capable of producing sector-based effects, rainbow gradients, strobes, and more, with a full 360 degree range of the room, or any sector of it! Apart from being an almost disco ball of sorts, the mechanism itself allows it to also act as an LED light display, almost looking like some sort of Vegas Sphere, except as a cylinder.
 
-
-## More Pictures!
+This project took over a hundred hours to make (with tons of redesigns!), and, retrospectively, I guess it's just because I think LEDs look pretty cool. The idea of replicating what happened in the venue really kept me going, and, now staring at what's been created, I think those hours were worth it! Learned lots a things along the way, such as reading datasheets, power in general, and implementing stuff from the ground up!
 
 
 
@@ -35,12 +38,26 @@ Wanna know more? Here's some quick places to get started!
 - [BOM](</BOM.csv>)
     - Wanna make your own copy of Raven? Here's the BOM in CSV format! (You can look at [`BOM.md`](</BOM.md>) for a markdown version of it, but it won't be too descriptive!) (Or just scroll down.)
 
+## Assembly!
+
+1. First things first, it's recommended that you pull up the [CAD](</CAD/README.md>) and get familiar with how things look, and think of the order of steps. Special attention should be paid towards making sure that it is possible to put together, along with wires being able to "fit". Use logic to figure out whether a wire will be inside a part!
+2. We're gonna assemble all the PCBs first! Pull up the [PCB](</PCB/README.md>) on KiCad for the PCBs themselves. Where things should be placed should be clear in the drawing! Do NOT solder the Hall Effect Sensors on!
+3. Test the boards! It'll be easier now before it's in an awkward position!
+4. Back to the CAD, assemble the LED subsystem structure! This should be quite simple, but just very tedious, as there are are a lot of parts and screws.
+5. Assemble the shaft collar and the motor subsystem structure!
+6. Ok, place that all aside for now. It's time to do the power systems for both! While doing this, reference the electronics wiring drawn below! Also note the names of the nets in KiCad.
+7. Check solder joints!!! Everything on the LED subsystem MUST be ziptied (or you will risk something flying off). After this, start finding the center of gravity of the LED subsystem and try to balance it in the center (important).
+8. After this, assemble everything together! Note the CAD and the epic image above!
+9. Test that each system works individually! If so, head on over to the [firmware](</firmware/README.md>) and flash both of them!
+10. Enjoy and check back for any firmware/general updates!
+
+![](</raven_wiring.png>)
 
 
 ## BOM
 *The Bill of Materials for x1 unit of Raven!*
 
-Note: For this list, the prices are as of July 2025. Depending on certain actions on certain people, this may fluctuate over the next couple months/years. Additionally, the price listed will be the one of the **ABSOLUTE WORST** case scenario, for instance, a coupon or deal not going through. Therefore, the total price listed is likely higher than the amount it actually costs. To see how much it actually cost (shipping and tax included), look out for `updatelogs` during construction time! Things will be grouped up by source and bolded with the sum of all the prices under group. Stuff in italics are added up in the bolded prices, so don't count it twice!
+Note: For this list, the prices are as of July 2025. Depending on certain actions on certain people, this may fluctuate over the next couple months/years. Current calculations have shipping and tax included, but if you want to see how much everything actual ended up costing me (as in, trying to use all the deals), look out for `updatelogs` during construction time! Below, things are grouped up by source and bolded with the sum of all the prices under group. Stuff in italics are added up in the bolded prices, so don't count them twice!
 
 ### Structure
 *structural bits*
@@ -95,7 +112,7 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
-| **ELECTRICAL ALIEXPRESS**     | **$40.18**    | AliExpress    |
+| **ELECTRICAL ALIEXPRESS**     | **$46.69**    | AliExpress    |
 | *775 Motor (288W, 12k)*       | *$17.65*      | [AliExpress](https://www.aliexpress.us/item/3256807114067845.html) |
 | *Overdischarge (1S 16A)*      | *$1.26*       | [AliExpress](https://www.aliexpress.us/item/3256805852468677.html) |
 | *Overdischarge (4S 20A std.)* | *$5.89*       | [AliExpress](https://www.aliexpress.us/item/3256806720463818.html) |
@@ -104,6 +121,8 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 | *TP4056 (x5, USB-C, safety)*  | *$2.70*       | [AliExpress](https://www.aliexpress.us/item/3256807959506419.html) |
 | *22 AWG wire (5m, 1 roll)*    | *$2.02*       | [AliExpress](https://www.aliexpress.us/item/3256807263561521.html) |
 | *10 AWG wire (1m, Black)*     | *$6.86*       | [AliExpress](https://www.aliexpress.us/item/3256807572728671.html) |
+| *Battery Holder (x1, 1B)*     | *$2.79*       | [AliExpress](https://www.aliexpress.us/item/3256806864993334.html) |
+| *Battery Holder (x1, 4B)*     | *$3.72*       | [AliExpress](https://www.aliexpress.us/item/3256806864993334.html) |
 | *Shipping (to NYC)*           | *$0.00*       | (AliExpress)  |
 | **BATTERIES**                 | **$26.23**    | IMR Batteries |
 | *Samsung 25R 18650...*        | *$15.00*      | [IMR Batteries](https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery) |
@@ -121,7 +140,7 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 | ALL PCBS FROM JLCPCB          | $20.30        |
 | ALL MICROCONTROLLERS          | $19.00        |
 | LCSC Parts                    | $21.29        |
-| ELECTRICAL ALIEXPRESS         | $40.18        |
+| ELECTRICAL ALIEXPRESS         | $46.69        |
 | BATTERIES                     | $26.23        |
 | BUFFER                        | $5.00         |
-| **TOTAL**                     | **$154.75**   |
+| **TOTAL**                     | **$161.26**   |

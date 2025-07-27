@@ -1,34 +1,36 @@
 ﻿Part,Description,Quantity,Price,Source,Link
-M4 Screws (40mm),Structural,20, $2.85 ,AliExpress,https://www.aliexpress.us/item/3256804341271555.html
-M4 Screws (30mm),Structural,20, $2.49 ,AliExpress,https://www.aliexpress.us/item/3256804341271555.html
-M4 Screws (16mm),Structural,80, $7.96 ,AliExpress,https://www.aliexpress.us/item/3256804341271555.html
-M4 Nuts,Structural,125, $9.45 ,AliExpress,https://www.aliexpress.us/item/3256807407546447.html
+M4 Screws (40mm),Structural,20,$2.85 ,AliExpress,https://www.aliexpress.us/item/3256804341271555.html
+M4 Screws (30mm),Structural,20,$2.49 ,AliExpress,https://www.aliexpress.us/item/3256804341271555.html
+M4 Screws (16mm),Structural,80,$7.96 ,AliExpress,https://www.aliexpress.us/item/3256804341271555.html
+M4 Nuts,Structural,125,$9.45 ,AliExpress,https://www.aliexpress.us/item/3256807407546447.html
 3D Printed Parts,Structural,NA, $-   ,Self Printing,NA
-PCB LED Panels,Rotating LED Panels,5, $2.10 ,JLCPCB,https://jlcpcb.com/
-PCB LED Subsystem,LED Subsystem Control PCB (rotates),5, $4.00 ,JLCPCB,https://jlcpcb.com/
-PCB Motor Subsystem,Motor Subsystem Control PCB (stationary),5, $4.00 ,JLCPCB,https://jlcpcb.com/
-PCB Shipping (JLCPCB -> NYC),Shipping,NA, $10.20 ,JLCPCB,NA
-SeeedStudio XIAO ESP32-C3,Microcontrollers,2, $10.00 ,SeeedStudio,https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html
-SeeedStudio Shipping (Warehouse -> NYC),Shipping,NA, $9.00 ,SeeedStudio,NA
-A3144,Hall Effect Sensors,5, $1.18 ,LCSC,https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html
-30SQ045,Motor Diodes,3, $1.76 ,LCSC,https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html
-WS2812B,LEDs,65, $4.28 ,LCSC,https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html
-1N4148,Logic Diodes,20, $0.51 ,LCSC,https://lcsc.com/product-detail/Switching-Diodes_onsemi-1N4148_C258182.html
-PR01000101002JA100,10 kΩ Resistor,5, $0.60 ,LCSC,https://lcsc.com/product-detail/Through-Hole-Resistors_VISHAY-PR01000101002JA100_C1366567.html
-MF1W-100Ω±1% T,100 Ω Resistor,10, $0.45 ,LCSC,https://lcsc.com/product-detail/Through-Hole-Resistors_CCO-Chian-Chia-Elec-MF1W-100-1-T_C119469.html
-1N5822,Microcontroller Schottky Diodes,5, $0.51 ,LCSC,https://lcsc.com/product-detail/Schottky-Diodes_MDD-Microdiode-Semiconductor-1N5822_C2476.html
-LCSC Handling Fee,Some Fee,NA, $3.00 ,LCSC,NA
-LCSC Shipping (LCSC -> NYC),Shipping,NA, $9.00 ,LCSC,NA
-"775 Motor (288W, 12k)",The Motor Behind It All,1, $17.65 ,AliExpress,https://www.aliexpress.us/item/3256807114067845.html
-Overdischarge Protection (1S 16A),Protects batteries from overdischarge (safety),1, $1.26 ,AliExpress,https://www.aliexpress.us/item/3256805852468677.html
-Overdischarge Protection (4S 20A Standard),Protects batteries from overdischarge (safety),1, $5.89 ,AliExpress,https://www.aliexpress.us/item/3256806720463818.html
-LM2596 (Step Down Converter),Steps down voltage for Motor Subsystem,1, $1.76 ,AliExpress,https://www.aliexpress.us/item/3256805963034065.html
-XL6019 (Step Up Converter),Steps up voltage for LED Subsystem,1, $2.04 ,AliExpress,https://www.aliexpress.us/item/2255800011462620.html
-"TP4056 (USB-C, Safety)",Recharges batteries (SAFETY VERSION NEEDED),5, $2.70 ,AliExpress,https://www.aliexpress.us/item/3256807959506419.html
-"22 AWG wire (5m, 1 roll)",Wires for LED subsystem -> LED panels,1, $2.02 ,AliExpress,https://www.aliexpress.us/item/3256807263561521.html
-"10 AWG wire (1m, Black)",Wires for Motor subsystem,1, $6.86 ,AliExpress,https://www.aliexpress.us/item/3256807572728671.html
-Samsung 25R 18650 2500mAh 20A Battery,Batteries for the whole system,5, $15.00 ,IMR Batteries,https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery
-Taxes,Mysterious IMR Batteries Taxes,NA, $2.10 ,IMR Batteries,NA
-Battery Shipping (IMR Batteries -> NYC),Shipping,NA, $9.13 ,IMR Batteries,NA
-Buffer,"In the event of mysterious price increases/errors in calculations (there probably isn't, but just in case)",NA, $5.00 ,NA,NA
-Total,,, $154.75 ,,
+PCB LED Panels,Rotating LED Panels,5,$2.10 ,JLCPCB,https://jlcpcb.com/
+PCB LED Subsystem,LED Subsystem Control PCB (rotates),5,$4.00 ,JLCPCB,https://jlcpcb.com/
+PCB Motor Subsystem,Motor Subsystem Control PCB (stationary),5,$4.00 ,JLCPCB,https://jlcpcb.com/
+PCB Shipping (JLCPCB -> NYC),Shipping,NA,$10.20 ,JLCPCB,NA
+SeeedStudio XIAO ESP32-C3,Microcontrollers,2,$10.00 ,SeeedStudio,https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html
+SeeedStudio Shipping (Warehouse -> NYC),Shipping,NA,$9.00 ,SeeedStudio,NA
+A3144,Hall Effect Sensors,5,$1.18 ,LCSC,https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html
+30SQ045,Motor Diodes,3,$1.76 ,LCSC,https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html
+WS2812B,LEDs,65,$4.28 ,LCSC,https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html
+1N4148,Logic Diodes,20,$0.51 ,LCSC,https://lcsc.com/product-detail/Switching-Diodes_onsemi-1N4148_C258182.html
+PR01000101002JA100,10 kΩ Resistor,5,$0.60 ,LCSC,https://lcsc.com/product-detail/Through-Hole-Resistors_VISHAY-PR01000101002JA100_C1366567.html
+MF1W-100Ω±1% T,100 Ω Resistor,10,$0.45 ,LCSC,https://lcsc.com/product-detail/Through-Hole-Resistors_CCO-Chian-Chia-Elec-MF1W-100-1-T_C119469.html
+1N5822,Microcontroller Schottky Diodes,5,$0.51 ,LCSC,https://lcsc.com/product-detail/Schottky-Diodes_MDD-Microdiode-Semiconductor-1N5822_C2476.html
+LCSC Handling Fee,Some Fee,NA,$3.00 ,LCSC,NA
+LCSC Shipping (LCSC -> NYC),Shipping,NA,$9.00 ,LCSC,NA
+"775 Motor (288W, 12k)",The Motor Behind It All,1,$17.65 ,AliExpress,https://www.aliexpress.us/item/3256807114067845.html
+Overdischarge Protection (1S 16A),Protects batteries from overdischarge (safety),1,$1.26 ,AliExpress,https://www.aliexpress.us/item/3256805852468677.html
+Overdischarge Protection (4S 20A Standard),Protects batteries from overdischarge (safety),1,$5.89 ,AliExpress,https://www.aliexpress.us/item/3256806720463818.html
+LM2596 (Step Down Converter),Steps down voltage for Motor Subsystem,1,$1.76 ,AliExpress,https://www.aliexpress.us/item/3256805963034065.html
+XL6019 (Step Up Converter),Steps up voltage for LED Subsystem,1,$2.04 ,AliExpress,https://www.aliexpress.us/item/2255800011462620.html
+"TP4056 (USB-C, Safety)",Recharges batteries (SAFETY VERSION NEEDED),5,$2.70 ,AliExpress,https://www.aliexpress.us/item/3256807959506419.html
+"22 AWG wire (5m, 1 roll)",Wires for LED subsystem -> LED panels,1,$2.02 ,AliExpress,https://www.aliexpress.us/item/3256807263561521.html
+"10 AWG wire (1m, Black)",Wires for Motor subsystem,1,$6.86 ,AliExpress,https://www.aliexpress.us/item/3256807572728671.html
+"Battery Holder (x1, 1B)",Holds x1 battery for the LED Subsystem,1,$2.79 ,AliExpress,https://www.aliexpress.us/item/3256806864993334.html
+"Battery Holder (x1, 4B)",Holds x4 batteries for the Motor Subsystem,1,$3.72 ,AliExpress,https://www.aliexpress.us/item/3256806864993334.html
+Samsung 25R 18650 2500mAh 20A Battery,Batteries for the whole system,5,$15.00 ,IMR Batteries,https://imrbatteries.com/products/samsung-25r-18650-2500mah-20a-battery
+Taxes,Mysterious IMR Batteries Taxes,NA,$2.10 ,IMR Batteries,NA
+Battery Shipping (IMR Batteries -> NYC),Shipping,NA,$9.13 ,IMR Batteries,NA
+Buffer,"In the event of mysterious price increases, taxes, or errors in calculations (there probably isn't, but just in case)",NA,$5.00 ,NA,NA
+Total,,,$161.26 ,,
