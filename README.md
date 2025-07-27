@@ -21,6 +21,8 @@ Now inspired by the lights at the venue of the aforementioned robotics trip (and
 
 This project took over a hundred hours to make (with tons of redesigns!), and, retrospectively, I guess it's just because I think LEDs look pretty cool. The idea of replicating what happened in the venue really kept me going, and, now staring at what's been created, I think those hours were worth it! Learned lots a things along the way, such as reading datasheets, power in general, and implementing stuff from the ground up!
 
+
+
 ## Long Description
 
 Incase you wanted a full, long description, here it is!
@@ -37,6 +39,8 @@ This entire system is packaged inside a cylinderical shape with diameter of roug
 
 And that's Raven, an open source spinning light display!
 
+
+
 ## Directory
 
 Wanna know more? Here's some quick places to get started!
@@ -51,6 +55,19 @@ Wanna know more? Here's some quick places to get started!
     - Wanna know the thought process behind stuff? Or just a really long read? Check out the journal! (or the [`updatelogs`](/updatelogs/) for everything in different files...)
 - [BOM](</BOM.csv>)
     - Wanna make your own copy of Raven? Here's the BOM in CSV format! (You can look at [`BOM.md`](</BOM.md>) for a markdown version of it, but it won't be too descriptive!) (Or just scroll down.)
+
+
+---
+
+![](</raven_pcb_led.png>)
+
+![](</raven_pcb_motor.png>)
+
+![](/raven_pcb_panel.png)
+
+---
+
+
 
 ## Assembly!
 
@@ -68,10 +85,13 @@ Wanna know more? Here's some quick places to get started!
 ![](</raven_wiring.png>)
 
 
+
 ## BOM
 *The Bill of Materials for x1 unit of Raven!*
 
 Note: For this list, the prices are as of July 2025. Depending on certain actions on certain people, this may fluctuate over the next couple months/years. Current calculations have shipping and tax included, but if you want to see how much everything actual ended up costing me (as in, trying to use all the deals), look out for `updatelogs` during construction time! Below, things are grouped up by source and bolded with the sum of all the prices under group. Stuff in italics are added up in the bolded prices, so don't count them twice!
+
+
 
 ### Structure
 *structural bits*
