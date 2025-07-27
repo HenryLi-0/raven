@@ -1,7 +1,7 @@
 # BOM
 *The Bill of Materials for x1 unit of Raven!*
 
-Note: For this list, the prices are as of July 2025. Depending on certain actions on certain people, this may fluctuate over the next couple months/years. Additionally, the price listed will be the one of the **ABSOLUTE WORST** case scenario, for instance, a coupon or deal not going through. Therefore, the total price listed is likely higher than the amount it actually costs. To see how much it actually cost (shipping and tax included), look out for `updatelogs` during construction time! Things will be grouped up by source and bolded with the sum of all the prices under group. Stuff in italics are added up in the bolded prices, so don't count it twice!
+Note: For this list, the prices are as of July 2025. Depending on certain actions on certain people, this may fluctuate over the next couple months/years. Current calculations have shipping and tax included, but if you want to see how much everything actual ended up costing me (as in, trying to use all the deals), look out for `updatelogs` during construction time! Below, things are grouped up by source and bolded with the sum of all the prices under group. Stuff in italics are added up in the bolded prices, so don't count them twice!
 
 ## Structure
 *structural bits*
@@ -20,8 +20,6 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 ## PCBs
 *pcbs*
 
-Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10x10cm boards are $2 as part of some deal. This is just incase that deal ends. These prices may also fluctuate because of certain people.
-
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
 | **ALL PCBS FROM JLCPCB**      | **$20.30**    | JLCPCB        |
@@ -33,6 +31,7 @@ Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10
 
 ## Small Electronics
 *small stuff like microcontrollers and resistors*
+
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
 | **ALL MICROCONTROLLERS**      | **$19.00**    | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
@@ -53,7 +52,7 @@ Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10
 ## Big Electronics
 *big stuff like motors and batteries*
 
-Note: This is, again, the **WORST CASE**. I'll try to use the AliExpress Welcome Deal on the 775 Motor, then take advantage of a current sale on the batteries (drops all the batteries down to ~$26, including shipping and taxes).
+Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage of a current sale on the batteries (drops all the batteries down to ~$26, including shipping and taxes)! (Batteries are currently calulated with the discount.)
 
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
@@ -75,8 +74,6 @@ Note: This is, again, the **WORST CASE**. I'll try to use the AliExpress Welcome
 
 ## Total
 *a + b = c*
-
-Once again, this is the theoretical **MAX**. This is the theoretical most this would cost on a **VERY BAD DAY** and all the odds are **AGAINST YOU**. This is the theoretical price in a **WORST CASE SCENARIO** where you have lost **EVERY DEAL AND PROMOTION**. All amounts previously listed are rounded up to the nearest dollar. These calculations do not take into account certain people's actions that may affect shipping/manufacturing prices.
 
 | Group                         | Price         |
 |-------------------------------|---------------|

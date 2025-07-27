@@ -2,17 +2,18 @@ import board
 '''
 Pins:
 
-board.D0  - 
-board.D1  - 
-board.D2  - 
-board.D3  - 
-board.D4  - 
-board.D5  - 
-board.D6  - 
+board.D0  - LED
+board.D1  - NA
+board.D2  - NA
+board.D3  - NA
+board.D4  - NA
+board.D5  - NA
+board.D6  - NA
 
-board.D7  - 
-board.D8  - 
-board.D10 - 
+board.D7  - MOSFET
+board.D8  - MOSFET BACKUP
+board.D9  - HALL EFFECT SENSOR BACKUP
+board.D10 - HALL EFFECT SENSOR
 '''
 
 class Constants:

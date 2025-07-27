@@ -4,14 +4,15 @@ Pins:
 
 board.D0  - LED 0
 board.D1  - LED 1
-board.D2  - LED BACKUP 2
+board.D2  - LED BACKUP 1
 board.D3  - LED 2
-board.D4  - LED BACKUP 1
-board.D5  - LED 3
-board.D6  - LED 4
+board.D4  - LED 3
+board.D5  - LED 4
+board.D6  - LED BACKUP 2
 
 board.D7  - HALL EFFECT SENSOR
-board.D8  - HALL EFFECT SENSOR BACKUP
+board.D8  - HALL EFFECT SENSOR BACKUP 1
+board.D9  - HALL EFFECT SENSOR BACKUP 2
 board.D10 - SELF LEDS
 '''
 
@@ -27,8 +28,8 @@ class Constants:
             board.D0,
             board.D1,
             board.D3,
+            board.D4,
             board.D5,
-            board.D6,
         ]
         # The number of panels
         NUMBER_OF_PANELS = len(LED_PANELS)

@@ -1,6 +1,6 @@
 <div align="center">
     <h2>Raven</h2>
-    ![]()
+    ![](/raven_banner.png)
 </div>
 
 ---
@@ -15,10 +15,13 @@ Since being introduced to an LED strip during FRC at the start of 2024, I realiz
 Now inspired by the lights at the venue of the aforementioned robotics trip (and the lights show that occured near the end of the event), that brings us here! Introducting Raven, a spinning LED display that uses 50 LEDs spread across 5 panels, spinning *really* fast. Using a Hall Effect Sensor for speed measurement, the measured values for angular prediction, and wireless control for wireless communications, Raven is capable of producing sector-based effects, rainbow gradients, strobes, and more, with a full 360 degree range of the room, or any sector of it! This project took over a hundred hours to make (with tons of redesigns!), and, retrospectively, I guess it's just because I think LEDs look pretty cool. The idea of replicating what happened in the venue really kept me going, and, now staring at what's been created, I think those hours were worth it.
 
 
+## More Pictures!
+
+
 
 ## Directory
 
-New around here? Here's some quick places to get started!
+Wanna know more? Here's some quick places to get started!
 
 - [CAD](</CAD/README.md>)
     - We used OnShape for this, but you can grab files here too! (Although, poking around the CAD is probably better to have an idea of what things look like!)
@@ -27,7 +30,7 @@ New around here? Here's some quick places to get started!
 - [Firmware](</firmware/README.md>)
     - We have two firmwares, one for each subsystem! (These firmwares are written for CircuitPython! Look here for deeper instructions!)
 - [Journal](</JOURNAL.md>)
-    - Wanna know the though process behind stuff? Or just a really long read? Check out the journal! (or the [`updatelogs`](/updatelogs/) for everything in different files...)
+    - Wanna know the thought process behind stuff? Or just a really long read? Check out the journal! (or the [`updatelogs`](/updatelogs/) for everything in different files...)
 - [BOM](</BOM.csv>)
     - Wanna make your own copy of Raven? Here's the BOM in CSV format! (You can look at [`BOM.md`](</BOM.md>) for a markdown version of it, but it won't be too descriptive!) (Or just scroll down.)
 
@@ -55,8 +58,6 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 ### PCBs
 *pcbs*
 
-Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10x10cm boards are $2 as part of some deal. This is just incase that deal ends. These prices may also fluctuate because of certain people.
-
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
 | **ALL PCBS FROM JLCPCB**      | **$20.30**    | JLCPCB        |
@@ -68,6 +69,7 @@ Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10
 
 ### Small Electronics
 *small stuff like microcontrollers and resistors*
+
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
 | **ALL MICROCONTROLLERS**      | **$19.00**    | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
@@ -88,7 +90,7 @@ Note: This is the **ABSOLUTE WORST CASE SCENARIO**. It seems that, on JLCPCB, 10
 ### Big Electronics
 *big stuff like motors and batteries*
 
-Note: This is, again, the **WORST CASE**. I'll try to use the AliExpress Welcome Deal on the 775 Motor, then take advantage of a current sale on the batteries (drops all the batteries down to ~$26, including shipping and taxes).
+Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage of a current sale on the batteries (drops all the batteries down to ~$26, including shipping and taxes)! (Batteries are currently calulated with the discount.)
 
 | Part                          | Price         | Link          |
 |-------------------------------|---------------|---------------|
@@ -110,8 +112,6 @@ Note: This is, again, the **WORST CASE**. I'll try to use the AliExpress Welcome
 
 ### Total
 *a + b = c*
-
-Once again, this is the theoretical **MAX**. This is the theoretical most this would cost on a **VERY BAD DAY** and all the odds are **AGAINST YOU**. This is the theoretical price in a **WORST CASE SCENARIO** where you have lost **EVERY DEAL AND PROMOTION**. All amounts previously listed are rounded up to the nearest dollar. These calculations do not take into account certain people's actions that may affect shipping/manufacturing prices.
 
 | Group                         | Price         |
 |-------------------------------|---------------|

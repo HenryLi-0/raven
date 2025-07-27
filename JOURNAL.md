@@ -1,7 +1,7 @@
 ---
 title: "Raven"
 author: "HenryLi-0"
-description: "An open source spinning LED light display!"
+description: "A spinning LED light display!"
 created_at: "2025-06-25"
 ---
 
@@ -14,7 +14,7 @@ created_at: "2025-06-25"
 
 Nothing much today, just simple repository setup and a silly idea! In fact, the silly idea came a bit before and is a little fleshed out, but it's time to actually start progress on this!
 
-**Total time spent: 0.5 hrs**
+**Time Spent: 0.5 hrs**
 
 ## 06-25-2025: Day 1: The Idea! On paper!
 **So what's this raven thing? Is it like some bird...?**
@@ -27,7 +27,7 @@ imagine 49 LEDs, or 50. now, imagine it spinning. like really fast. what does th
 
 And yeah, that allows for super cool lights! see ya next time!
 
-**Total time spent: 1 hrs**
+**Time Spent: 1 hrs**
 
 ## 06-26-2025: Day 2: The Refined Idea!
 **Tests! As in, not exams!**
@@ -68,7 +68,7 @@ no difference? try looking at the top right of each photo! the camera seems to c
 
 and yeah, so interesting tests today! i'll be pretty busy tomorrow, but the plan is to find specifics (motor power, good motor speeds, battery stuff, etc.)! also, yes, i used my hackpad for this! ok, that's all for today, good night!
 
-**Total time spent: 2 hrs**
+**Time Spent: 2 hrs**
 
 ## 06-27-2025: Day 3: Really Refining The Idea!
 **What in the chemistry?**
@@ -153,7 +153,7 @@ The [seeedstudio XIAO ESP32-C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p
 
 before i look at a bunch of memes before sleeping tonight, ill do some research with motors! ideally, pretty light, can achieve 1k-3k RPM, (so like 16-50 rotations per second)! of course, we should aim to make the spinning part as light as possible, but we'll see! ok, see ya tomorrow! good night! (also, i wanna draw some art for this release... might not come out in time, who knows!)
 
-**Time spent today: 2.5 hrs**
+**Time Spent: 2.5 hrs**
 
 ## 06-28-2025: Day 4: Parts Finding and Start PCB!
 **Pathfinding? FRC Reference?**
@@ -1537,3 +1537,72 @@ what is this. (random pop up)
 gonna investigate this, but, for now, good night!
 
 **Time Spent: 5 hrs**
+
+## 07-25-2025: Day 30: Almost There!
+**so close!**
+
+update 30! started at like 4:45 PM, and just updated all the journals! if i put in those numbers correctly, i've spent 96.75 hours on this so far (thats actually insane!). hopefully today's the last day, since it's been, quite literally a month since we started! (6/25/2025 was the first update log!)
+
+stuff to do:
+- complete BOM!
+    - add stuff
+        - wiring
+        - magnets (maybe? check LCSC first)
+        - solder? (maybe? might run out, gotta make sure its safe)
+    - aliexpress and orders
+    - figure out shipping prices and deals!
+- double check PCB wiring
+    - (for all!)
+- update CAD
+    - with most updated PCBs
+    - double check collisions again
+- clean up repository
+    - double check docs
+    - update journal
+    - finish [the main `README.md`](</README.md>)
+- submit
+    - ??? (check the website again)
+
+ok, time to get going! as in, start working on stuff, im not leaving just yet! little note to anyone looking for AWG numbers, there's a [great chart on Wikipedia](https://en.wikipedia.org/wiki/American_wire_gauge)! for example, here, 12AWG supports 20A at 60C! 22AWG supports 3A at 60C! ok, so now we got our wires!
+
+yeah so i actually just touched my bed at 5:30 PM, and then just... fell asleep? did a couple other things, back at 8:47 PM! ok, so BOM stuff, need some 12AWG wire, got some!
+
+ok, gonna try optimizing the BOM now (we're reaaaaaly hitting the roof now), quick commit first!
+
+ok, found [this](https://www.aliexpress.us/item/3256805195972424.html) on aliexpress for the XIAO. not sure if its certainly legit, since one of the reviews say its never arrived. gonna do a bit more digging (what does "Selected item with premium quality" actually mean?) (oh it means nothing)
+
+doing some math, it appears that using aliexpress to get the microcontrollers is more expensive than seeedstudio? on seeedstudio, its $19-ish total, while its $19.30 + $4.65 on aliexpress? maybe poking around amazon? turns out you can get three for $19.99 on [amazon](https://www.amazon.com/dp/B0DGX3LSC7/ref=twister_B0DYP3RYTC?_encoding=UTF8&th=1). huh. might be strategic to try to get some more stuff from there in order to get the free shipping from amazon.
+
+nope definitely not the batteries, IMR is definitely cheaper. just noticed a downside with amazon, it says "Or fastest delivery August 14 - September 1". uh that means it comes like, really late (like after all the other stuff, plus like a week).
+
+ok, just updated some code on both stuff to prepare for bluetooth! basically all the shutdown and stuff. unfortunately, cant exactly try this out yet, gotta wait to actually have them to quickly iterate and test code!
+
+ok, doesnt seem like we can really optimize this? (i really dont want to move away from IMR batteries because its likely cheaper and more legit, since random aliexpress battery exploding would not be good.) time to double check the PCBs! (export gerbers too, and STEP files!) quick commit first!
+
+swapped out the `1N5819` diodes for `1N5822`, cheaper (and was the original idea, it seems)
+
+oops forgot the gerbers...
+
+huh what did i do to the leds (they vanished, as in the 3d viewer in kicad)
+
+so fixed an issue with a random pad (probably a copy paste mistake) on the led panel! still dont know where all the LEDs went... updating the CAD now! huh leds exported? 10:07 PM, updating the detailed assembly!
+
+ok, so that 45 degree angle flyback diode actually cuts into one of the bottom mounts. the clear solution here, is to act like it's not like that, and just leave the screw a teeny bit loose (i really cant care about symmetry at this point :/) but other than that, no other collision, it seems! but other than that, it's good! time to clean up the repo!
+
+right, we also need the BOM in csv format!
+
+wrote the whole thing, recalculated a BUNCH of stuff! no magnets or solder though... (i know where to find both, so it should be alright! zipties too, got 20 sitting on the other table). almost time to update the `README.md`!
+
+ok, 11:20 PM now, gonna watch a movie!
+
+back at 12:33 AM! add a buffer (oh no chemistry flashbacks) in case of miscalculations (dont think there are any, but just in case). rest of funds after buying are going to be returned anyways so yeah! ok, just writing the readme!
+
+its 1:08 AM, and i just exported 26 different STEP files (waa)
+
+![waa](</updatelogs/images/202507/07252025 - 1.png>)
+
+ok, since im being forced to go to sleep right now, lots of things are going on, almost done, very likely submitting tomorrow (probably afternoon, since im probably not gonna wake up in the morning) (does the image markdown thingy work inside vscode, at least inside an HTML block? i know plain markdown works, but does it work in a html thingy inside markdown? idk)
+
+yeah im really being forced to go to sleep right now. ok good night! (oh right, need to get rid of unused files, guess that'll be part of cleanup tomorrow.) ok, good night!
+
+**Time Spent: 4 hrs**
