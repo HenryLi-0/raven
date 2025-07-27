@@ -1,6 +1,7 @@
 <div align="center">
     <h2>Raven</h2>
-    ![](/raven_banner.png)
+    <p>by <a href= "https://github.com/HenryLi-0/raven"> @HenryLi-0 </a></p>
+    <img src="raven_banner.png" alt="banner"/>
 </div>
 
 ---
