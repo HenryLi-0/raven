@@ -9,7 +9,7 @@ created_at: "2025-06-25"
 
 *Note: This is the accumulated (and condensed) version of the documenting and logging I typically do! Check out [the repository](https://github.com/HenryLi-0/raven) for [more organized files and full logs](</updatelogs/>)!*
 
-**Total Time Spent: 105 hrs!**
+**Total Time Spent: 107 hrs!**
 
 ## 06-24-2025: Day 0: Or Day One? Who knows!
 **Setup!**
@@ -1665,3 +1665,12 @@ wow, what a journey! gotta tally up the hours... but yeah, learned a bunch, just
 see ya!
 
 **Time Spent: 4.25 hrs**
+
+## 07-27-2025: Day 32: Submitting!
+**not really much!**
+
+surprise! didnt expect to see this huh? well, not really much today. basically, spent my morning looking through everything again, updating stuff, added another battery holder to the BOM (for the charger), compressed some stuff, and really just working on submitting and fixing stuff. overall, not too much work today, just a bunch of checking!
+
+but yeah, havent really done anything for the rest of today (i guess thats what happens when you spend 107 hours on something and now are "done"), so yeah, pretty sort update today, good night!
+
+**Time Spent: 2 hrs**
