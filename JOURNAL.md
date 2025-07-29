@@ -9,7 +9,18 @@ created_at: "2025-06-25"
 
 *Note: This is the accumulated (and condensed) version of the documenting and logging I typically do! Check out [the repository](https://github.com/HenryLi-0/raven) for [more organized files and full logs](</updatelogs/>)!*
 
-**Total Time Spent: 107 hrs!**
+
+## Stats
+
+Total Design Time Spent: 105 hrs!
+
+Total Order Time Spent:
+
+Total Build Time Spent:
+
+Total Time Spent:
+
+Total Build Cost:
 
 ## 06-24-2025: Day 0: Or Day One? Who knows!
 **Setup!**
@@ -1674,3 +1685,74 @@ surprise! didnt expect to see this huh? well, not really much today. basically, 
 but yeah, havent really done anything for the rest of today (i guess thats what happens when you spend 107 hours on something and now are "done"), so yeah, pretty sort update today, good night!
 
 **Time Spent: 2 hrs**
+
+## 07-28-2025: Day 33: Shopping
+**too many reciepts**
+
+dang, hack club is FAST! currently 5:45 PM, but the project got approved at like 8:32 AM this morning (as in NYC time) (yes, i was still sleeping at this time.)
+
+![yay](</updatelogs/images/202507/07282025 - 1.png>)
+
+(thanks cyao!)
+
+anyways, just wanted to take a moment to see how far we've come! 31 days of work, research, and all, leading up to this moment. we're definitely not done yet, we still have ordering (gonna try doing that today), but we've done A LOT. redoing the PCB like three times, hunting down MOSFETs, and lots and lots of CAD. looking back, i dont feel like it was *that* much, but hey, i guess i dont see the progress so far? itll be pretty obivious when i see a giant thing in front of my face. (hopefully no one snatches the package off my porch.) ive decided what songs i want to do for the first tests. for testing (as in, the systems), i want to use the song thats meant for rainbow LEDs. yep, it's [`Caramelldansen (speedycake remix)`](https://www.youtube.com/watch?v=yqhKGBWvyqM). then, for our first full test, we're gonna use the song that started it all, back in BattleCry 2025, [`I Slay`](https://www.youtube.com/watch?v=jA9EAUvNKiM). yeah, interesting choices, but that's gonna be it!
+
+needless to say, im very excited right now, time to start ordering! surprise surprise, turns out we got a $20 JLCPCB coupon (thanks Hack Club!), so the PCBs are only $0.75 (wow!).
+
+![yay](</updatelogs/images/202507/07282025 - 2.png>)
+
+hmm do i want the order number on it? i guess ill just leave it as is, might look cool (i mean, looking at my hackpad, doesnt seem to be too big)
+
+ok, checkout, here we go!
+
+ew sales tax and stuff has made it $1.64. still crazy good though!
+
+![yay](</updatelogs/images/202507/07282025 - 3.png>)
+
+one down! gonna start working on a spreadsheet... ok, got a ordering list ready! next up, the microcontrollers! 
+
+so uh i have no idea if they ship with headers, i hope they do?
+
+two done! lcsc next! uh is lcsc ok, everything adds to $8.99 but jlcpcb is saying $9.23? oh wait thats because its counting the discount later.
+
+ok, LCSC done! $41.15 spent so far, off to dinner! (its 6:53 PM right now!)
+
+back at 8:34 PM! next step is imr batteries! (im gonna do aliexpress last) ok, its 8:47 PM, and that's good! ok, four transactions so far, now for the final one! aliexpress! spent $66.60 so far!
+
+just poked onto youtube to find something to listen to while working and suddenly got recommended [a 13 year old GTX 680 video](https://www.youtube.com/watch?v=4SfPLhTgRPQ). huh. ok, aliexpress time (im terrified)
+
+ok, we should use the welcome deal on the motor now! since its the most expensive component on our BOM!
+
+ok, $17.65 motor dropped down to $3.59 ($0.82 added to both numbers since thats the little number below or whatever), selected the 288W 12000 RPM motor!
+
+buddy.
+
+![wha](</updatelogs/images/202507/07282025 - 4.png>)
+
+seems like the solution (according to reddit) is to make a new account? HOW AM I SUPPOSED TO ADD A BILLING ADDRESS WHEN YOU DONT LET ME AAAAA
+
+so had to reload page like three times, entered card info so much that ive kinda memorized it, in fact here it is, just kidding, not gonna leak the card info!
+
+ok, aliexpress motor done, time for the rest... thats a lot...
+
+uh oh theres only one set of 20pc 16mm screws left... i think i need to find another batch? gonna split the other aliexpress orders into batches of 5, just for safety
+
+whys getting reciepts for aliexpress so hard, i just had to upload 8 files
+
+looking for DIN912 screws... ok, [heres](https://www.aliexpress.com/item/3256806983352954.html) some that have M4 16mm screws! a bit more expensive than the other ones, but at least we have them! ok, BOM would be $1.28 more, but we've been using so many of these deals, it isnt too much anymore
+
+so uh. i seriously goofed up. i uh. forgot to add the AOD424 to the BOM. which is kinda silly, given the fact that its one of the most important parts in the entire system. (im very sorry)
+
+ok, almost done with aliexpress. gonna wait until cyao wakes up or something, since i need to let my reviewer know about the BOM change (the screws). other than that, we're almost done ordering!
+
+ok, prepared it for ordering tomorrow, gonna freeze the cards overnight (just so no one, you know, yoinks)
+
+$239.94 remaining! here's what the transactions look like:
+
+![hmm](</updatelogs/images/202507/07282025 - 5.png>)
+
+currently on track to have the entire BOM be $124.07! (assuming deal still applies tomorrow morning, and that i didnt forget anything else)
+
+ok, so that's about it for today, what else is there? gonna go draw some art until midnight (its 11:32 PM right now), so yeah, gonna update the journal, good night!
+
+**Time Spent: 4 hrs**

@@ -37,7 +37,7 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 | **ALL MICROCONTROLLERS**      | **$19.00**    | [Seeed Studio](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html) |
 | *XIAO ESP32-C3 (x2)*          | *$10.00*      | ^^^           |
 | *Shipping (to NYC)*           | ~*$9.00*      | ^^^           |
-| **LCSC Parts**                | **$21.29**    | LCSC          |
+| **LCSC Parts**                | **$21.75**    | LCSC          |
 | *A3144 (min 5)*               | *$1.18*       | [LCSC](https://lcsc.com/product-detail/Hall-Switches_JSMSEMI-A3144EUA-T-JSM_C18188954.html) |
 | *30SQ045 (x3)*                | *$1.76*       | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_LGE-30SQ045_C2903878.html) |
 | *WS2812B (x65, mul 5)*        | *$4.28*       | [LCSC](https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC_Worldsemi-WS2812B-B-W_C114586.html) |
@@ -45,6 +45,7 @@ Note: For this list, the prices are as of July 2025. Depending on certain action
 | *PR01000101002JA100 (min 5)*  | *$0.60*       | [LCSC](https://lcsc.com/product-detail/Through-Hole-Resistors_VISHAY-PR01000101002JA100_C1366567.html) |
 | *MF1W-100Ω±1% T (min 10)*     | *$0.45*       | [LCSC](https://lcsc.com/product-detail/Through-Hole-Resistors_CCO-Chian-Chia-Elec-MF1W-100-1-T_C119469.html) |
 | *1N5822 (x2, min 5)*          | *$0.51*       | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_MDD-Microdiode-Semiconductor-1N5822_C2476.html) |
+| *AOD424 (x1)*                 | *$0.46*       | [LCSC](https://lcsc.com/product-detail/MOSFETs_AOS-AOD424_C357852.html) |
 | *Handling Fee*                | *$3.00*       | LCSC          |
 | *Shipping (to NYC)*           | ~*$9.00*      | LCSC          |
 
@@ -83,8 +84,8 @@ Note: Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage
 | 3D Printed Parts              | $0            |
 | ALL PCBS FROM JLCPCB          | $20.30        |
 | ALL MICROCONTROLLERS          | $19.00        |
-| LCSC Parts                    | $21.29        |
+| LCSC Parts                    | $21.75        |
 | ELECTRICAL ALIEXPRESS         | $49.48        |
 | BATTERIES                     | $26.23        |
 | BUFFER                        | $5.00         |
-| **TOTAL**                     | **$164.05**   |
+| **TOTAL**                     | **$164.51**   |

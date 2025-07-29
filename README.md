@@ -115,6 +115,7 @@ Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage of a 
 | PR01000101002JA100 (min 5)    | $0.60         | [LCSC](https://lcsc.com/product-detail/Through-Hole-Resistors_VISHAY-PR01000101002JA100_C1366567.html) |
 | MF1W-100Ω±1% T (min 10)       | $0.45         | [LCSC](https://lcsc.com/product-detail/Through-Hole-Resistors_CCO-Chian-Chia-Elec-MF1W-100-1-T_C119469.html) |
 | 1N5822 (x2, min 5)            | $0.51         | [LCSC](https://lcsc.com/product-detail/Schottky-Diodes_MDD-Microdiode-Semiconductor-1N5822_C2476.html) |
+| AOD424 (x1)                   | $0.46         | [LCSC](https://lcsc.com/product-detail/MOSFETs_AOS-AOD424_C357852.html) |
 | Handling Fee                  | $3.00         | (LCSC)            |
 | Shipping (to NYC)             | $9.00         | (LCSC)            |
 | 775 Motor (288W, 12k)         | $17.65        | [AliExpress](https://www.aliexpress.us/item/3256807114067845.html) |
@@ -132,4 +133,4 @@ Try to use the AliExpress Welcome Deal on the 775 Motor and take advantage of a 
 | Shipping (to NYC)             | $9.13         | (IMR Batteries)   |
 | Taxes                         | $2.07         | (IMR Batteries)   |
 | Buffer                        | $5.00         |                   |
-| **TOTAL**                     | **$164.05**   |                   |
+| **TOTAL**                     | **$164.51**   |                   |

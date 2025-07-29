@@ -17,6 +17,7 @@ WS2812B,LEDs,65,$4.28 ,LCSC,https://lcsc.com/product-detail/RGB-LEDs-Built-in-IC
 PR01000101002JA100,10 kΩ Resistor,5,$0.60 ,LCSC,https://lcsc.com/product-detail/Through-Hole-Resistors_VISHAY-PR01000101002JA100_C1366567.html
 MF1W-100Ω±1% T,100 Ω Resistor,10,$0.45 ,LCSC,https://lcsc.com/product-detail/Through-Hole-Resistors_CCO-Chian-Chia-Elec-MF1W-100-1-T_C119469.html
 1N5822,Microcontroller Schottky Diodes,5,$0.51 ,LCSC,https://lcsc.com/product-detail/Schottky-Diodes_MDD-Microdiode-Semiconductor-1N5822_C2476.html
+AOD424,MOSFET,1,$0.46 ,LCSC,https://lcsc.com/product-detail/MOSFETs_AOS-AOD424_C357852.html
 LCSC Handling Fee,Some Fee,NA,$3.00 ,LCSC,NA
 LCSC Shipping (LCSC -> NYC),Shipping,NA,$9.00 ,LCSC,NA
 "775 Motor (288W, 12k)",The Motor Behind It All,1,$17.65 ,AliExpress,https://www.aliexpress.us/item/3256807114067845.html
@@ -33,4 +34,4 @@ Samsung 25R 18650 2500mAh 20A Battery,Batteries for the whole system,5,$15.00 ,I
 Taxes,Mysterious IMR Batteries Taxes,NA,$2.10 ,IMR Batteries,NA
 Battery Shipping (IMR Batteries -> NYC),Shipping,NA,$9.13 ,IMR Batteries,NA
 Buffer,"In the event of mysterious price increases, taxes, or errors in calculations (there probably isn't, but just in case)",NA,$5.00 ,NA,NA
-Total,,,$164.05 ,,
+Total,,,$164.51 ,,
