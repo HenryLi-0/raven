@@ -1756,3 +1756,445 @@ currently on track to have the entire BOM be $124.07! (assuming deal still appli
 ok, so that's about it for today, what else is there? gonna go draw some art until midnight (its 11:32 PM right now), so yeah, gonna update the journal, good night!
 
 **Time Spent: 4 hrs**
+
+## 07-29-2025: Day 34: More Shopping and 3D Printing!
+**print print print**
+
+ok, so its 1:08 PM right now, since we were supposed to have a trip today but turns out its way too hot here in NYC, so we're going online today. ive already did everything, so here's a brief summary of whats happened!
+
+last night, before going to be at 2:35 AM in the morning, checked the hack club slack and saw i got the go for the updates, and bought all the stuff in bed. so turns out i forgot to unfreeze the card, so i had to unfreeze it and do it again. anyways, now, gotta do the reciept stuff! basically, its just battery holders and the M4 16mm screws (took me like 10 minutes)
+
+ok here's the transactions!
+
+![woo](</updatelogs/images/202507/07292025 - 1.png>)
+
+(the declined one was because i forgot to unfreeze the card oops)
+
+so yeah! $225.93 left in the grant card, only spent $124.07, so thats less than $150, so thats pretty cool! now, time to start printing...
+
+ok, its 1:21 PM, im gonna get back into this meeting
+
+huh 500 layers! started preparing at 4:30-ish PM, and its now 4:46 PM! lets see how long this prints for, slicer is say 1 hour and 6 minutes, but we'll see! here we go!
+
+![woo](</updatelogs/images/202507/07292025 - 2.png>)
+
+ok, also logging this stuff in our spreadsheet!
+
+ok, just set the speed to sport speed! hopefully it doesnt fail (this is NOT foreshadowing.)!
+
+8:22 PM, just did a filament swap! time to print out the bottom plate, pretty sure i wont get to finishing the arms today! looking over the cad, i feel a little nervious with only 0.39cm of radius around the motor supports and the spinning bit. i guess we just have to balance it really well?
+
+you know what, i guess itll be fine.
+
+hmm just took it off the hotplate... hotplate? oops buildplate, and it feels weirdly statically charged? after a couple minutes it seems to have lost it, but this is one of the prettiest parts ive ever seen! ok, arms now i guess? wait, actually, before that, the shaft collar washers!
+
+ok, 9:55 PM, decided to also do the motor's top mounting too! ok, 10:09 PM now, printed!mightve accidentally licked some of the printer lubricant thingy oops
+
+gotta say, things always dont look like the scale they do when CADing. was expecting this to be kinda bigger than i imagined, while when making FRC robots, they look smaller than they actually are (or just dont really feel any similarity in size?)
+
+ok, motor bottom mount, then arm time! ok, 10:35 PM, exporting stuff...
+
+its 11:58 PM! printed 9 arms (straight), and 3 arms (diagonal). currently, made a lapse in judgement, and currently printing another set of 3 arms (diagonal). too late to really stop it, so i guess we'll just have an extra 2? (currently have an extra arm (straight), but thats ok).
+
+been a bit, been drawing some art lol, but here's all the parts printed today!
+
+![waw](</updatelogs/images/202507/07292025 - 3.png>)
+
+ok, so, for the list of things that don't depend on the motor shape, we have the bracket rings, bracket spacers, and arm spacers left (oh those spacers are gonna use a LOT of filament arent they...)! so yeah, its 12:42 AM now, good night!
+
+also one more thing, all the printing files (step and 3mf) are also here! check out the [`/printing/`](</printing/>) folder! ok, good night!
+
+**Time Spent: 1.5 hrs**
+
+## 07-30-2025: Day 35: More 3D Printing!
+**beep boop**
+
+the grind never stops huh? well, packages are slowly moving across the world (but not around here just yet), so tracking lots of them right now! JLCPCB already manufactured all the PCBs, and is strarting to ship! also around this time, LCSC has packed the singular MOSFET's package and that's sent to ship! aliexpress has three things ready, both AWG wires, and some screws! ok, now you're all caught up, its 5:49 PM here in NYC, and its hot outside! im your host for tonight, so lets get this rolling!
+
+ok, enough of that, time to start printing! so, we have some... uh... 40 bracket rings to print. yeah, this one might sting. anyways, i guess 8 batches of 5? lets get printing! nah, hows 4 batches of 10? (i might regret this)
+
+also, forgot to mention yesterday, but i am indeed keeping track of all the stats of this on yet another spreadsheet! ok, 5:58 PM, and we're off! starting to print the first batch...
+
+layer 3, ramped it up to ludicrous speed... ok, been a bit, hearing some VERY rough grinding sounds from the other room, hopefully the nozzle isnt destroying itself again.
+
+ok, so its just a bit tough to slide in, but should be ok! just need a bit of convincing to slide in. anyways, batch 2 is going right now! ok, finished printing the bracket rings at 7:02-ish PM (which also happened to be the time the rain started to kick in). ok, off to dinner now!
+
+back at 8:30-ish PM, printing again!
+
+ok, 9:54 PM, got the bracket bits all printed, time for the spacers! kinda scared about this one... turned on supports (it just made brims) so hopefully it all stays together. printing 3 at once right now! (a smarter idea would be splitting them in half, now that i think about it...)
+
+hmm is this smart though? printing it vertically? we wouldnt want it splitting by itself, but if the layer lines are parallel to the plane of the screw going in, if we accidentally hit it too hard, wouldnt the layer lines be weak and detach? basic structure should keep everything together in the event one fails, but is this the correct move? well, we also dont want everything spliting, since the way we are thinking about it is that it'll be squished by the two arms screwing in. however, we dont want to rip layer lines, as printing it on its side would do, so i guess we just keep going? its probably also a good idea not to print it in two pieces as being one piece to hold the top and bottom together is kinda its point...
+
+watched layer 140 through 180 and im still terrified
+
+layer 271... (277 in total)
+
+277! and it printed! on ludicrous speed!
+
+ok, 10:50 PM, walked into the room for layer 277 to be printed! ok, so inner spacers done (they look way smaller than i thought they would be), time to do the outer ones! woah, these are 285 layers tall...
+
+just did a bit of java coding for FRC, been a while! anyways, layer 169 for the tall spacers!
+
+![waw](</updatelogs/images/202507/07302025 - 1.png>)
+
+ok, so thats how things look like now! stuff all finished printing around 12:00 AM, currently 1:00 AM now in NYC, since i got a bit focused on FRC and some art, so yeah, that's it for me today! it seems like we've gone through all the parts that need to be printed that dont depend on the motor specs, so yeah, that's it for now! here's what the printing checklist looks like:
+
+![woo](</updatelogs/images/202507/07302025 - 2.png>)
+
+so yeah, all the non-electronics and screws and nuts stuff is what's left for printing!
+
+ok, good night!
+
+**Time Spent: 1.25 hrs**
+
+## 07-31-2025: Day 36: Package Update!
+**any day now...**
+
+well, really not much happened today, the batteries seem to have slowed down movement, but the microcontrollers are coming in fast! that's pretty cool because i can sort out the bluetooth stuff before everything else arrives, which would be pretty cool! anyways, mosfet and pcb are still out there somewhere, doesnt seem to have moved much.
+
+something interesting is the fact that all the aliexpress products moved to shipping. like what is this lol
+
+![huh](</updatelogs/images/202507/07312025 - 1.png>)
+
+talk about spam... (joking, thanks for all the updates!)
+
+anyways, just waiting for them all to come now. estimates say roughly by august 12th or something, so yeah, i guess we can expect everything to come by two or three weeks.
+
+in the meantime, i kinda started one of the most, if not the most, complex programming projects! it, in theory, should work, and if it does work, it would be a pretty big deal for FRC! so yeah, a lot of work to do, hopefully can write everything up before kickoff! (this stuff could also be applied to general robotics too)
+
+anyways, yeah! thats really it for today! 30/31 updatelogs for july is pretty neat! (wow its already august?) gonna be going up to school tomorrow, so i probably wont be doing a bunch here except for maybe shipping updates and whenever those microcontrollers come, so that's it for a bit! (they're currently in NYC, likely gonna be shipped tomorrow!)
+
+good night!
+
+**Time Spent: 0.25 hrs**
+
+## 08-01-2025: Day 37: Package Update 2 and Microcontrollers!
+**wait already?**
+
+so... guess what came in while i was coming home from school today?
+
+![yay](</updatelogs/images/202508/08012025 - 1.png>)
+
+yep, currently 9:45 PM at night, gonna open them up! they really are XIAO (get it haha), although i see the one on the hackpad, i still was suprised that it was that small! so, turns out, they do come with headers! for the first experiment, im gonna try to conenct to it from my computer and make it... idk, do something. unboxing time!
+
+*yoink*
+
+i still cant comprhend the size of this thing. its TINY! im gonna definitely mess up soldering this... gonna check the docs since i really dont want to break this! ok, so as far as i can tell, its basically a similar process to setting up circuit python on the XIAO RP2040?
+
+gonna drop some links here:
+- [circuitpython](https://circuitpython.org/board/seeed_xiao_esp32c3/)
+- [docs](https://learn.adafruit.com/circuitpython-with-esp32-quick-start/overview)
+
+ok, so it isnt how you setup a XIAO RP2040. alrighty.
+
+shouldve gotetn an ESP32-S3. whatever, lets try to figure this out... uh, its just not showing. yeah.
+
+hey, guess what the issue was? in pure desperation, i plugged in the USB-C upside down, and it works! ok, trying to figure out how to boot this...
+
+uh maybe erasing the flash was a bad idea
+
+uh its taking a bit
+
+ok, went to watch a movie at 10:45 PM, and now its 12:33 AM. i can not figure out this error?
+
+```
+Error: Invalid head of packet (0x45): Possible serial noise or corruption.
+To run the new firmware, please reset your device.
+```
+
+ah the solution was to try a lower bandwidth. just tried `115200 Baud` and seems to work!
+
+hmm trying to do the wifi setup stuff, started doing something after i realized i needed to stick the attenna on... ok! just figured out how to connect to it! and its not melting! great!
+
+ok, that's gonna be it for today (its already 1:16 AM somehow), so yeah, if tomorrow's weather is nice and cool like tonight, might do lots tomorrow! ok, good night!
+
+**Time Spent: 1.75 hrs**
+
+## 08-02-2025: Day 38: More Microcontroller Stuff!
+**it talks!**
+
+ok, 3:45 PM here on saturday! my sleep schedule is absolutely messed up, but we're back! gonna try to make this a bluetooth activatable device or something, then see if i can control an LED from my computer!
+
+ok, so last night i continued playing with it, and figured a couple stuff out:
+
+- `time.time()` only returns whole numbers
+- `time.monotonic_ns()/(10**9)` returns decimal time tracking, but it appears to be relative to when it was turned on or something (up to 3 decimal places after the decimal point it seems)
+
+so i was searching some [docs](https://github.com/adafruit/circuitpython/blob/main/ports/espressif/README.rst#connecting-to-the-esp32-c3). and uh i think it hasnt been implemented in circuitpython yet? hmm found [this seeedstudio page](https://wiki.seeedstudio.com/xiao_esp32c3_with_circuitpython/) about the xiao esp32c3 with circuitpython but doesnt seem to metnion bluetooth...? oh something about UART
+
+nvm, seems like [it is supported](https://docs.circuitpython.org/en/latest/shared-bindings/_bleio/index.html)? ok [here](https://docs.circuitpython.org/projects/ble/en/latest/) now, that was a bit too low level
+
+so its actually supported but also apparently isnt (see the [support matrix](https://docs.circuitpython.org/en/latest/shared-bindings/support_matrix.html)). i guess we use wifi for now?
+
+yo!
+
+![yay](</updatelogs/images/202508/08022025 - 1.png>)
+
+should i make a specfic firmware for just testing things? i guess so... seems like the frequency i can send info to this LED over internet is 0.25s difference (so thats like 4 messages per second which isnt too bad)
+
+256 characters per second (64 every 0.25s) seems pretty decent, if we can compress our data we can probably achieve that level! ok, gonna make the testing firmware folder stuff
+
+hmm seems to work eh on 0.25s, couple blended messages, but should be fine with better logic?
+
+ok 5:25 PM now, gonna go do something else, so here's a commit!
+
+yeah, nothing else really happened, good night!
+
+**Time Spent: 1.75 hrs**
+
+## 08-04-2025: Day 39: Package Update 3! 
+**batteries!**
+
+hmm gotta really start catching up on updating the journal, but today the batteries arrived! all 5, the wrapper has a texture i wasnt quite expecting, almost reminds you of like, idk how to describe it. but all 5 green batteries are here, with a nice big red warning paper! currently keeping it next to my window, just in case it explodes. at the same time, im also kinda sleeping next to it (its on my table), so if something bad happens, uh oh.
+
+anyways, cant exactly do anything with it just yet. update from yesterday too, the LCSC stuff has touched down in the US, gonna check the PCBs real quick... oh wow, arrived like three hours ago (its 12:13 AM right now oops) in New York, New York! cleared for import! any day now... quickly checking on LCSC, the location isnt specified, so its some place in the US. meanwhile over at aliexpress, the package is still awaiting an airplane! its cleared for exports but is still waiting on a flight...
+
+so yeah! 2/6 packages arrived! nothing too much happened programming wise (other than the fact i made a word hunt solver, but thats not exactly related), so yeah! ok, pretty short update, good night!
+
+**Time Spent: 0.25 hrs**
+
+## 08-06-2025: Day 40: Package Update 4! 
+**everyhing's here!**
+
+dealing 4 repositories of work at once isnt a good idea is it...
+
+welcome back! todays just another quick update on the arrivals of stuff! today, LCSC packages came, two in fact! one containing a bunch of neat electronics, the other also containing neat electronics, except just one of them, that being the MOSFET! anyways, other than that, aliexpress has just told me that the package is now "at the local delivery center" and is about to take its final stretch to get here! luckily for me, i just happen to be able to stay home for the entirety of tomorrow!
+
+at this very moment, in a repository far from here, a new repository rises to another YSWS! yep, planning on doing this one in 10 days, which is kinda insane. anyways, if we pull this off, it would be quite nice, except for the fact it kinda messes with my entire summer schedule. yeah, sorry ivo, gotta wait like two weeks...
+
+anyways, thats about it! its just aliexpress and the PCBs, and we can get working! speaking of which, a quick update on JLCPCB, the package has also arrived at the same distribution facility, just one day shy of the LCSC ones! this means, hopefully, that it might come... tomorrow? we'll see! but for now, we wait for the local carrier on their way!
+
+that's it folks! ok, yeah, got everything laid out on the table, hopefully we can begin assembly friday or this weekend! ok, good night!
+
+**Time Spent: 0.25 hrs**
+
+## 08-07-2025: Day 41: Motor Adjustements
+**uh, just a tiny problem...**
+
+5:45 PM, finished unboxing the aliexpress stuff, and cant say im happy or disappointed. its alright, pretty nice for its price, but the motor specs are like +/- 0.3cm off. like, even for that, i still feel like its quite horrific to put incorrect specs on the listing, especially for cases like this. the issue now is that the motor doesnt fit through the motor PCB. thats horrible, since im now faced with three options:
+
+- grind the motor flanges and pray the insides slide well
+- grind the PCB to make a bigger hole
+- redesign the lower half.
+
+now, i dont want to destroy this motor, so not option 1, and i definitely dont want to do number 2, so we gotta redesign the whole bottom bit.
+
+now, this also means, since the top of the shaft is actually 0.5cm instead of 0.28cm, that i also need to fix that stuff.
+
+also, forgot to say, the JLCPCB stuff arrived this morning! this means, that all the packages and stuff are here, assuming that aliexpress didnt mess anything up! honestly not sure how i feel about it. i mean, it is crazy cheap and thats pretty good, but i think quality control and accurate specifications are really holding it back. and also the fact that half the labels are kinda hard to read. and a box felt a bit soggy.
+
+anyways, trying to work out the CAD right now...
+
+so now i think it looks rather ugly, as its like 2 cm taller than before (like 17 overall). it just feels like theres so much air space between the spinning bit and the motor PCB. so i have a solution! we're gonna have an electronics cover (for the motor PCB), so that it stays safe! then we could probably make that stuff not be upside down, so we could possibly store stuff down there? (nah, storing batteries just isnt gonna work out lol)
+
+ok, heights been decreased by 0.4cm, ok, height is like 16.330cm right now, so eh, thats ok? gonna eat dinner now (6:38 PM), gonna start printing stuff after dinner!
+
+back at 7:33 PM, still fixing stuff...
+
+of, 7:45 PM now, we can start printing again! just kidding, random issues came up, its 7:58 PM and i think we're good? currently writing up a printing list
+
+ok, printing list ready! time to start exporting and stuff! just checked interference detection, should be good enough, turning on the printer!
+
+8:16 PM, and the printers off and running! (wait that sounds confusing lol). what i mean is, its working on the print! ok, gonna work on making sure the aliexpress stuff is all here! ok, nice! everything's here!
+
+ok 8:43 PM and im gonna go back to watching godot tutorials, see ya whenever something interesting happens!
+
+hmm one corner of the elctronics mount come out wonky. think i need to clean the build plate or something but thats realyl unfortunate. i mean, the stuff lines up, so it should be alright!
+
+ok, 12:42 AM and all the stuff should be printed! gonna start assembly maybe saturday (gonna go to school for the last day of summer robotics tomorrow!)! ok, good night!
+
+**Time Spent: 2.5 hrs**
+
+## 08-08-2025: Day 42: Construction Day 1!
+**screws and stuff**
+
+yeah, its like 4:20 PM, and im unloading a bunch of the screws and nuts! preparing to begin assembly!
+
+ok 4:30 PM, unpacked all the nuts into one box, and the 16mm screws into another (i left the 30mm and 40mm in their own bags)
+
+![waw](</updatelogs/images/202508/08082025 - 1.png>)
+
+but yeah, time to start putting them pieces together! this box of 3d printed parts must be the most complicated as in terms of number of parts ive had sitting on my table!
+
+![hmm](</updatelogs/images/202508/08082025 - 2.png>)
+
+4:50 PM, and the brackets (at least, just the rings on them) have been added! gonna eventually super glue these when we get the position right! probably a good idea to check if the motor shaft collar works now?
+
+![hmm](</updatelogs/images/202508/08082025 - 3.png>)
+
+shaft collar works! bad news though, i did not add the stuff that should be below the shaft collar. oops, gotta take this off somehow... ok, got it off!
+
+so it seems that the 16mm screws go a bit too far and actually poke the motor internals when screwing it in, so im gonna see if we can shorten this screw
+
+turns out the mega cutting thing isnt able to cut through. hmm
+
+5:31 PM, went down and asked my dad for some help, found two screws that were shorter, unfortunately they were a bit too fat (probably M5 or maybe even M6?), so got some help with cutting it! apparently, its one of the more tougher screws he's ever seen (which is quite shocking, since hes quite strong and has seen a lot of screws). but yeah, huge thanks to my dad for shortening these screws!
+
+![waa](</updatelogs/images/202508/08082025 - 4.png>)
+
+so it turns out, those motor dimensions were pretty off. gotta reprint the motor side stuff (these are NOT cheap in 3d printing terms), and the top cover. 
+
+got some of the bottom legs screwed in!
+
+![yay](</updatelogs/images/202508/08082025 - 5.png>)
+
+so uh tapping 3cm of threads is NOT fun. did a single side of a spacer, all my fingers hurt, and it took like 10 minutes
+
+ok, 7:00 PM, both my hands are in pain and only did 4 spacers (3 for 30mm, one for the electronics arm which is 16mm)
+
+7:47 PM, and back to tapping!
+
+i am... very dumb sometimes. i accidentally screwed an inner spacer on the outer ring. time to unscrew it!
+
+ok, fixed, one more inner spacer!
+
+ok, 8:09 PM, and all the inner spacers are in! gonna add the brackets now, just kidding gotta add the outer spacers... 8:28 PM, first outer spacer done!
+
+ok, left at like 8:35 PM, back at 9:35 PM! got distracted by talking about robotics stuff
+
+3rd spacer at 9:41 PM! big thanks to these gloves that allow you to have insane grip! (however, its not too fun to type in them...) i was able to do most of a full tap without using the floor! ok, back to tapping! onto the fifth outer spacer... yep thats all the tapping for tonight. basically, my fingers all hurt whenever i extend and retract my fingers. so yeah. i guess its a good time to start reprinting stuff? (i do not like the idea that i have to do this whole process again on the other side.)
+
+turns out i broke a part i shouldnt have. safasdfhasdjk
+
+just assembled the shaft collar to led subsystem section, lookin good! havent started 3d printing yet, gonna double check numbers this time!
+
+![yay](</updatelogs/images/202508/08082025 - 6.png>)
+
+10:45 PM and im taking a break, gonna consider the options i have right now. simply, this setup is very wonky now.
+
+erm since when could a 1.5V AA battery ouput enough power to run the motor? i connected a double aa battery and its spinning pretty fast! idk the RPM, but it appears to be like at least 60, dare i say, maybe 120?
+
+yeah so its like... already a blur. maybe we went a bit overkill? idk, depends on when we actually get the rest of the subsystem on there!
+
+anyways, i never actually took a break, its 11:01 PM, and i guess we yolo the print?
+
+nah, i guess we gotta redesign the middle section. im thinking of an extra platform over there that switches the larger outer diameter to a smaller outer diameter on order to have it still line up with the PCB stuff? well we actually dont have enough screws for that...
+
+ok, ive come up with a solution. it aint pretty, but it'll do. just making it go whooop and out and back in.
+
+so i didnt actually start cadding then, instead i just assembled the brackets connected to the top arms! some days it just doesnt feel like it when you cad and 3d print stuff, you know?
+
+ok, 12:29 AM, and guess what, i so didnt want to do that today that i actually started assembling the base thingy. ok, here's the picture of today's progress!
+
+![waw](</updatelogs/images/202508/08082025 - 7.png>)
+
+ok, so thats it for today! fingers still hurt a bit, got lots of excersize i guess while screwing things. might consider touching electronics tomorrow on a breadboard to test if everything works first? i do have two breadboards sitting around...
+
+ok, good night! gotta remember to turn off the printer, the lights still pulsing... also, realized that we forgot to print the motor bottom spacers, so added that to the future printing list!
+
+ok, good night!
+
+**Time Spent: 6.5 hrs**
+
+## 08-10-2025: Day 43: Construction Day 2!
+**owie hand hurts**
+
+i should stop procrastinating logging the hours shouldnt i...
+
+anyways, 8:12 PM, continuing work! 8:22 PM and just finished installing screws on the lower brackets! not gonna connect them just yet since we have a couple more spacers to tap...
+
+![waw](</updatelogs/images/202508/08102025 - 1.png>)
+
+first one on the electronics arm done without using the floor! currently 8:30 PM! second at 8:34 PM! and third one on 8:38 PM! thats all the bottom tapping done for the led susbsystem!
+
+ok, added the bracket and nuts for 3/5 arms, gonna brb! (8:50 PM right now)
+
+back at 9:19 PM! ok, 9:24 PM, nuts are alright, but ocd is saying that its like a tinny bit off and is going crazy
+
+![hmm](</updatelogs/images/202508/08102025 - 2.png>)
+
+ok, took out the first LED PCB for the support! wait a second, just realized i cant do this since we didnt fix the motor issue yet, never mind! i guess i cant keep running away from that... ok, 9:33 PM and im gonna go watch a movie!
+
+back at 11:16 PM to fix the nuts! ok, finally at a point where im happy with this, but idk how im prorastinating looking into the motor issue for this long...
+
+ok, so ive noticed that it seems like we actually got two different sets of M4 116mm screws, one being just a tiny bit shorter than the other
+
+![hmm](</updatelogs/images/202508/08102025 - 3.png>)
+
+well, shouldve been able to tell this from the slightly different color and marking on the screw
+
+![hmm](</updatelogs/images/202508/08102025 - 4.png>)
+
+yay
+
+![yay](</updatelogs/images/202508/08102025 - 5.png>)
+
+ok, i guess its time to fix the motor issue, since we (quite literally) cant move on without fixing this, currently 12:11 AM, gonna go play mosim real quick
+
+back at 12:42 AM, gonna try to solve this!
+
+ok, here at 1:28 AM, the solution appears to be way simplier than anything i was thinking of before. i was thinking extended something, weird bends, but no. its literally just this.
+
+![hmm](</updatelogs/images/202508/08102025 - 6.png>)
+
+yeah, just bend it in. thats it. now, it is a bit structurally sus right now, and i am aware of that, but i think* it should be ok, since it wraps around the motor, and, in theory, the force is going from the screws inwards and downwards, meaning that it should still be fine, since we have that giant screw setup. speaking of which, it doesnt collide with the motor! just probably gonna add a spacer on the bottom since its getting a tinny bit close. actually, thats probably a good thing, since it really strengthens the middle section! (it does dig into it a little but that should be alright?)
+
+ok its late, (1:33 AM), good night!
+
+**Time Spent: 3.5 hrs**
+
+## 08-11-2025: Day 44: Construction Day 3!
+**more tapping...**
+
+ok, typing in these gloves is still pretty hard, but yeah, printed the motor shields while i was outside today! they seem to fit ok, also printed out the bottom motor spacers and screwed them in! currently 5:18 PM, probably spent like 15 minutes on that? ok, time to switch spools and start printing the motor top mount, then its probably electronics and getting everything together! (im not looking forward to soldering the xiao pin headers, way too scary lol)
+
+ok, yeah, gonna switch filament spools now! ok, its currently printing, but while its doing that, just finished tapping the screws for the motor support shields!
+
+![woo](</updatelogs/images/202508/08112025 - 1.png>)
+
+ok, 5:43 PM and its printed! gonna let it cool down before popping it off this time! oops it fell off, ok, time to assemble! also, since its probably one of the few times im gonna take them out, the motor screws (as in, the ones screwed onto the top), are cut to roughly 10mm!
+
+![yay](</updatelogs/images/202508/08112025 - 2.png>)
+
+ok, assembled the top and the sides! collsion checks with the rest of the led subsystem seem a bit close for comfort, but should be fine. so yeah, just turned 6:00 PM, gonna go for now!
+
+![yay](</updatelogs/images/202508/08112025 - 3.png>)
+
+yeah, that was it for the day, good night!
+
+**Time Spent: 1 hrs**
+
+## 08-12-2025: Day 45: Electronics Day 1!
+**woo soldering!**
+
+ok, electronics day 1, i guess! 5:44 PM, air flow is alright, gonna watch some soldering tutorials again (i have soldered before, its just been a bit!)
+
+- [SMD tutorial](https://www.youtube.com/watch?v=GgDqgixKTpU)
+- [Soldering tutorial](https://www.youtube.com/watch?v=Qps9woUGkvI)
+- [Another one!](https://www.youtube.com/watch?v=rK38rpUy568)
+
+might bring out the hackpad extra boards for this one to play around with again, right, also need to watch how to do the headers stuff! its probably smarter to do that, test that everything works, before soldering it onto the PCB!
+
+- [headers](https://www.youtube.com/shorts/aZWLQi96fW8)
+
+ok, time to whip out the stuff and try not to be absolutely terrified!
+
+lots of prepping later, i think im ready? idk why im so nervous lol, guess ill use the bathroom and put on some music
+
+ok, im back, 6:14 PM, lets practice soldering! gonna set it to 340C to test it out first
+
+ok, solder didnt melt well, 350C
+
+ok, i think i got it! now time for the scary part...
+
+lets not make this mistake again, which side do i solder the headers on.
+
+ok, 360C and it seems like its good? 6:23 PM with the first one soldered! gonna head on to the second!
+
+ok, i think i got the technique, lost it, and got it again, so i guess we good now?
+
+pro tip: your solder is NOT a slinky. do not unwind the entire thing since you'll have to rewind it again.
+
+ok, here's the picture! couldve been a bit better, but in the sections where i got the flow, it looks not bad!
+
+![woo](</updatelogs/images/202508/08122025 - 1.png>)
+
+havent tested if they still work (please do lol), but i never flashed the second one, so hopefully that still works! also gonna double check that nothing's shorting, because that would be pretty bad. ok, 6:56 PM now, and off to dinner!
+
+yeah so we actually cant test much without soldering a bunch of stuff, so i guess ill look for a multimeter tomorrow? i guess while im here, ill do the math for... oh man, 13 update logs.
+
+ok, took quite some time, probably like half an hour, since i kept getting demotivated lol
+
+so thats really it for tonight, gonna work on something else now. ok, good night!
+
+**Time Spent: 1.75 hrs**
